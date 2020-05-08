@@ -8,12 +8,9 @@
 import webbrowser
 import time
 
-<<<<<<< HEAD
 x = 0
 while x < 100:
-=======
 
->>>>>>> d161e9664d8111854ab0b2b6fa27cde756de3423
    a_website = "https://cnn.com"
    b_website = "https://npr.org"
   #b _website = "https://stltoday.com"
@@ -23,15 +20,13 @@ while x < 100:
    f_website = "http://wunderground.com/radar/us"
    g_website = "https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6"
 
-<<<<<<< HEAD
-
    y = 0
    while y < 10:
-=======
+
 for x in range(1,100)
 
    for y in range (1,10)
->>>>>>> d161e9664d8111854ab0b2b6fa27cde756de3423
+
       webbrowser.get('Firefox').open(a_website, new=0)
       time.sleep(300)
 
