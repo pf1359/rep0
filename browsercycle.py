@@ -12,7 +12,7 @@ x = 0
 y = 0
 while x < 100:
 
-   a_website = "https://https://www.msn.com/en-us/news/"
+   a_website = "https://www.msn.com/en-us/news/"
    b_website = "https://npr.org"
    d_website = "https://www.pollen.com/forecast/current/pollen/63132"
    e_website = "https://forecast.weather.gov/MapClick.php?CityName=Olivette&state=MO&site=LSX&textField1=38.6723&textField2=-90.3772&e=0"
