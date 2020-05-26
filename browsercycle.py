@@ -4,6 +4,7 @@
 # browser.link.open_newwindow.restriction = 0
 # browser.link.open_newwindow = 1
 # modified 11 May to cleanup the loop. ptf
+# modified 25 May to add more content and comments. ptf
 
 import webbrowser
 import time
@@ -60,7 +61,7 @@ while x < 100:
 
       webbrowser.get('Firefox').open(j_website, new=0)
       time.sleep(300)
-      
+
    y+=1
 
    webbrowser.get('Firefox').open(g_website, new=0)
