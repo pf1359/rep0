@@ -12,20 +12,32 @@ x = 0
 y = 0
 while x < 100:
 
+   #a = MSN news page
    a_website = "https://www.msn.com/en-us/news/"
+   #b = NPR home page
    b_website = "https://npr.org"
+   #d = Pollen count for STL
    d_website = "https://www.pollen.com/forecast/current/pollen/63132"
+   #e = NOAA weather forcast for STL
    e_website = "https://forecast.weather.gov/MapClick.php?CityName=Olivette&state=MO&site=LSX&textField1=38.6723&textField2=-90.3772&e=0"
+   #c = Blitzortung US lightning mape
    c_website = "http://en.blitzortung.org/live_lightning_maps.php?map=30"
+   #f = US weather radar
    f_website = "http://wunderground.com/radar/us"
+   #g = COVID-19 research map
    g_website = "https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6"
+   #h = KMOV news page
    h_website = "https://www.kmov.com/news/"
+   #i = COVID-19 live stats pageag
+   i_website = "https://ncov2019.live/"
+   #j = Live feed from ISS
+   j_website = "https://www.youtube.com/watch?v=EEIk7gwjgIM"
 
    while y < 10:
       webbrowser.get('Firefox').open(a_website, new=0)
       time.sleep(300)
 
-      webbrowser.get('Firefox').open(b_website, new=0)
+      webbrowser.get('Firefox').open(f_website, new=0)
       time.sleep(300)
 
       webbrowser.get('Firefox').open(c_website, new=0)
@@ -37,11 +49,18 @@ while x < 100:
       webbrowser.get('Firefox').open(e_website, new=0)
       time.sleep(300)
 
-      webbrowser.get('Firefox').open(f_website, new=0)
+      webbrowser.get('Firefox').open(b_website, new=0)
       time.sleep(300)
 
       webbrowser.get('Firefox').open(h_website, new=0)
       time.sleep(300)
+
+      webbrowser.get('Firefox').open(i_website, new=0)
+      time.sleep(300)
+
+      webbrowser.get('Firefox').open(j_website, new=0)
+      time.sleep(300)
+      
    y+=1
 
    webbrowser.get('Firefox').open(g_website, new=0)
