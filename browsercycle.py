@@ -33,6 +33,8 @@ while x < 100:
    i_website = "https://ncov2019.live/"
    #j = Live feed from ISS
    j_website = "https://www.youtube.com/watch?v=EEIk7gwjgIM"
+   #k = ISS location
+   k_website = "https://spotthestation.nasa.gov/tracking_map.cfm"
 
    while y < 10:
       webbrowser.get('Firefox').open(a_website, new=0)
@@ -60,6 +62,8 @@ while x < 100:
       time.sleep(300)
 
       webbrowser.get('Firefox').open(j_website, new=0)
+      time.sleep(300)
+      webbrowser.get('Firefox').open(k_website, new=0)
       time.sleep(300)
 
    y+=1
