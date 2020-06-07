@@ -35,6 +35,12 @@ while x < 100:
    j_website = "https://www.youtube.com/watch?v=EEIk7gwjgIM"
    #k = ISS location
    k_website = "https://spotthestation.nasa.gov/tracking_map.cfm"
+   #l = internet traffic report
+   l_website = "http://www.internettrafficreport.com/"
+   #m = Kaspersky attack visualization
+   m_website = "https://cybermap.kaspersky.com"
+   #n = Akamai threat monitor
+   n_website = "https://www.akamai.com/us/en/resources/visualizing-akamai/enterprise-threat-monitor.jsp"
 
    while y < 10:
       webbrowser.get('Firefox').open(a_website, new=0)
@@ -47,6 +53,9 @@ while x < 100:
       time.sleep(300)
 
       webbrowser.get('Firefox').open(d_website, new=0)
+      time.sleep(300)
+
+      webbrowser.get('Firefox').open(n_website, new=0)
       time.sleep(300)
 
       webbrowser.get('Firefox').open(e_website, new=0)
