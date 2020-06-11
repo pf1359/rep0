@@ -41,6 +41,8 @@ while x < 100:
    m_website = "https://cybermap.kaspersky.com"
    #n = Akamai threat monitor
    n_website = "https://www.akamai.com/us/en/resources/visualizing-akamai/enterprise-threat-monitor.jsp"
+   #o = Meraki site for Findley
+   o_website = "https://n340.meraki.com/1000Llewellyn-wi/n/fGBARc0c/manage/usage/list?timespanClient=7200"
 
    while y < 10:
       webbrowser.get('Firefox').open(a_website, new=0)
@@ -72,7 +74,11 @@ while x < 100:
 
       webbrowser.get('Firefox').open(j_website, new=0)
       time.sleep(300)
+
       webbrowser.get('Firefox').open(k_website, new=0)
+      time.sleep(300)
+
+      webbrowser.get('Firefox').open(o_website, new=0)
       time.sleep(300)
 
    y+=1
