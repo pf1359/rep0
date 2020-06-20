@@ -43,6 +43,9 @@ while x < 100:
    n_website = "https://www.akamai.com/us/en/resources/visualizing-akamai/enterprise-threat-monitor.jsp"
    #o = Meraki site for Findley
    o_website = "https://n340.meraki.com/1000Llewellyn-wi/n/fGBARc0c/manage/usage/list?timespanClient=7200"
+   #p = FlightRadar 24.  use with findleytablet@gmail.com for best result
+   p_website = "https://www.flightradar24.com/40.52,-101.43/4"
+
 
    while y < 10:
       webbrowser.get('Firefox').open(a_website, new=0)
@@ -75,7 +78,7 @@ while x < 100:
       webbrowser.get('Firefox').open(j_website, new=0)
       time.sleep(300)
 
-      webbrowser.get('Firefox').open(k_website, new=0)
+      webbrowser.get('Firefox').open(p_website, new=0)
       time.sleep(300)
 
       webbrowser.get('Firefox').open(o_website, new=0)
