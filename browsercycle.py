@@ -32,7 +32,7 @@ while x < 100:
    #i = COVID-19 live stats pageag
    i_website = "https://ncov2019.live/"
    #j = Live feed from ISS
-   j_website = "https://www.youtube.com/watch?v=EEIk7gwjgIM"
+   #j_website = "https://www.youtube.com/watch?v=EEIk7gwjgIM"
    #k = ISS location
    k_website = "https://spotthestation.nasa.gov/tracking_map.cfm"
    #l = internet traffic report
@@ -45,6 +45,8 @@ while x < 100:
    o_website = "https://n340.meraki.com/1000Llewellyn-wi/n/fGBARc0c/manage/usage/list?timespanClient=7200"
    #p = FlightRadar 24.  use with findleytablet@gmail.com for best result
    p_website = "https://www.flightradar24.com/40.52,-101.43/4"
+   # q = random live feed of a train in Thailand
+   q_website = "https://www.youtube.com/watch?v=ywqKR0NKnXQ"
 
 
    while y < 10:
@@ -75,8 +77,8 @@ while x < 100:
       webbrowser.get('Firefox').open(i_website, new=0)
       time.sleep(300)
 
-      webbrowser.get('Firefox').open(j_website, new=0)
-      time.sleep(300)
+      #webbrowser.get('Firefox').open(j_website, new=0)
+      #time.sleep(300)
 
       webbrowser.get('Firefox').open(p_website, new=0)
       time.sleep(300)
@@ -84,8 +86,7 @@ while x < 100:
       webbrowser.get('Firefox').open(o_website, new=0)
       time.sleep(300)
 
+      webbrowser.get('Firefox').open(g_website, new=0)
+      time.sleep(300)
    y+=1
-
-   webbrowser.get('Firefox').open(g_website, new=0)
-   time.sleep(300)
 x+=1
