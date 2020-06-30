@@ -47,7 +47,8 @@ while x < 100:
    p_website = "https://www.flightradar24.com/40.52,-101.43/4"
    # q = random live feed of a train in Thailand
    q_website = "https://www.youtube.com/watch?v=ywqKR0NKnXQ"
-
+   #r = text weather in STL
+   r_website = "http://wttr.in/Saint+Louis+Missouri"
 
    while y < 10:
       webbrowser.get('Firefox').open(a_website, new=0)
