@@ -49,6 +49,8 @@ while x < 100:
    q_website = "https://www.youtube.com/watch?v=ywqKR0NKnXQ"
    #r = text weather in STL
    r_website = "http://wttr.in/Saint+Louis+Missouri"
+   #s = radar loop
+   s_website = "https://radar.weather.gov/ridge/radar_lite.php?rid=LSX&product=NCR&loop=yes"
 
    while y < 10:
       webbrowser.get('Firefox').open(a_website, new=0)
