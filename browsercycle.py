@@ -65,7 +65,7 @@ while x < 100:
       webbrowser.get('Firefox').open(d_website, new=0)
       time.sleep(300)
 
-      webbrowser.get('Firefox').open(n_website, new=0)
+      webbrowser.get('Firefox').open(s_website, new=0)
       time.sleep(300)
 
       webbrowser.get('Firefox').open(e_website, new=0)
