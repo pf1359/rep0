@@ -1,0 +1,10 @@
+[Unit]
+Description=ready_blink
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/opt/scripts/ready_blink.sh
+
+[Install]
+WantedBy=multi-user.target
