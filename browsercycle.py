@@ -51,6 +51,10 @@ while x < 100:
    r_website = "http://wttr.in/Saint+Louis+Missouri"
    #s = radar loop
    s_website = "https://radar.weather.gov/ridge/radar_lite.php?rid=LSX&product=NCR&loop=yes"
+   #t = hurricane watch
+   t_website = "https://www.nhc.noaa.gov"
+   #u = ISS watch
+   u_website = "https://spotthestation.nasa.gov/sightings/view.cfm?country=United_States&region=Missouri&city=Jefferson_National_Expansion_Memorial"
 
    while y < 10:
       webbrowser.get('Firefox').open(a_website, new=0)
@@ -90,6 +94,12 @@ while x < 100:
       time.sleep(300)
 
       webbrowser.get('Firefox').open(g_website, new=0)
+      time.sleep(300)
+
+      webbrowser.get('Firefox').open(t_website, new=0)
+      time.sleep(300)
+
+      webbrowser.get('Firefox').open(u_website, new=0)
       time.sleep(300)
    y+=1
 x+=1
