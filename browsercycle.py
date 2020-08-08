@@ -55,6 +55,10 @@ while x < 100:
    t_website = "https://www.nhc.noaa.gov"
    #u = ISS watch
    u_website = "https://spotthestation.nasa.gov/sightings/view.cfm?country=United_States&region=Missouri&city=Jefferson_National_Expansion_Memorial"
+   #v = Deerfield Beach Underwater Camera
+   v_website = "https://www.youtube.com/watch?v=GAv4VCC41oU&feature=youtu.be"
+   #w = Cardinals
+   w_website = "https://www.mlb.com/cardinals"
 
    while y < 10:
       webbrowser.get('Firefox').open(a_website, new=0)
@@ -84,7 +88,7 @@ while x < 100:
       webbrowser.get('Firefox').open(i_website, new=0)
       time.sleep(300)
 
-      #webbrowser.get('Firefox').open(j_website, new=0)
+      webbrowser.get('Firefox').open(v_website, new=0)
       #time.sleep(300)
 
       webbrowser.get('Firefox').open(p_website, new=0)
@@ -100,6 +104,9 @@ while x < 100:
       time.sleep(300)
 
       webbrowser.get('Firefox').open(u_website, new=0)
+      time.sleep(300)
+
+      webbrowser.get('Firefox').open(w_website, new=0)
       time.sleep(300)
    y+=1
 x+=1
