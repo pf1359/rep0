@@ -32,7 +32,7 @@ while x < 100:
    #i = COVID-19 live stats page
    i_website = "https://ncov2019.live/"
    #j = Live feed from ISS
-   #j_website = "https://www.youtube.com/watch?v=EEIk7gwjgIM"
+   j_website = "https://www.youtube.com/watch?v=EEIk7gwjgIM"
    #k = ISS location
    k_website = "https://spotthestation.nasa.gov/tracking_map.cfm"
    #l = internet traffic report
@@ -59,8 +59,8 @@ while x < 100:
    v_website = "https://www.youtube.com/watch?v=GAv4VCC41oU&feature=youtu.be"
    #w = Cardinals
    w_website = "https://www.mlb.com/cardinals"
-   #x = Live feed from ISS (added 13Aug2020)
-   x_website = "https://www.youtube.com/watch?v=DDU-rZs-Ic4"
+   #x = Live feed from ISS (added 13Aug2020, removed 14Aug2020)
+   #x_website = "https://www.youtube.com/watch?v=DDU-rZs-Ic4"
 
    while y < 10:
       #a = MSN news page
@@ -127,8 +127,8 @@ while x < 100:
       webbrowser.get('Firefox').open(w_website, new=0)
       time.sleep(180)
 
-      #x = Live feed from ISS
-      webbrowser.get('Firefox').open(x_website, new=0)
+      #j = Live feed from ISS
+      webbrowser.get('Firefox').open(j_website, new=0)
       time.sleep(300)
    y+=1
 x+=1
