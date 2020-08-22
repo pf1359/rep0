@@ -61,10 +61,18 @@ while x < 100:
    w_website = "https://www.mlb.com/cardinals"
    #x = Live feed from ISS (added 13Aug2020, removed 14Aug2020)
    #x_website = "https://www.youtube.com/watch?v=DDU-rZs-Ic4"
+   #y = BBC news
+   y_website = "https://www.bbc.com/"
+   #z = Newsbeak St. Louis
+   z_website = "https://www.newsbreak.com/missouri/st.-louis"
 
    while y < 10:
       #a = MSN news page
-      webbrowser.get('Firefox').open(a_website, new=0)
+      #webbrowser.get('Firefox').open(a_website, new=0)
+      #time.sleep(300)
+
+      #y = BBC news
+      webbrowser.get('Firefox').open(y_website, new=0)
       time.sleep(300)
 
       #f = US weather radar
@@ -89,6 +97,10 @@ while x < 100:
 
       #b = NPR home page
       webbrowser.get('Firefox').open(b_website, new=0)
+      time.sleep(300)
+
+      #z = Newsbeak St. Louis
+      webbrowser.get('Firefox').open(z_website, new=0)
       time.sleep(300)
 
       #h = KMOV news page
