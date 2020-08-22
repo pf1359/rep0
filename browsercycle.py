@@ -123,9 +123,9 @@ while x < 100:
       webbrowser.get('Firefox').open(o_website, new=0)
       time.sleep(300)
 
-      #g = COVID-19 research map
-      webbrowser.get('Firefox').open(g_website, new=0)
-      time.sleep(180)
+      #g = COVID-19 research map (disabled 22Aug - using too many cpu)
+      #webbrowser.get('Firefox').open(g_website, new=0)
+      #time.sleep(180)
 
       #t = hurricane watch
       webbrowser.get('Firefox').open(t_website, new=0)
