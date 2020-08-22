@@ -31,6 +31,8 @@ while x < 100:
    h_website = "https://www.kmov.com/news/"
    #i = COVID-19 live stats page
    i_website = "https://ncov2019.live/"
+   #ia = COVID-19 US live stats page (added 22Aug2020)
+   ia_website = "https://ncov2019.live/data/unitedstates"
    #j = Live feed from ISS
    j_website = "https://www.youtube.com/watch?v=EEIk7gwjgIM"
    #k = ISS location
@@ -109,6 +111,10 @@ while x < 100:
 
       #i = COVID-19 live stats page
       webbrowser.get('Firefox').open(i_website, new=0)
+      time.sleep(300)
+
+      #ia = COVID-19 US live stats page
+      webbrowser.get('Firefox').open(ia_website, new=0)
       time.sleep(300)
 
       #v = Deerfield Beach Underwater Camera (disable 22 Aug 2020)
