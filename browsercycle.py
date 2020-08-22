@@ -100,8 +100,8 @@ while x < 100:
       time.sleep(300)
 
       #v = Deerfield Beach Underwater Camera
-      webbrowser.get('Firefox').open(v_website, new=0)
-      time.sleep(300)
+      #webbrowser.get('Firefox').open(v_website, new=0)
+      #time.sleep(300)
 
       #p = FlightRadar 24.  use with findleytablet@gmail.com for best result
       webbrowser.get('Firefox').open(p_website, new=0)
@@ -128,7 +128,7 @@ while x < 100:
       time.sleep(180)
 
       #j = Live feed from ISS
-      webbrowser.get('Firefox').open(j_website, new=0)
-      time.sleep(300)
+      #webbrowser.get('Firefox').open(j_website, new=0)
+      #time.sleep(300)
    y+=1
 x+=1
