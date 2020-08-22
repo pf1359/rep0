@@ -61,13 +61,13 @@ while x < 100:
    w_website = "https://www.mlb.com/cardinals"
    #x = Live feed from ISS (added 13Aug2020, removed 14Aug2020)
    #x_website = "https://www.youtube.com/watch?v=DDU-rZs-Ic4"
-   #y = BBC news
+   #y = BBC news (add 22 Aug 2020)
    y_website = "https://www.bbc.com/"
-   #z = Newsbeak St. Louis
+   #z = Newsbreak St. Louis (add 22 Aug 2020)
    z_website = "https://www.newsbreak.com/missouri/st.-louis"
 
    while y < 10:
-      #a = MSN news page
+      #a = MSN news page (disable 22 Aug 2020)
       #webbrowser.get('Firefox').open(a_website, new=0)
       #time.sleep(300)
 
@@ -99,7 +99,7 @@ while x < 100:
       webbrowser.get('Firefox').open(b_website, new=0)
       time.sleep(300)
 
-      #z = Newsbeak St. Louis
+      #z = Newsbreak St. Louis
       webbrowser.get('Firefox').open(z_website, new=0)
       time.sleep(300)
 
@@ -111,7 +111,7 @@ while x < 100:
       webbrowser.get('Firefox').open(i_website, new=0)
       time.sleep(300)
 
-      #v = Deerfield Beach Underwater Camera
+      #v = Deerfield Beach Underwater Camera (disable 22 Aug 2020)
       #webbrowser.get('Firefox').open(v_website, new=0)
       #time.sleep(300)
 
@@ -139,7 +139,7 @@ while x < 100:
       webbrowser.get('Firefox').open(w_website, new=0)
       time.sleep(180)
 
-      #j = Live feed from ISS
+      #j = Live feed from ISS (disable 22 Aug 2020)
       #webbrowser.get('Firefox').open(j_website, new=0)
       #time.sleep(300)
    y+=1
