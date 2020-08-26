@@ -5,6 +5,7 @@
 # browser.link.open_newwindow = 1
 # Remember to go into options and enable autoplay audio and video if using Youtube links
 # 13 Aug 2020 - adjusted timing
+# Sequence (abitrary): 47
 
 import webbrowser
 import time
