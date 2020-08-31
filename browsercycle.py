@@ -68,9 +68,9 @@ while x < 100:
    y_website = "https://www.bbc.com/"
    #z = Newsbreak St. Louis (add 22 Aug 2020)
    z_website = "https://www.newsbreak.com/missouri/st.-louis"
-   #aa = Oracle Internet Intelligence internet uptime
+   #aa = Oracle Internet Intelligence internet uptime (add 30 Aug 2020)
    aa_website="https://map.internetintel.oracle.com/?root=national&country=US"
-   #ab = wundermap local stations
+   #ab = wundermap local stations (add 30 Aug 2020)
    ab_website = "https://www.wunderground.com/wundermap"  
 
    while y < 10:
