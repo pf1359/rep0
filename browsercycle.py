@@ -68,6 +68,10 @@ while x < 100:
    y_website = "https://www.bbc.com/"
    #z = Newsbreak St. Louis (add 22 Aug 2020)
    z_website = "https://www.newsbreak.com/missouri/st.-louis"
+   #aa = Oracle Internet Intelligence internet uptime
+   aa_website="https://map.internetintel.oracle.com/?root=national&country=US"
+   #ab = wundermap local stations
+   ab_website = "https://www.wunderground.com/wundermap"  
 
    while y < 10:
       #a = MSN news page (disable 22 Aug 2020)
@@ -93,6 +97,10 @@ while x < 100:
       #s = radar loop
       webbrowser.get('Firefox').open(s_website, new=0)
       time.sleep(300)
+
+      #ab = wundermap local stations
+      webbrowser.get('Firefox').open(ab_website, new=0)
+      time.sleep(180)
 
       #e = NOAA weather forcast for STL
       webbrowser.get('Firefox').open(e_website, new=0)
@@ -149,5 +157,10 @@ while x < 100:
       #j = Live feed from ISS (disable 22 Aug 2020)
       #webbrowser.get('Firefox').open(j_website, new=0)
       #time.sleep(300)
+
+      #aa = Oracle Internet Intelligence internet uptime
+      webbrowser.get('Firefox').open(aa_website, new=0)
+      time.sleep(180)
+
    y+=1
 x+=1
