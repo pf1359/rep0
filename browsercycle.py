@@ -72,8 +72,8 @@ while x < 100:
    aa_website="https://map.internetintel.oracle.com/?root=national&country=US"
    #ab = wundermap local stations (add 30 Aug 2020)
    ab_website = "https://www.wunderground.com/wundermap"
-   #ac = pfsense dashboard (add 4 Sep 2020)
-   ac_website = "https://192.168.137.251:4433/index.php"
+   #ad = pihole on rpi4-19a (add 7 Sep 2020)
+   ad_website = "http://dns.findley.cc/admin/"
 
    while y < 10:
       #a = MSN news page (disable 22 Aug 2020)
@@ -164,8 +164,8 @@ while x < 100:
       webbrowser.get('Firefox').open(aa_website, new=0)
       time.sleep(180)
 
-      #ac = pfsense dashboard (add 4 Sep 2020)
-      webbrowser.get('Firefox').open(ac_website, new=0)
+      #ad = pihole on rpi4-19a
+      webbrowser.get('Firefox').open(ad_website, new=0)
       time.sleep(180)
 
    y+=1
