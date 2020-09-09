@@ -3,8 +3,9 @@
 # To get Firefox to open pages in the same tab, you have to make these changes in about:config:
 # browser.link.open_newwindow.restriction = 0
 # browser.link.open_newwindow = 1
-# modified 11 May to cleanup the loop. ptf
-# modified 25 May to add more content and comments. ptf
+# Remember to go into options and enable autoplay audio and video if using Youtube links
+# 13 Aug 2020 - adjusted timing
+# Sequence (abitrary): 47
 
 import webbrowser
 import time
@@ -21,7 +22,7 @@ while x < 100:
    d_website = "https://www.pollen.com/forecast/current/pollen/63132"
    #e = NOAA weather forcast for STL
    e_website = "https://forecast.weather.gov/MapClick.php?CityName=Olivette&state=MO&site=LSX&textField1=38.6723&textField2=-90.3772&e=0"
-   #c = Blitzortung US lightning mape
+   #c = Blitzortung US lightning map
    c_website = "http://en.blitzortung.org/live_lightning_maps.php?map=30"
    #f = US weather radar
    f_website = "http://wunderground.com/radar/us"
@@ -29,10 +30,12 @@ while x < 100:
    g_website = "https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6"
    #h = KMOV news page
    h_website = "https://www.kmov.com/news/"
-   #i = COVID-19 live stats pageag
+   #i = COVID-19 live stats page
    i_website = "https://ncov2019.live/"
+   #ia = COVID-19 US live stats page (added 22Aug2020)
+   ia_website = "https://ncov2019.live/data/unitedstates"
    #j = Live feed from ISS
-   #j_website = "https://www.youtube.com/watch?v=EEIk7gwjgIM"
+   j_website = "https://www.youtube.com/watch?v=EEIk7gwjgIM"
    #k = ISS location
    k_website = "https://spotthestation.nasa.gov/tracking_map.cfm"
    #l = internet traffic report
@@ -55,51 +58,115 @@ while x < 100:
    t_website = "https://www.nhc.noaa.gov"
    #u = ISS watch
    u_website = "https://spotthestation.nasa.gov/sightings/view.cfm?country=United_States&region=Missouri&city=Jefferson_National_Expansion_Memorial"
+   #v = Deerfield Beach Underwater Camera
+   v_website = "https://www.youtube.com/watch?v=GAv4VCC41oU&feature=youtu.be"
+   #w = Cardinals
+   w_website = "https://www.mlb.com/cardinals"
+   #x = Live feed from ISS (added 13Aug2020, removed 14Aug2020)
+   #x_website = "https://www.youtube.com/watch?v=DDU-rZs-Ic4"
+   #y = BBC news (add 22 Aug 2020)
+   y_website = "https://www.bbc.com/"
+   #z = Newsbreak St. Louis (add 22 Aug 2020)
+   z_website = "https://www.newsbreak.com/missouri/st.-louis"
+   #aa = Oracle Internet Intelligence internet uptime (add 30 Aug 2020)
+   aa_website="https://map.internetintel.oracle.com/?root=national&country=US"
+   #ab = wundermap local stations (add 30 Aug 2020)
+   ab_website = "https://www.wunderground.com/wundermap"
+   #ad = pihole on rpi4-19a (add 7 Sep 2020)
+   ad_website = "http://dns.findley.cc/admin/"
 
    while y < 10:
-      webbrowser.get('Firefox').open(a_website, new=0)
+      #a = MSN news page (disable 22 Aug 2020)
+      #webbrowser.get('Firefox').open(a_website, new=0)
+      #time.sleep(300)
+
+      #y = BBC news
+      webbrowser.get('Firefox').open(y_website, new=0)
       time.sleep(300)
 
+      #f = US weather radar
       webbrowser.get('Firefox').open(f_website, new=0)
       time.sleep(300)
 
+      #c = Blitzortung US lightning map
       webbrowser.get('Firefox').open(c_website, new=0)
       time.sleep(300)
 
+      #d = Pollen count for STL
       webbrowser.get('Firefox').open(d_website, new=0)
-      time.sleep(300)
+      time.sleep(180)
 
+      #s = radar loop
       webbrowser.get('Firefox').open(s_website, new=0)
       time.sleep(300)
 
+      #ab = wundermap local stations
+      webbrowser.get('Firefox').open(ab_website, new=0)
+      time.sleep(180)
+
+      #e = NOAA weather forcast for STL
       webbrowser.get('Firefox').open(e_website, new=0)
       time.sleep(300)
 
+      #b = NPR home page
       webbrowser.get('Firefox').open(b_website, new=0)
       time.sleep(300)
 
+      #z = Newsbreak St. Louis
+      webbrowser.get('Firefox').open(z_website, new=0)
+      time.sleep(300)
+
+      #h = KMOV news page
       webbrowser.get('Firefox').open(h_website, new=0)
       time.sleep(300)
 
+      #i = COVID-19 live stats page
       webbrowser.get('Firefox').open(i_website, new=0)
       time.sleep(300)
 
-      #webbrowser.get('Firefox').open(j_website, new=0)
+      #ia = COVID-19 US live stats page
+      webbrowser.get('Firefox').open(ia_website, new=0)
+      time.sleep(300)
+
+      #v = Deerfield Beach Underwater Camera (disable 22 Aug 2020)
+      #webbrowser.get('Firefox').open(v_website, new=0)
       #time.sleep(300)
 
+      #p = FlightRadar 24.  use with findleytablet@gmail.com for best result
       webbrowser.get('Firefox').open(p_website, new=0)
       time.sleep(300)
 
+      #o = Meraki site for Findley
       webbrowser.get('Firefox').open(o_website, new=0)
       time.sleep(300)
 
-      webbrowser.get('Firefox').open(g_website, new=0)
-      time.sleep(300)
+      #g = COVID-19 research map (disabled 22Aug - using too many cpu)
+      #webbrowser.get('Firefox').open(g_website, new=0)
+      #time.sleep(180)
 
+      #t = hurricane watch
       webbrowser.get('Firefox').open(t_website, new=0)
-      time.sleep(300)
+      time.sleep(180)
 
-      webbrowser.get('Firefox').open(u_website, new=0)
-      time.sleep(300)
+      #u = ISS watch (disable 3 Sep 2020)
+      #webbrowser.get('Firefox').open(u_website, new=0)
+      #time.sleep(180)
+
+      #w = Cardinals
+      webbrowser.get('Firefox').open(w_website, new=0)
+      time.sleep(180)
+
+      #j = Live feed from ISS (disable 22 Aug 2020)
+      #webbrowser.get('Firefox').open(j_website, new=0)
+      #time.sleep(300)
+
+      #aa = Oracle Internet Intelligence internet uptime
+      webbrowser.get('Firefox').open(aa_website, new=0)
+      time.sleep(180)
+
+      #ad = pihole on rpi4-19a
+      webbrowser.get('Firefox').open(ad_website, new=0)
+      time.sleep(180)
+
    y+=1
 x+=1
