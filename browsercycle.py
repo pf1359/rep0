@@ -74,6 +74,8 @@ while x < 100:
    ab_website = "https://www.wunderground.com/wundermap"
    #ad = pihole on rpi4-19a (add 7 Sep 2020)
    ad_website = "http://dns.findley.cc/admin/"
+   #ae = MLB Postseason
+   ae_website = "https://www.mlb.com/postseason"
 
    while y < 10:
       #a = MSN news page (disable 22 Aug 2020)
@@ -166,6 +168,10 @@ while x < 100:
 
       #ad = pihole on rpi4-19a
       webbrowser.get('Firefox').open(ad_website, new=0)
+      time.sleep(180)
+
+      #ae = MLB Postseason (add 27Sep2020)
+      webbrowser.get('Firefox').open(ae_website, new=0)
       time.sleep(180)
 
    y+=1
