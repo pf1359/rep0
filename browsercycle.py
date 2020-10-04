@@ -154,9 +154,9 @@ while x < 100:
       #webbrowser.get('Firefox').open(u_website, new=0)
       #time.sleep(180)
 
-      #w = Cardinals
-      webbrowser.get('Firefox').open(w_website, new=0)
-      time.sleep(180)
+      #w = Cardinals (disable 3 Oct 2020 when they lost)
+      #webbrowser.get('Firefox').open(w_website, new=0)
+      #time.sleep(180)
 
       #j = Live feed from ISS (disable 22 Aug 2020)
       #webbrowser.get('Firefox').open(j_website, new=0)
