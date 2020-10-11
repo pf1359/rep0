@@ -73,8 +73,7 @@ while x < 100:
    #ab = wundermap local stations (add 30 Aug 2020)
    ab_website = "https://www.wunderground.com/wundermap"
    #ad = pihole on rpi4-19a (add 7 Sep 2020)
-   #mod 8 Oct 2020 - can't access vm from vostro14 host)
-   ad_website = "http://dns2.findley.cc/admin/"
+   ad_website = "http://dns.findley.cc/admin/"
    #ae = MLB Postseason
    ae_website = "https://www.mlb.com/postseason"
 
