@@ -5,7 +5,8 @@
 # browser.link.open_newwindow = 1
 # Remember to go into options and enable autoplay audio and video if using Youtube links
 # 13 Aug 2020 - adjusted timing
-# Sequence (abitrary): 47
+# 10 Oct 2020 - reduced timing on most pages
+
 
 import webbrowser
 import time
@@ -84,19 +85,19 @@ while x < 100:
 
       #y = BBC news
       webbrowser.get('Firefox').open(y_website, new=0)
-      time.sleep(300)
+      time.sleep(180)
 
       #f = US weather radar
       webbrowser.get('Firefox').open(f_website, new=0)
-      time.sleep(300)
+      time.sleep(240)
 
       #c = Blitzortung US lightning map
       webbrowser.get('Firefox').open(c_website, new=0)
-      time.sleep(300)
+      time.sleep(180)
 
       #d = Pollen count for STL
       webbrowser.get('Firefox').open(d_website, new=0)
-      time.sleep(180)
+      time.sleep(120)
 
       #s = radar loop
       webbrowser.get('Firefox').open(s_website, new=0)
@@ -108,27 +109,27 @@ while x < 100:
 
       #e = NOAA weather forcast for STL
       webbrowser.get('Firefox').open(e_website, new=0)
-      time.sleep(300)
+      time.sleep(180)
 
       #b = NPR home page
       webbrowser.get('Firefox').open(b_website, new=0)
-      time.sleep(300)
+      time.sleep(240)
 
       #z = Newsbreak St. Louis
       webbrowser.get('Firefox').open(z_website, new=0)
-      time.sleep(300)
+      time.sleep(180)
 
       #h = KMOV news page
       webbrowser.get('Firefox').open(h_website, new=0)
-      time.sleep(300)
+      time.sleep(180)
 
       #i = COVID-19 live stats page
       webbrowser.get('Firefox').open(i_website, new=0)
-      time.sleep(300)
+      time.sleep(120)
 
       #ia = COVID-19 US live stats page
       webbrowser.get('Firefox').open(ia_website, new=0)
-      time.sleep(300)
+      time.sleep(120)
 
       #v = Deerfield Beach Underwater Camera (disable 22 Aug 2020)
       #webbrowser.get('Firefox').open(v_website, new=0)
@@ -140,7 +141,7 @@ while x < 100:
 
       #o = Meraki site for Findley
       webbrowser.get('Firefox').open(o_website, new=0)
-      time.sleep(300)
+      time.sleep(180)
 
       #g = COVID-19 research map (disabled 22Aug - using too many cpu)
       #webbrowser.get('Firefox').open(g_website, new=0)
@@ -164,7 +165,7 @@ while x < 100:
 
       #aa = Oracle Internet Intelligence internet uptime
       webbrowser.get('Firefox').open(aa_website, new=0)
-      time.sleep(180)
+      time.sleep(120)
 
       #ad = pihole on rpi4-19a
       webbrowser.get('Firefox').open(ad_website, new=0)
