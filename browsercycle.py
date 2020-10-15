@@ -73,10 +73,12 @@ while x < 100:
    aa_website="https://map.internetintel.oracle.com/?root=national&country=US"
    #ab = wundermap local stations (add 30 Aug 2020)
    ab_website = "https://www.wunderground.com/wundermap"
-   #ad = pihole on rpi4-19a (add 7 Sep 2020)
+   #ad = pihole on ubuntu820(mod 14 Oct 2020)
    ad_website = "http://dns.findley.cc/admin/"
    #ae = MLB Postseason
    ae_website = "https://www.mlb.com/postseason"
+   #ad = pihole on rpi0wrw (add 14 Oct 2020)
+   af_website = "http://dns2.findley.cc/admin/"
 
    while y < 10:
       #a = MSN news page (disable 22 Aug 2020)
@@ -144,8 +146,8 @@ while x < 100:
       time.sleep(180)
 
       #g = COVID-19 research map (disabled 22Aug - using too many cpu)
-      #webbrowser.get('Firefox').open(g_website, new=0)
-      #time.sleep(180)
+      webbrowser.get('Firefox').open(g_website, new=0)
+      time.sleep(90)
 
       #t = hurricane watch
       webbrowser.get('Firefox').open(t_website, new=0)
@@ -167,9 +169,13 @@ while x < 100:
       webbrowser.get('Firefox').open(aa_website, new=0)
       time.sleep(120)
 
-      #ad = pihole on rpi4-19a
+      #ad = pihole on ubuntu820
       webbrowser.get('Firefox').open(ad_website, new=0)
-      time.sleep(180)
+      time.sleep(120)
+
+      #ad = pihole on rpi0wrw
+      webbrowser.get('Firefox').open(af_website, new=0)
+      time.sleep(120)
 
       #ae = MLB Postseason (add 27Sep2020)
       webbrowser.get('Firefox').open(ae_website, new=0)
