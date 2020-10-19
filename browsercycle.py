@@ -77,6 +77,8 @@ while x < 100:
    ad_website = "http://dns.findley.cc/admin/"
    #ae = MLB Postseason
    ae_website = "https://www.mlb.com/postseason"
+   #af = Rumble console (sign in as reed honely)
+   af_website = "https://console.rumble.run/"
 
    while y < 10:
       #a = MSN news page (disable 22 Aug 2020)
@@ -174,6 +176,10 @@ while x < 100:
       #ae = MLB Postseason (add 27Sep2020)
       webbrowser.get('Firefox').open(ae_website, new=0)
       time.sleep(180)
+
+      #ae = rumble console (added 18 Oct 2020)
+      webbrowser.get('Firefox').open(af_website, new=0)
+      time.sleep(120)
 
    y+=1
 x+=1
