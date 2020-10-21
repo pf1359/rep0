@@ -4,6 +4,7 @@ import time
 
 ticker=1
 while (ticker != 0):
+    print("1")
     client1 = gnewsclient.NewsClient(language='english',
                                 location='United States',
                                 topic='top stories',
@@ -16,8 +17,8 @@ while (ticker != 0):
         print("Link : ", item['link'])
         print("")
 
-    time.sleep(30)
-
+    time.sleep(5)
+    print("2")
     client2 = gnewsclient.NewsClient(language='english',
                                 location='United States',
                                 topic='technology',
@@ -30,8 +31,8 @@ while (ticker != 0):
         print("Link : ", item['link'])
         print("")
 
-    time.sleep(30)
-
+    time.sleep(5)
+    print("3")
     client3 = gnewsclient.NewsClient(language='english',
                                 location='United States',
                                 topic='business',
@@ -44,8 +45,8 @@ while (ticker != 0):
         print("Link : ", item['link'])
         print("")
 
-    time.sleep(30)
-
+    time.sleep(5)
+    print("4")
     client4 = gnewsclient.NewsClient(language='english',
                                 location='United States',
                                 topic='world',
@@ -58,8 +59,8 @@ while (ticker != 0):
         print("Link : ", item['link'])
         print("")
 
-    time.sleep(30)
-    
+    time.sleep(5)
+    print("6")
     client5 = gnewsclient.NewsClient(language='english',
                                 location='United States',
                                 topic='nation',
@@ -72,7 +73,8 @@ while (ticker != 0):
         print("Link : ", item['link'])
         print("")
 
-    time.sleep(30)
+    time.sleep(5)
+    print("7")
 
     client6 = gnewsclient.NewsClient(language='english',
                                 location='United States',
@@ -86,5 +88,5 @@ while (ticker != 0):
         print("Link : ", item['link'])
         print("")
 
-    time.sleep(30)
+    time.sleep(5)
 print("End of Cycle")
