@@ -1,13 +1,89 @@
 from gnewsclient import gnewsclient
+import time
 
-client = gnewsclient.NewsClient(language='english',
+ticker=1
+while (ticker != 0):
+    client1 = gnewsclient.NewsClient(language='english',
+                                location='United States',
+                                topic='top stories',
+                                max_results=5)
+
+    news_list = client1.get_news()
+
+    for item in news_list:
+        print("Title : ", item['title'])
+        print("Link : ", item['link'])
+        print("")
+
+    time.sleep(30)
+
+    client2 = gnewsclient.NewsClient(language='english',
                                 location='United States',
                                 topic='technology',
-                                max_results=3)
+                                max_results=5)
 
-news_list = client.get_news()
+    news_list = client2.get_news()
 
-for item in news_list:
-    print("Title : ", item['title'])
-    print("Link : ", item['link'])
-    print("")
+    for item in news_list:
+        print("Title : ", item['title'])
+        print("Link : ", item['link'])
+        print("")
+
+    time.sleep(30)
+
+    client3 = gnewsclient.NewsClient(language='english',
+                                location='United States',
+                                topic='business',
+                                max_results=5)
+
+    news_list = client3.get_news()
+
+    for item in news_list:
+        print("Title : ", item['title'])
+        print("Link : ", item['link'])
+        print("")
+
+    time.sleep(30)
+
+    client4 = gnewsclient.NewsClient(language='english',
+                                location='United States',
+                                topic='world',
+                                max_results=5)
+
+    news_list = client4.get_news()
+
+    for item in news_list:
+        print("Title : ", item['title'])
+        print("Link : ", item['link'])
+        print("")
+
+    time.sleep(30)
+    
+    client5 = gnewsclient.NewsClient(language='english',
+                                location='United States',
+                                topic='nation',
+                                max_results=5)
+
+    news_list = client5.get_news()
+
+    for item in news_list:
+        print("Title : ", item['title'])
+        print("Link : ", item['link'])
+        print("")
+
+    time.sleep(30)
+
+    client6 = gnewsclient.NewsClient(language='english',
+                                location='United States',
+                                topic='sports',
+                                max_results=5)
+
+    news_list = client6.get_news()
+
+    for item in news_list:
+        print("Title : ", item['title'])
+        print("Link : ", item['link'])
+        print("")
+
+    time.sleep(30)
+print("End of Cycle")
