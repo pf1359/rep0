@@ -7,7 +7,7 @@ while (ticker != 0):
     print("1")
     client1 = gnewsclient.NewsClient(language='english',
                                 location='United States',
-                                topic='top stories',
+                                topic='Top Stories',
                                 max_results=5)
 
     news_list = client1.get_news()
