@@ -1,3 +1,4 @@
+import gnewsclient
 from gnewsclient import gnewsclient
 import time
 
