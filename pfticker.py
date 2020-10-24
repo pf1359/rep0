@@ -1,6 +1,7 @@
 import gnewsclient
-from gnewsclient import gnewsclient
-import time
+from gnewsclient import gnewsclient # for the google newsfeed
+import time # for sleep
+import requests #for the wttr.in request
 
 TTOPICS = ['technology', 'business', 'world', 'nation', 'sport']
 CWHITE =  '\33[37m'
@@ -11,7 +12,7 @@ CWHITE2 = '\33[97m'
 CBLUE2 = '\33[94m'
 
 ticker=1
-while (ticker != 0):
+while (ticker != 0):    #because why not?  runs until killed
     for TTOPIC in TTOPICS:
         client = gnewsclient.NewsClient(language='english',
                                 location='United States',
@@ -27,7 +28,15 @@ while (ticker != 0):
 
         time.sleep(6)
 
-print (CGREEN + "End of Cycle" + CEND)
+    #generates txt weather report.  Uses OS-defined location
+    VAR_URL="http://wttr.in"
+    VAR_RES = requests.get(VAR_URL)
+    print(VAR_RES.text)
+
+    
+
+
+    print (CGREEN + "End of Cycle" + CEND)
 
 
 #Black: \u001b[30m.
