@@ -1,3 +1,6 @@
+#Created October 2020 ptf
+#basis: https://www.geeksforgeeks.org/build-an-application-to-extract-news-from-google-news-feed-using-python/
+
 import gnewsclient
 from gnewsclient import gnewsclient # for the google newsfeed
 import time # for sleep
