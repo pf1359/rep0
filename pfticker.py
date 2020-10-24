@@ -33,7 +33,7 @@ while (ticker != 0):    #because why not?  runs until killed
     VAR_URL="http://wttr.in/stl?2n"
     VAR_RES = requests.get(VAR_URL)
     print(VAR_RES.text)
-    time.sleep(45)
+    time.sleep(30)
 
     
 
