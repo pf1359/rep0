@@ -10,6 +10,7 @@ CGREEN = '\33[32m'
 CEND = '\33[0m'
 CWHITE2 = '\33[97m'
 CBLUE2 = '\33[94m'
+CGREY    = '\33[90m'
 
 ticker=1
 while (ticker != 0):    #because why not?  runs until killed
@@ -23,16 +24,16 @@ while (ticker != 0):    #because why not?  runs until killed
 
         for item in news_list:
             print(CWHITE2 + "Title : ", item['title'] + CEND)
-            print(CBLUE2 + "Link : ", item['link'] + CEND)
+            print(CGREY + "Link : " + CBLUE2, item['link'] + CEND)
             print("")
 
         time.sleep(6)
 
     #generates txt weather report.  Uses OS-defined location
-    VAR_URL="http://wttr.in"
+    VAR_URL="http://wttr.in/stl?2n"
     VAR_RES = requests.get(VAR_URL)
     print(VAR_RES.text)
-    time.sleep(30)
+    time.sleep(45)
 
     
 
