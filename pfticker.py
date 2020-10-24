@@ -2,72 +2,37 @@ import gnewsclient
 from gnewsclient import gnewsclient
 import time
 
+TTOPICS = ['technology', 'business', 'world', 'nation', 'sport']
+CWHITE =  '\33[37m'
+CCYAN = '\33[36m'
+CGREEN = '\33[32m'
+CEND = '\33[0m'
+
 ticker=1
 while (ticker != 0):
-    client2 = gnewsclient.NewsClient(language='english',
+    for TTOPIC in TTOPICS:
+        client = gnewsclient.NewsClient(language='english',
                                 location='United States',
-                                topic='technology',
-                                max_results=5)
+                                topic=TTOPIC,
+                                max_results=3)
 
-    news_list = client2.get_news()
+        news_list = client.get_news()
 
-    for item in news_list:
-        print("Title : ", item['title'])
-        print("Link : ", item['link'])
-        print("")
+        for item in news_list:
+            print(CWHITE + "Title : ", item['title'] + CEND)
+            print(CCYAN + "Link : ", item['link'] + CEND)
+            print("")
 
-    time.sleep(10)
-    client3 = gnewsclient.NewsClient(language='english',
-                                location='United States',
-                                topic='business',
-                                max_results=5)
+        time.sleep(6)
 
-    news_list = client3.get_news()
+print (CGREEN + "End of Cycle" + CEND)
 
-    for item in news_list:
-        print("Title : ", item['title'])
-        print("Link : ", item['link'])
-        print("")
 
-    time.sleep(10)
-    client4 = gnewsclient.NewsClient(language='english',
-                                location='United States',
-                                topic='world',
-                                max_results=5)
-
-    news_list = client4.get_news()
-
-    for item in news_list:
-        print("Title : ", item['title'])
-        print("Link : ", item['link'])
-        print("")
-
-    time.sleep(10)
-    client5 = gnewsclient.NewsClient(language='english',
-                                location='United States',
-                                topic='nation',
-                                max_results=5)
-
-    news_list = client5.get_news()
-
-    for item in news_list:
-        print("Title : ", item['title'])
-        print("Link : ", item['link'])
-        print("")
-
-    time.sleep(10)
-
-    client6 = gnewsclient.NewsClient(language='english',
-                                location='United States',
-                                topic='sports',
-                                max_results=5)
-
-    news_list = client6.get_news()
-
-    for item in news_list:
-        print("Title : ", item['title'])
-        print("Link : ", item['link'])
-        print("")
-
-    time.sleep(10)
-print("End of Cycle")
+#Black: \u001b[30m.
+#Red: \u001b[31m.
+# #Green: \u001b[32m.
+#Yellow: \u001b[33m.
+#Blue: \u001b[34m.
+#Magenta: \u001b[35m.
+#Cyan: \u001b[36m.
+#White: \u001b[37m.
