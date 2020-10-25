@@ -1,12 +1,20 @@
 #Created October 2020 ptf
 #basis: https://www.geeksforgeeks.org/build-an-application-to-extract-news-from-google-news-feed-using-python/
 
-import gnewsclient
-from gnewsclient import gnewsclient # for the google newsfeed
-import time # for sleep
-import requests #for the wttr.in request
-from datetime import datetime, timedelta
+from gnewsclient import gnewsclient        
+import time                                
+import requests                             
+from datetime import datetime, timedelta    
 import feedparser
+import sys
+
+#Validate we are online, since everything is internet-based.  Quit if not.
+try:
+    if requests.get('http://1.1.1.1').ok:
+        print("You're Online")
+except:
+    print("You're Offline")
+    sys.quit()
 
 TTOPICS = ['technology', 'business', 'world', 'nation', 'sport']
 CWHITE =  '\33[37m'
@@ -19,12 +27,9 @@ CGREY    = '\33[90m'
 CYELLOW2 = '\33[93m'
 
 VAR_RSS = ['https://www.aljazeera.com/xml/rss/all.xml',
-               'https://feeds.npr.org/500005/podcast.xml',
-               'https://kwmu-rss.streamguys1.com/gateway/gateway.xml',
-               'http://rss.slashdot.org/Slashdot/slashdotMain',
-               'https://hnrss.org/frontpage',
+               'https://hnrss.org/frontpage',       
                'https://www.zdnet.com/news/rss.xml']
-TOTAL_RSS = 6
+TOTAL_RSS = 3
 TOTAL_ENTRIES = TOTAL_RSS * 4
 NOW = datetime.now()
 LATER = datetime.now() + timedelta(minutes=31)
@@ -34,6 +39,8 @@ FEED_ARRAY = []
 
 TICKER=1
 while (TICKER != 0):    #because why not?  runs until killed
+
+#Read Google news feeds and display
     for TTOPIC in TTOPICS:
         client = gnewsclient.NewsClient(language='english',
                             location='United States',
@@ -41,41 +48,45 @@ while (TICKER != 0):    #because why not?  runs until killed
                             max_results=3)
 
         news_list = client.get_news()
+        for item in news_list:
+            print(CWHITE2 + "Title : ", item['title'] + CEND)
+            print(CGREY + "Link : " + CBLUE2, item['link'] + CEND)
+            print("")
+            time.sleep(4)
 
-   # for item in news_list:
-    #    print(CWHITE2 + "Title : ", item['title'] + CEND)
-     #   print(CGREY + "Link : " + CBLUE2, item['link'] + CEND)
-      #  print("")
-
-   # time.sleep(6)
-
-    #generates txt weather report.  Uses OS-defined location
+#generates txt weather report.  Uses OS-defined location
     VAR_URL="http://wttr.in/stl?2n"
     VAR_RES = requests.get(VAR_URL)
     print(VAR_RES.text)
-#    time.sleep(5)
+    time.sleep(5)
 
 #Start of the RSS Feed
 #We only want to poll RSS Feeds twice per hour
     if RSS_RESET == 0:                                     
         RSS_CNTR = 0                                               
-        ENTRY_CNT = 0                                      
-        ENTRY_LOOP = 0                                      
+        ARRAY_CNT = 0                                      
+        ENTRY_LOOP = 0
+        print(CGREEN + "Refreshing RSS feeds" + CEND)
+                                          
         while RSS_CNTR < TOTAL_RSS:
-            RSSENTRY = feedparser.parse(VAR_RSS[RSS_CNTR])                    
-            while ENTRY_LOOP < 4:  
-                print(ENTRY_LOOP)                       
-                FEEDENTRY = RSSENTRY.entries[ENTRY_LOOP]     
-                FEED_ARRAY.append(FEEDENTRY)                
+            RSSENTRY = feedparser.parse(VAR_RSS[RSS_CNTR])
+            E_CNT = len(RSSENTRY['entries'])
+            if E_CNT > 4:
+                E_CNT = 4                    
+            while ENTRY_LOOP < E_CNT:                     
+                FEEDENTRY = RSSENTRY.entries[ENTRY_LOOP]
+                FEED_ARRAY.append(FEEDENTRY)              
                 ENTRY_LOOP += 1                           
-                ENTRY_CNT += 1                                                                   
+                ARRAY_CNT += 1                                                                   
             ENTRY_LOOP = 0
             RSS_CNTR += 1                                  
-        RSS_RESET = 1                                      
-    
+        RSS_RESET = 1                                       
+    else:
+        print(CGREEN + "RSS feeds last refreshed " + NOW + CEND)    
     ENTRY_NO = 0
-    while ENTRY_NO <= ENTRY_CNT:
-        entry = FEED_ARRAY[ENTRY_NO].entries
+
+    while ENTRY_NO < ARRAY_CNT:
+        entry = FEED_ARRAY[ENTRY_NO]
         print(CWHITE2 + entry.published + CEND)
         print(CYELLOW2 + "******" + CEND)
         print(CGREY + entry.summary + CEND)
