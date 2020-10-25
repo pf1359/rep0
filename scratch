@@ -40,3 +40,36 @@ spit out all the arrays slowly
 check the time -has 30 minutes passed?
     if yes - start from top, add a note about refreshing
     if no - cycle through arrays again
+
+
+import feedparser
+
+NewsFeed = feedparser.parse("https://timesofindia.indiatimes.com/rssfeedstopstories.cms")
+
+entry = NewsFeed.entries[1]
+
+print entry.published
+print "******"
+print entry.summary
+print "------News Link--------"
+print entry.link
+
+from datetime import datetime, timedelta
+futuredate = datetime.now() + timedelta(minutes=30)
+-------------------------------------------
+
+feed[array]
+feed_cnt = int
+entry_no = 1
+now = current time
+later = 31 minutes from now
+
+reset = 0
+if reset < 1
+    cycle feeds once
+    put them all in one big entry array
+ print entry array
+
+do the rest of the stuff
+
+if now = later: reset = 1
