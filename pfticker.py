@@ -31,6 +31,7 @@ LATER = datetime.now() + timedelta(minutes=31)
 RSS_RESET = 0
 FEED_ARRAY = []
 
+
 TICKER=1
 while (TICKER != 0):    #because why not?  runs until killed
     for TTOPIC in TTOPICS:
@@ -41,30 +42,36 @@ while (TICKER != 0):    #because why not?  runs until killed
 
         news_list = client.get_news()
 
-    for item in news_list:
-        print(CWHITE2 + "Title : ", item['title'] + CEND)
-        print(CGREY + "Link : " + CBLUE2, item['link'] + CEND)
-        print("")
+   # for item in news_list:
+    #    print(CWHITE2 + "Title : ", item['title'] + CEND)
+     #   print(CGREY + "Link : " + CBLUE2, item['link'] + CEND)
+      #  print("")
 
-    time.sleep(6)
+   # time.sleep(6)
 
     #generates txt weather report.  Uses OS-defined location
     VAR_URL="http://wttr.in/stl?2n"
     VAR_RES = requests.get(VAR_URL)
     print(VAR_RES.text)
-    time.sleep(30)
+#    time.sleep(5)
 
-    if RSS_RESET == 0:
-        CNTR = 0
-        ENTRY_CNT = 0
-        ENTRY_LOOP = 0
-        while CNTR < TOTAL_RSS:
-            while ENTRY_LOOP < 4:
-                FEED_ARRAY[ENTRY_CNT] = feedparser.parse(VAR_RSS[CNTR])
-                ENTRY_LOOP += 1
-                ENTRY_CNT += 1
-            CNTR += 1
-        RSS_RESET = 0
+#Start of the RSS Feed
+#We only want to poll RSS Feeds twice per hour
+    if RSS_RESET == 0:                                     
+        RSS_CNTR = 0                                               
+        ENTRY_CNT = 0                                      
+        ENTRY_LOOP = 0                                      
+        while RSS_CNTR < TOTAL_RSS:
+            RSSENTRY = feedparser.parse(VAR_RSS[RSS_CNTR])                    
+            while ENTRY_LOOP < 4:  
+                print(ENTRY_LOOP)                       
+                FEEDENTRY = RSSENTRY.entries[ENTRY_LOOP]     
+                FEED_ARRAY.append(FEEDENTRY)                
+                ENTRY_LOOP += 1                           
+                ENTRY_CNT += 1                                                                   
+            ENTRY_LOOP = 0
+            RSS_CNTR += 1                                  
+        RSS_RESET = 1                                      
     
     ENTRY_NO = 0
     while ENTRY_NO <= ENTRY_CNT:
@@ -73,13 +80,13 @@ while (TICKER != 0):    #because why not?  runs until killed
         print(CYELLOW2 + "******" + CEND)
         print(CGREY + entry.summary + CEND)
         print(CBLUE2 + "------News Link--------")
-        print(CBLUE2 + entry.link)
+        print(CBLUE2 + entry.link + CEND)
         time.sleep(5)
         ENTRY_NO += 1
 
     if NOW >= LATER: 
         LATER = datetime.now() + timedelta(minutes=31)
-        RSS_RESET = 1
+        RSS_RESET = 0
     print (CGREEN + "End of Cycle" + CEND)
 
 
