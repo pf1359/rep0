@@ -82,7 +82,7 @@ while (TICKER != 0):    #because why not?  runs until killed
             RSS_CNTR += 1                                  
         RSS_RESET = 1                                       
     else:
-        print(CGREEN + "RSS feeds last refreshed " + NOW + CEND)    
+        print(CGREEN + "Recycling RSS feeds" + CEND)    
     ENTRY_NO = 0
 
     while ENTRY_NO < ARRAY_CNT:
