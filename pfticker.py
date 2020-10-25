@@ -15,6 +15,8 @@ CWHITE2 = '\33[97m'
 CBLUE2 = '\33[94m'
 CGREY    = '\33[90m'
 
+#need to slow this down
+#feeds don't like to be polled more than twice per hour
 ticker=1
 while (ticker != 0):    #because why not?  runs until killed
     for TTOPIC in TTOPICS:
@@ -52,3 +54,11 @@ while (ticker != 0):    #because why not?  runs until killed
 #Magenta: \u001b[35m.
 #Cyan: \u001b[36m.
 #White: \u001b[37m.
+
+#https://www.aljazeera.com/xml/rss/all.xml
+#https://feeds.npr.org/500005/podcast.xml
+#https://kwmu-rss.streamguys1.com/gateway/gateway.xml
+#http://rss.slashdot.org/Slashdot/slashdotMain
+#https://hnrss.org/frontpage
+#https://www.zdnet.com/news/rss.xml
+

@@ -32,3 +32,11 @@ CBLUE2   = '\33[94m'
 CVIOLET2 = '\33[95m'
 CBEIGE2  = '\33[96m'
 CWHITE2  = '\33[97m'
+
+get the time
+start the loop to poll each rss
+dump the output into arrays
+spit out all the arrays slowly
+check the time -has 30 minutes passed?
+    if yes - start from top, add a note about refreshing
+    if no - cycle through arrays again
