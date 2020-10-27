@@ -75,9 +75,12 @@ while (TICKER != 0):    #because why not?  runs until killed
                 E_CNT = 4                    
             while ENTRY_LOOP < E_CNT:                     
                 FEEDENTRY = RSSENTRY.entries[ENTRY_LOOP]
-                FEED_ARRAY.append(FEEDENTRY)              
-                ENTRY_LOOP += 1                           
-                ARRAY_CNT += 1                                                                   
+                if FEEDENTRY == None:
+                    pass
+                else:
+                    FEED_ARRAY.append(FEEDENTRY)
+                    ARRAY_CNT += 1
+                ENTRY_LOOP += 1                                                                                                             
             ENTRY_LOOP = 0
             RSS_CNTR += 1                                  
         RSS_RESET = 1                                       
