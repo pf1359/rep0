@@ -136,39 +136,13 @@ while VAR_CYCLE > 0:
     webbrowser.get('Firefox').open(af_website, new=0)
     time.sleep(120)
 
-    #ae = MLB Postseason
-    ae_website = "https://www.mlb.com/postseason"
-    webbrowser.get('Firefox').open(ae_website, new=0)
-    time.sleep(180)
+    #ae = MLB Postseason (maybe next year....)
+    #ae_website = "https://www.mlb.com/postseason"
+    #webbrowser.get('Firefox').open(ae_website, new=0)
+    #time.sleep(180)
     
     #ag = rumble console (run as reed honely, added 18Oct2020)
     ag_website = "https://console.rumble.run"
     webbrowser.get('Firefox').open(ag_website, new=0)
     time.sleep(120)
-
-      #y = BBC news
-      #f = US weather radar
-      #c = Blitzortung US lightning map
-      #d = Pollen count for STL
-      #s = radar loop
-      #ab = wundermap local stations
-      #e = NOAA weather forcast for STL
-      #b = NPR home page
-      #z = Newsbreak St. Louis
-      #h = KMOV news page
-      #i = COVID-19 live stats page
-      #ia = COVID-19 US live stats page
-      #v = Deerfield Beach Underwater Camera (disable 22 Aug 2020)
-      #p = FlightRadar 24.  use with findleytablet@gmail.com for best result
-      #o = Meraki site for Findley
-      #g = COVID-19 research map (disabled 22Aug - using too many cpu)
-      #t = hurricane watch
-      #u = ISS watch (disable 3 Sep 2020)
-      #w = Cardinals (disable 3 Oct 2020 when they lost)
-      #j = Live feed from ISS (disable 22 Aug 2020)
-      #aa = Oracle Internet Intelligence internet uptime
-      #ad = pihole on ubuntu820
-      #af = pihole on rpi0wrw
-      #ae = MLB Postseason (add 27Sep2020)
-      #ag = rumble console (added 18 Oct 2020)
       
