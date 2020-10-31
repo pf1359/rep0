@@ -14,8 +14,9 @@ try:
         print("You're Online")
 except:
     print("You're Offline")
-    sys.quit()
-
+    #sys.quit()
+    exit()
+    
 TTOPICS = ['technology', 'business', 'world', 'nation', 'sport']
 CWHITE =  '\33[37m'
 CCYAN = '\33[36m'
