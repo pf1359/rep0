@@ -45,20 +45,20 @@ while (TICKER != 0):    #because why not?  runs until killed
         client = gnewsclient.NewsClient(language='english',
                             location='United States',
                             topic=TTOPIC,
-                            max_results=3)
+                            max_results=4)
 
         news_list = client.get_news()
         for item in news_list:
             print(CWHITE2 + "Title : ", item['title'] + CEND)
             print(CGREY + "Link : " + CBLUE2, item['link'] + CEND)
             print("")
-            time.sleep(4)
+            time.sleep(5)
 
 #generates txt weather report.  Uses OS-defined location
     VAR_URL="http://wttr.in/stl?2n"
     VAR_RES = requests.get(VAR_URL)
     print(VAR_RES.text)
-    time.sleep(5)
+    time.sleep(8)
 
 #Start of the RSS Feed
 #We only want to poll RSS Feeds twice per hour
