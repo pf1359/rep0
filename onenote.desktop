@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=OneNote
+Comment=OneNote Electron
+Exec=/snap/p3x-onenote/current/p3x-onenote
+Terminal=false
+Icon=onenote.png
+#StartupWMClass=p3x-onenote
+
+#originally tried with appimage but wouldn't launch from this shortcut
+#icon location /usr/share/pixmaps
+#remaining: determine why the app opens a separate generic icon when it launches
