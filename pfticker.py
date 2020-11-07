@@ -2,20 +2,25 @@
 #basis: https://www.geeksforgeeks.org/build-an-application-to-extract-news-from-google-news-feed-using-python/
 
 from gnewsclient import gnewsclient        
-import time                                
-import requests                             
+import time                                                            
 from datetime import datetime, timedelta    
 import feedparser
 import sys
 
-#Validate we are online, since everything is internet-based.  Quit if not.
-try:
-    if requests.get('http://1.1.1.1').ok:
+
+def check_internet():
+    #Validate we are online, since everything is internet-based.
+    # Quit if not.
+    import requests
+    try:
+        requests.get('http://1.1.1.1', timeout=0.5).ok
         print("You're Online")
-except:
-    print("You're Offline")
-    #sys.quit()
-    exit()
+    except:
+        print("You're offline. Exiting")
+        quit()
+check_internet()
+
+
     
 TTOPICS = ['technology', 'business', 'world', 'nation', 'sport']
 CWHITE =  '\33[37m'
@@ -41,25 +46,40 @@ FEED_ARRAY = []
 TICKER=1
 while (TICKER != 0):    #because why not?  runs until killed
 
-#Read Google news feeds and display
-    for TTOPIC in TTOPICS:
-        client = gnewsclient.NewsClient(language='english',
-                            location='United States',
-                            topic=TTOPIC,
-                            max_results=3)
 
-        news_list = client.get_news()
-        for item in news_list:
-            print(CWHITE2 + "Title : ", item['title'] + CEND)
-            print(CGREY + "Link : " + CBLUE2, item['link'] + CEND)
-            print("")
-            time.sleep(4)
+    def read_google_news():
+        #imports data from Google News Reader and
+        #prints top four from each defined topic.
+        from gnewsclient import gnewsclient
+        import feedparser
+        import time
+        CEND = '\33[0m'
+        CWHITE2 = '\33[97m'
+        CBLUE2 = '\33[94m'
+        CGREY = '\33[90m'
+        categories = ['technology',
+                      'business',
+                      'world',
+                      'nation',
+                      'sport']
+        for category in categories:
+            client = gnewsclient.NewsClient(language='english',
+                                            topic=category,
+                                            location='United States',
+                                            max_results=4)
+            news_list = client.get_news()
+            for item in news_list:
+                print(CWHITE2 + "Title : ", item['title'] + CEND)
+                print(CGREY + "Link : " + CBLUE2, item['link'] + CEND)
+                print("")
+                time.sleep(4)
+    read_google_news()
 
 #generates txt weather report.  Uses OS-defined location
     VAR_URL="http://wttr.in/stl?2n"
     VAR_RES = requests.get(VAR_URL)
     print(VAR_RES.text)
-    time.sleep(5)
+    time.sleep(10)
 
 #Start of the RSS Feed
 #We only want to poll RSS Feeds twice per hour
@@ -103,15 +123,5 @@ while (TICKER != 0):    #because why not?  runs until killed
         LATER = datetime.now() + timedelta(minutes=31)
         RSS_RESET = 0
     print (CGREEN + "End of Cycle" + CEND)
-
-
-#Black: \u001b[30m.
-#Red: \u001b[31m.
-# #Green: \u001b[32m.
-#Yellow: \u001b[33m.
-#Blue: \u001b[34m.
-#Magenta: \u001b[35m.
-#Cyan: \u001b[36m.
-#White: \u001b[37m.
 
 
