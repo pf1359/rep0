@@ -77,6 +77,7 @@ while (TICKER != 0):    #because why not?  runs until killed
 
 #generates txt weather report.  Uses OS-defined location
     VAR_URL="http://wttr.in/stl?2n"
+    import requests
     VAR_RES = requests.get(VAR_URL)
     print(VAR_RES.text)
     time.sleep(10)
