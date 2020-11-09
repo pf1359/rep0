@@ -1,10 +1,6 @@
 #Created October 2020 ptf
 #basis: https://www.geeksforgeeks.org/build-an-application-to-extract-news-from-google-news-feed-using-python/
-
-from gnewsclient import gnewsclient        
-import time                                                            
-from datetime import datetime, timedelta    
-import feedparser
+  
 import sys
 
 
@@ -51,7 +47,6 @@ while (TICKER != 0):    #because why not?  runs until killed
         #imports data from Google News Reader and
         #prints top four from each defined topic.
         from gnewsclient import gnewsclient
-        import feedparser
         import time
         CEND = '\33[0m'
         CWHITE2 = '\33[97m'
