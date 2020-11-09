@@ -2,7 +2,7 @@
 # bring the site variables outside the function
 # make the site count variable measure the array
 #create another function to ingest site recommendations
-#make the output a separate function so it can be redirected to a web function
+
 # create a web function for the output
 
 var_rss = ['https://www.aljazeera.com/xml/rss/all.xml',
@@ -69,7 +69,7 @@ while x != 0:
             print(CBLUE2 + "------News Link--------")
             print(CBLUE2 + rss_entry.link + CEND)
             time.sleep(5)
-            print(CGREEN + "End of Cycle" + CEND)
+        print(CGREEN + "End of Cycle" + CEND)
 
 
 
@@ -84,13 +84,10 @@ while x != 0:
         rss_newsreader()
         time_reset = 1
         rss_reset_time = datetime.now() + timedelta(minutes=31)
-
-    rss_array, rss_ctr = rss_newsreader()
-    if time_reset == 1:
         print(CGREEN + "Refreshing RSS feeds" + CEND)
-    else:
-        print(CGREEN + "Recycling RSS feeds" + CEND)
-    rss_terminal_output(rss_array,rss_ctr)
+
+    rss_array = rss_newsreader()
+
+    rss_terminal_output(rss_array)
     if (current_time >= rss_reset_time):
         time_reset = 0
-
