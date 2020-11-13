@@ -23,47 +23,32 @@ def check_internet():
         print("You're offline. Exiting")
         quit()
 check_internet()
- 
-#Start of the main loop
-TICKER=1
-while (TICKER != 0):    #because why not?  runs until killed
 
-
-    def read_google_news():
-        #imports data from Google News Reader and
-        #prints top four from each defined topic.
-        from gnewsclient import gnewsclient
-        import time
-        CEND = '\33[0m'
-        CWHITE2 = '\33[97m'
-        CBLUE2 = '\33[94m'
-        CGREY = '\33[90m'
-        categories = ['technology',
-                      'business',
-                      'world',
-                      'nation',
-                      'sport']
-        for category in categories:
-            client = gnewsclient.NewsClient(language='english',
-                                            topic=category,
-                                            location='United States',
-                                            max_results=4)
-            news_list = client.get_news()
-            for item in news_list:
-                print(CWHITE2 + "Title : ", item['title'] + CEND)
-                print(CGREY + "Link : " + CBLUE2, item['link'] + CEND)
-                print("")
-                time.sleep(4)
-    read_google_news()
-
-#generates txt weather report.
-    wttr_url="http://wttr.in/stl?2n"
-    var_res = requests.get(wttr_url)
-    print(var_res.text)
-    time.sleep(10)
-
-#Start of the RSS Feed
-#We only want to poll RSS Feeds twice per hour
+def read_google_news():
+    #imports data from Google News Reader and
+    #prints top four from each defined topic.
+    from gnewsclient import gnewsclient
+    import time
+    CEND = '\33[0m'
+    CWHITE2 = '\33[97m'
+    CBLUE2 = '\33[94m'
+    CGREY = '\33[90m'
+    categories = ['technology',
+                  'business',
+                  'world',
+                  'nation',
+                  'sport']
+    for category in categories:
+        client = gnewsclient.NewsClient(language='english',
+                                        topic=category,
+                                        location='United States',
+                                        max_results=4)
+        news_list = client.get_news()
+        for item in news_list:
+            print(CWHITE2 + "Title : ", item['title'] + CEND)
+            print(CGREY + "Link : " + CBLUE2, item['link'] + CEND)
+            print("")
+            time.sleep(4)
 
 def rss_newsreader():
     #import time
@@ -97,6 +82,8 @@ def rss_newsreader():
         rss_cntr += 1
  
     return (feed_array)  
+#run once to ensure there is data
+rss_newsreader()
 
 def rss_terminal_output(rss_array):
     rss_array = rss_newsreader()
@@ -117,27 +104,36 @@ def rss_terminal_output(rss_array):
         time.sleep(5)
     print(CGREEN + "End of Cycle" + CEND)
 
+ 
+#Start of the main loop
+TICKER=1
+while (TICKER != 0):    #because why not?  runs until killed
 
-#Print the newsfeeds
-import time
-CGREEN = '\33[32m'
-CEND = '\33[0m'
-var_rss = ['https://www.aljazeera.com/xml/rss/all.xml',
-           'https://hnrss.org/frontpage',
-           'https://www.zdnet.com/news/rss.xml']
+    read_google_news()
 
+    #generates txt weather report.
+    wttr_url="http://wttr.in/stl?2n"
+    var_res = requests.get(wttr_url)
+    print(var_res.text)
+    time.sleep(10)
 
-if (time_reset == 0):
-    rss_newsreader()
-    time_reset = 1
-    later = datetime.now() + timedelta(minutes=31)
-    rss_reset_time = later.strftime("%X")
-    print(CGREEN + "Refreshing RSS feeds" + CEND)
+    #Print the newsfeeds
+    import time
+    CGREEN = '\33[32m'
+    CEND = '\33[0m'
 
-rss_array = rss_newsreader()
+    if (time_reset == 0):
+        rss_newsreader()
+        time_reset = 1
+        later = datetime.now() + timedelta(minutes=31)
+        rss_reset_time = later.strftime("%X")
+        print(CGREEN + "Refreshing RSS feeds" + CEND)
 
-rss_terminal_output(rss_array)
-now_time = datetime.now()
-now = now_time.strftime("%X")
-if now > rss_reset_time:
-    time_reset = 0
+    rss_array = rss_newsreader()
+
+    rss_terminal_output(rss_array)
+    now_time = datetime.now()
+    now = now_time.strftime("%X")
+    if now > rss_reset_time:
+        time_reset = 0
+#
