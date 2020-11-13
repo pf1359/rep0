@@ -106,8 +106,8 @@ def rss_terminal_output(rss_array):
 
  
 #Start of the main loop
-TICKER=1
-while (TICKER != 0):    #because why not?  runs until killed
+ticker=1
+while (ticker < 100):
 
     read_google_news()
 
@@ -136,4 +136,8 @@ while (TICKER != 0):    #because why not?  runs until killed
     now = now_time.strftime("%X")
     if now > rss_reset_time:
         time_reset = 0
+    ticker += 1
+print("Ticker ended: ")
+end_time = datetime.now()
+print (end_time)
 #
