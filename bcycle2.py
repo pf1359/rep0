@@ -1,3 +1,10 @@
+# My first Python script!  I found something to do with it.
+# Pat Findley 5 May 2020, in the midst of COVID-19 lockdown
+# To get Firefox to open pages in the same tab, you have to make these changes in about:config:
+# browser.link.open_newwindow.restriction = 0
+# browser.link.open_newwindow = 1
+# Remember to go into options and enable autoplay audio and video if using Youtube links
+
 import webbrowser
 import time
 
@@ -40,9 +47,9 @@ while VAR_CYCLE > 0:
     time.sleep(180)
 
     #g = COVID-19 research map
-    g_website = "https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6"
-    webbrowser.get('Firefox').open(g_website, new=0)
-    time.sleep(60)
+    #g_website = "https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6"
+    #webbrowser.get('Firefox').open(g_website, new=0)
+    #time.sleep(60)
 
     #i = COVID-19 live stats page
     i_website = "https://ncov2019.live/"
