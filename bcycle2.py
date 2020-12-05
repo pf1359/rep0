@@ -108,13 +108,13 @@ while VAR_CYCLE > 0:
     time.sleep(180)
     
     #t = hurricane watch
-    t_website = "https://www.nhc.noaa.gov"
-    webbrowser.get('Firefox').open(t_website, new=0)
-    time.sleep(180)
+    #t_website = "https://www.nhc.noaa.gov"
+    #webbrowser.get('Firefox').open(t_website, new=0)
+    #time.sleep(180)
 
    
     #w = Cardinals (removed when their 2020 season ended)
-    w_website = "https://www.mlb.com/cardinals"
+    #w_website = "https://www.mlb.com/cardinals"
     #webbrowser.get('Firefox').open(w_website, new=0)
     #time.sleep(180)
 
@@ -133,7 +133,7 @@ while VAR_CYCLE > 0:
     webbrowser.get('Firefox').open(aa_website, new=0)
     time.sleep(120)
 
-    #ad = pihole on ubuntu820(mod 14 Oct 2020)
+    #ad = pihole on rpi419a(mod 4 Dec 2020)
     ad_website = "http://dns.findley.cc/admin/"
     webbrowser.get('Firefox').open(ad_website, new=0)
     time.sleep(120)
@@ -153,3 +153,11 @@ while VAR_CYCLE > 0:
     webbrowser.get('Firefox').open(ag_website, new=0)
     time.sleep(120)
       
+
+    ah_website = "https://www.stltoday.com/news/#tracking-source=main-nav"
+    webbrowser.get('Firefox').open(ah_website, new=0)
+    time.sleep(120)
+
+    ai_website = "https://www.stltoday.com/sports/"
+    webbrowser.get('Firefox').open(ai_website, new=0)
+    time.sleep(120)
