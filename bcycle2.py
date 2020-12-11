@@ -139,7 +139,7 @@ while VAR_CYCLE > 0:
     time.sleep(120)
 
     #af = pihole on rpi0wrw (add 14 Oct 2020)
-    af_website = "http://dns2.findley.cc/admin/"
+    af_website = "http://dns3.findley.cc/admin/"
     webbrowser.get('Firefox').open(af_website, new=0)
     time.sleep(120)
 
