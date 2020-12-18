@@ -98,7 +98,7 @@ while VAR_CYCLE > 0:
     #x_website = "https://www.youtube.com/watch?v=DDU-rZs-Ic4"
    
     #s = radar loop
-    s_website = "https://radar.weather.gov/ridge/radar_lite.php?rid=LSX&product=NCR&loop=yes"
+    s_website = "https://radar.weather.gov/?settings=v1_eyJhZ2VuZGEiOnsiaWQiOiJ3ZWF0aGVyIiwiY2VudGVyIjpbLTkwLjIsMzguNjI4XSwiem9vbSI6NywibG9jYXRpb24iOlstOTAuMiwzOC42MjhdfSwiYmFzZSI6InN0YW5kYXJkIiwiY291bnR5IjpmYWxzZSwiY3dhIjpmYWxzZSwic3RhdGUiOmZhbHNlLCJtZW51Ijp0cnVlLCJzaG9ydEZ1c2VkT25seSI6ZmFsc2V9#/"
     webbrowser.get('Firefox').open(s_website, new=0)
     time.sleep(300)
 
