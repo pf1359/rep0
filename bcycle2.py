@@ -89,7 +89,7 @@ while VAR_CYCLE > 0:
     time.sleep(120)
 
     v_website = "https://www.youtube.com/embed/GAv4VCC41oU?mute=1;autoplay=1"
-    webbrowser.get('Firefox').open(u_website, new=0)
+    webbrowser.get('Firefox').open(v_website, new=0)
     time.sleep(180)
 
     #ad = pihole on rpi419a(mod 4 Dec 2020)
