@@ -7,6 +7,7 @@ from ffmpeg import Error
 moviepath = "/mnt/sd/movies/kids"
 statuslog = "/mnt/sd/movies/kids/status.log"
 errorlog = "error.log"
+
 os.chdir(moviepath)
 movies = (os.listdir(moviepath))
 mkvs = [i for i in movies if i.endswith('.mkv')]
@@ -17,7 +18,7 @@ for mkv in mkvs:
     log = open(errorlog, "w")
     try:
         ffmpeg.input(mkv) \
-           .output (null) \
+           .output (None) \
            .run(capture_stdout=False, capture_stderr=True)
     except ffmpeg.Error as e:
         log.write('stdout:', e.stdout.decode('utf8'))
@@ -29,7 +30,7 @@ for avi in avis:
     log = open(errorlog, "w")
     try:
         ffmpeg.input(avi) \
-           .output (null) \
+           .output (None) \
            .run(capture_stdout=False, capture_stderr=True)
     except ffmpeg.Error as e:
         log.write('stdout:', e.stdout.decode('utf8'))
