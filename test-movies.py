@@ -10,10 +10,12 @@ avis = [i for i in movies if i.endswith('.avi')]
 isos = [i for i in movies if i.endswith('.iso')]
 
 for mkv in mkvs:
+    print(mkv)
     subprocess.call(['ffmpeg', '-v', 'error', '-i', mkv, '-f', 'null', '2>error.log'])
     os.rename("error.log", mkv.log)
 
 for avi in avis:
+    print(avi)
     subprocess.call(['ffmpeg', '-v', 'error', '-i', avi, '-f', 'null', '2>error.log'])
     os.rename("error.log", avi.log)
 
