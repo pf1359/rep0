@@ -20,7 +20,6 @@ for mkv in mkvs:
     try:
         ffmpeg.input(mkv) \
            .output (ffoutput) \
-           .verbose \
            .run(capture_stdout=False, capture_stderr=True)
     except ffmpeg.Error as e:
         log.write('stdout:', e.stdout.decode('utf8'))
@@ -33,7 +32,6 @@ for avi in avis:
     try:
         ffmpeg.input(avi) \
            .output (ffoutput) \
-           .verbose \
            .run(capture_stdout=False, capture_stderr=True)
     except ffmpeg.Error as e:
         log.write('stdout:', e.stdout.decode('utf8'))
