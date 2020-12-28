@@ -4,6 +4,7 @@ import subprocess
 
 moviepath = "/mnt/sd/movies/kids"
 statuslog = "/mnt/sd/movies/kids/status.log"
+errorlog = "error.log"
 os.chdir(moviepath)
 movies = (os.listdir(moviepath))
 mkvs = [i for i in movies if i.endswith('.mkv')]
@@ -11,13 +12,17 @@ avis = [i for i in movies if i.endswith('.avi')]
 isos = [i for i in movies if i.endswith('.iso')]
 
 for mkv in mkvs:
-    print(mkv)
+    log = open(errorlog, "a")
+    log.write(mkv +"\n")
     subprocess.call(['ffmpeg', '-v', 'error', '-i', mkv, '-f', 'null', '2>error.log'])
+    log.close()
     os.rename('error.log', mkv+'.log')
 
 for avi in avis:
-    print(avi)
+    log = open(errorlog, "a")
+    log.write(avi +"\n")
     subprocess.call(['ffmpeg', '-v', 'error', '-i', avi, '-f', 'null', '2>error.log'])
+    log.close()
     os.rename('error.log', avi+'.log')
 
 # Need to figure out how to do this for ISOs
