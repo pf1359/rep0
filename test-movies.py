@@ -24,11 +24,11 @@ for movielog in movielogs:
     kb = os.path.getsize(movielog)
     if kb == 0:
         logstatus = open(statuslog, "a")
-        logstatus.write(kb " had no errors.\n")
+        logstatus.write(kb, " had no errors.\n")
         logstatus.close()
     else:
         logstatus = open(statuslog, "a")
-        logstatus.write(kb " had errors.\n")
+        logstatus.write(kb, " had errors.\n")
         logstatus.close()
 
 
