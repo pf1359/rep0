@@ -1,7 +1,7 @@
 import os
 from os import listdir, system
 
-path = "/mnt/sd/movies"
+path = "/mnt/sd/movies/kids"
 movies = (os.listdir(path))
 mkvs = [i for i in movies if i.endswith('.mkv')]
 avis = [i for i in movies if i.endswith('.avi')]
