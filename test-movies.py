@@ -2,9 +2,10 @@ import os
 from os import listdir, system, rename
 import subprocess
 
-path = "/mnt/sd/movies/kids"
+moviepath = "/mnt/sd/movies/kids"
 statuslog = "/mnt/sd/movies/kids/status.log"
-movies = (os.listdir(path))
+os.chdir(moviepath)
+movies = (os.listdir(moviepath))
 mkvs = [i for i in movies if i.endswith('.mkv')]
 avis = [i for i in movies if i.endswith('.avi')]
 isos = [i for i in movies if i.endswith('.iso')]
