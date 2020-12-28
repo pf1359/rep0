@@ -1,6 +1,8 @@
 import os
 from os import listdir, system, rename
 import subprocess
+import ffmpeg
+from ffmpeg import Error
 
 moviepath = "/mnt/sd/movies/kids"
 statuslog = "/mnt/sd/movies/kids/status.log"
@@ -13,25 +15,26 @@ isos = [i for i in movies if i.endswith('.iso')]
 
 for mkv in mkvs:
     log = open(errorlog, "w")
-    
-    ffmpeg_command = ["ffmpeg", "-v", "error", "-i", mkv, "-f", "null", "pipe:1"]
-    pipe = subprocess.run(ffmpeg_command,
-                       stderr=subprocess.PIPE,
-                       bufsize=10**8)
-    log.write(pipe.stderr)
+    ffmpeg.input(mkv) \
+        .output (null) \
+        .run(capture_stdout=False, capture_stderr=True)
+        except ffmpeg.Error as e:
+                log.write('stdout:', e.stdout.decode('utf8'))
+                log.write('stderr:', e.stderr.decode('utf8'))
+                raise e
     log.close()
-    os.rename('error.log', mkv+'.log')
 
 for avi in avis:
     log = open(errorlog, "w")
-    
-    ffmpeg_command = ["ffmpeg", "-v", "error", "-i", avi, "-f", "null", "pipe:1"]
-    pipe = subprocess.run(ffmpeg_command,
-                       stderr=subprocess.PIPE,
-                       bufsize=10**8)
-    log.write(pipe.stderr)
+    ffmpeg.input(avi) \
+        .output (null) \
+        .run(capture_stdout=False, capture_stderr=True)
+        except ffmpeg.Error as e:
+                log.write('stdout:', e.stdout.decode('utf8'))
+                log.write('stderr:', e.stderr.decode('utf8'))
+                raise e
     log.close()
-    os.rename('error.log', avi+'.log')
+
 
 # Need to figure out how to do this for ISOs
 
@@ -50,26 +53,3 @@ for movielog in movielogs:
 
 
 
-#my_frame = 3
-#subprocess.call(['ffmpeg', '-r', '10', '-i', 'frame%03d.png' % my_frame,
-#    ['-r',  'ntsc', 'movie%03d.mpg' % my_frame])
-#     ffmpeg -v error -i Up.mkv -f null 2>Up-error.log
-# Append-adds at last 
-#file1 = open("myfile.txt", "a")  # append mode 
-#file1.write("Today \n") 
-#file1.close() 
-
- # init command
-# ffmpeg_command = ["ffmpeg", "-i", mp3_path,
-#                   "-ab", "128k", "-acodec", "pcm_s16le", "-ac", "0", "-ar", target_fs, "-map",
-#                   "0:a", "-map_metadata", "-1", "-sn", "-vn", "-y",
-#                   "-f", "wav", "pipe:1"]
-
- # excute ffmpeg command
-# pipe = subprocess.run(ffmpeg_command,
-#                       stdout=subprocess.PIPE,
-#                       stderr=subprocess.PIPE,
-#                       bufsize=10**8)
-
- # debug
-# print(pipe.stdout, pipe.stderr)
