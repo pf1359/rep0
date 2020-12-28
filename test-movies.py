@@ -12,12 +12,12 @@ isos = [i for i in movies if i.endswith('.iso')]
 for mkv in mkvs:
     print(mkv)
     subprocess.call(['ffmpeg', '-v', 'error', '-i', mkv, '-f', 'null', '2>error.log'])
-    os.rename('error.log', mkv+".log")
+    os.rename('error.log', mkv+''.log')
 
 for avi in avis:
     print(avi)
     subprocess.call(['ffmpeg', '-v', 'error', '-i', avi, '-f', 'null', '2>error.log'])
-    os.rename('error.log', avi+".log")
+    os.rename('error.log', avi+''.log')
 
 # Need to figure out how to do this for ISOs
 
@@ -26,11 +26,11 @@ for movielog in movielogs:
     kb = os.path.getsize(movielog)
     if kb == 0:
         logstatus = open(statuslog, "a")
-        logstatus.write(kb, " had no errors.\n")
+        logstatus.write(kb+' had no errors.\n')
         logstatus.close()
     else:
         logstatus = open(statuslog, "a")
-        logstatus.write(kb, " had errors.\n")
+        logstatus.write(kb+' had errors.\n')
         logstatus.close()
 
 
