@@ -14,9 +14,8 @@ isos = [i for i in movies if i.endswith('.iso')]
 for mkv in mkvs:
     log = open(errorlog, "w")
     
-    ffmpeg_command = ["ffmpeg", "-v", "error", "-i", mkv, "-f", "null", "2>error.log"]
+    ffmpeg_command = ["ffmpeg", "-v", "error", "-i", mkv, "-f", "null", "pipe:1"]
     pipe = subprocess.run(ffmpeg_command,
-                       stdout=subprocess.PIPE,
                        stderr=subprocess.PIPE,
                        bufsize=10**8)
     log.write(pipe.stderr)
@@ -26,9 +25,8 @@ for mkv in mkvs:
 for avi in avis:
     log = open(errorlog, "w")
     
-    ffmpeg_command = ["ffmpeg", "-v", "error", "-i", avi, "-f", "null", "2>error.log"]
+    ffmpeg_command = ["ffmpeg", "-v", "error", "-i", avi, "-f", "null", "pipe:1"]
     pipe = subprocess.run(ffmpeg_command,
-                       stdout=subprocess.PIPE,
                        stderr=subprocess.PIPE,
                        bufsize=10**8)
     log.write(pipe.stderr)
