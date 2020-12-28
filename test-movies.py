@@ -15,24 +15,26 @@ isos = [i for i in movies if i.endswith('.iso')]
 
 for mkv in mkvs:
     log = open(errorlog, "w")
+    try:
     ffmpeg.input(mkv) \
         .output (null) \
         .run(capture_stdout=False, capture_stderr=True)
-        except ffmpeg.Error as e:
-                log.write('stdout:', e.stdout.decode('utf8'))
-                log.write('stderr:', e.stderr.decode('utf8'))
-                raise e
+    except ffmpeg.Error as e:
+            log.write('stdout:', e.stdout.decode('utf8'))
+            log.write('stderr:', e.stderr.decode('utf8'))
+            raise e
     log.close()
 
 for avi in avis:
     log = open(errorlog, "w")
+    try:
     ffmpeg.input(avi) \
         .output (null) \
         .run(capture_stdout=False, capture_stderr=True)
-        except ffmpeg.Error as e:
-                log.write('stdout:', e.stdout.decode('utf8'))
-                log.write('stderr:', e.stderr.decode('utf8'))
-                raise e
+    except ffmpeg.Error as e:
+            log.write('stdout:', e.stdout.decode('utf8'))
+            log.write('stderr:', e.stderr.decode('utf8'))
+            raise e
     log.close()
 
 
