@@ -26,7 +26,7 @@ while VAR_CYCLE > 0:
     #d = Pollen count for STL
     d_website = "https://www.pollen.com/forecast/current/pollen/63132"
     webbrowser.get('Firefox').open(d_website, new=0)
-    time.sleep(120)
+    time.sleep(60)
 
     #e = NOAA weather forcast for STL
     e_website = "https://forecast.weather.gov/MapClick.php?CityName=Olivette&state=MO&site=LSX&textField1=38.6723&textField2=-90.3772&e=0"
@@ -84,16 +84,17 @@ while VAR_CYCLE > 0:
     time.sleep(180)
 
     #aa = Oracle Internet Intelligence internet uptime (add 30 Aug 2020)
-    aa_website="https://map.internetintel.oracle.com/?root=national&country=US"
-    webbrowser.get('Firefox').open(aa_website, new=0)
-    time.sleep(120)
-
-    v_website = "https://www.youtube.com/embed/GAv4VCC41oU?mute=1;autoplay=1"
-    webbrowser.get('Firefox').open(v_website, new=0)
-    time.sleep(180)
+    #aa_website="https://map.internetintel.oracle.com/?root=national&country=US"
+    #webbrowser.get('Firefox').open(aa_website, new=0)
+    #time.sleep(120)
+    
+    #youtube live feed deerfield beach
+    #v_website = "https://www.youtube.com/embed/GAv4VCC41oU?mute=1;autoplay=1"
+    #webbrowser.get('Firefox').open(v_website, new=0)
+    #time.sleep(180)
 
     #ad = pihole on rpi419a(mod 4 Dec 2020)
-    ad_website = "http://dns.findley.cc/admin/"
+    ad_website = "http://dns4.findley.cc/admin/"
     webbrowser.get('Firefox').open(ad_website, new=0)
     time.sleep(120)
 
@@ -126,7 +127,6 @@ while VAR_CYCLE > 0:
     #a_website = "https://www.msn.com/en-us/news/"
     #webbrowser.get('Firefox').open(a_website, new=0)
     #time.sleep(180)
-    #ae = MLB Postseason (maybe next year....)
     #ae_website = "https://www.mlb.com/postseason"
     #webbrowser.get('Firefox').open(ae_website, new=0)
     #time.sleep(180)
