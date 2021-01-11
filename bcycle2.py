@@ -103,6 +103,11 @@ while VAR_CYCLE > 0:
     webbrowser.get('Firefox').open(af_website, new=0)
     time.sleep(120)
 
+    #am = stl business journal (requires sign-in, added 10Jan21)
+    am_website = "https://www.bizjournals.com/stlouis/news/"
+    webbrowser.get('Firefox').open(am_website, new=0)
+    time.sleep(120)
+
     #ag = rumble console (run as reed honely, added 18Oct2020)
     ag_website = "https://console.rumble.run"
     webbrowser.get('Firefox').open(ag_website, new=0)
@@ -121,7 +126,12 @@ while VAR_CYCLE > 0:
     webbrowser.get('Firefox').open(ai_website, new=0)
     time.sleep(120)
 
-    #latest = AL 26Dec2020
+    #an - rivered.io rss site by twitterfall people (added 10Jan21)   
+    an_website = "https://www.rivered.io/"
+    webbrowser.get('Firefox').open(an_website, new=0)
+    time.sleep(120)
+
+    #latest = AN - 10Jan21
 
     #a = MSN news page
     #a_website = "https://www.msn.com/en-us/news/"
