@@ -157,6 +157,11 @@ while VAR_CYCLE > 0:
         selection = choice(videos)
         webbrowser.get('Firefox').open(selection[0], new=0)
         time.sleep(selection[1])
+    else:
+        #r = text weather in STL
+        r_website = "http://wttr.in/Saint+Louis+Missouri"
+        webbrowser.get('Firefox').open(f_website, new=0)
+        time.sleep(120)
 
         #latest = AN - 10Jan21
 
