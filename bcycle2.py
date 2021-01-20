@@ -132,29 +132,30 @@ while VAR_CYCLE > 0:
     time.sleep(120)
 
     # choose a random element from a list
+    import random
     from random import choice, randint, seed
     # seed random number generator
-    seed(1)
+    random.seed()
     #create a chance to determine if a video plays this cycle
-    chance = randint(0, 10)
+    chance = random.randint(0, 10)
     # prepare a sequence
-    y1_site = ["https://www.youtube.com/watch?v=SUyDcyHpFhc;mute=1;autoplay=1", 86] #86 seconds flying past galaxies
-    y2_site = ["https://youtu.be/6tmbeLTHC_0?t=54;mute=1;autoplay=1", 120] #120 seconds the sun 1
-    y3_site = ["https://youtu.be/6tmbeLTHC_0?t=267;mute=1;autoplay=1", 120] #120 seconds the sun 2
-    y4_site = ["https://youtu.be/6tmbeLTHC_0?t=559;mute=1;autoplay=1", 120] #120 seconds the sun 3
-    y5_site = ["https://youtu.be/6tmbeLTHC_0?t=1059;mute=1;autoplay=1", 300] #300 seconds the sun 4
-    y6_site = ["https://youtu.be/7fYKMCCPh28?t=53;mute=1;autoplay=1", 65] #65 seconds earth 1
-    y7_site = ["https://youtu.be/7fYKMCCPh28?t=988;mute=1;autoplay=1", 55] #55 seconds earth 2
-    y8_site = ["https://youtu.be/7fYKMCCPh28?t=1196;mute=1;autoplay=1", 630] #630 seconds earth 3
-    y9_site = ["https://youtu.be/7fYKMCCPh28?t=1828;mute=1;autoplay=1", 347] #347 seconds earth 4
-    y10_site = ["https://youtu.be/PBJAR3-UvSQ?t=29;mute=1;autoplay=1", 260] #260 seconds aurora
-    y11_site = ["https://www.youtube.com/watch?v=Ilifg26TZrI&feature=emb_logo;mute=1;autoplay=1", 144] #144 seconds around the moon
-    y12_site = ["https://www.youtube.com/watch?v=rgBKFEeXfww&feature=youtu.be;mute=1;autoplay=1", 240] #240 seconds sights
+    y1_site = ["https://www.youtube.com/embed/SUyDcyHpFhc?mute=1;autoplay=1", 86] #86 seconds flying past galaxies
+    y2_site = ["https://www.youtube.com/embed/6tmbeLTHC_0?start=54&end=174;mute=1;autoplay=1", 120] #120 seconds the sun 1
+    y3_site = ["https://www.youtube.com/embed/6tmbeLTHC_0?start=267&end=387;mute=1;autoplay=1", 120] #120 seconds the sun 2
+    y4_site = ["https://www.youtube.com/embed/6tmbeLTHC_0?start=559&end=679;mute=1;autoplay=1", 120] #120 seconds the sun 3
+    y5_site = ["https://www.youtube.com/embed/6tmbeLTHC_0?start=1059&end=1359;mute=1;autoplay=1", 300] #300 seconds the sun 4
+    y6_site = ["https://www.youtube.com/embed/7fYKMCCPh28?start=53&end=118;mute=1;autoplay=1", 65] #65 seconds earth 1
+    y7_site = ["https://www.youtube.com/embed/7fYKMCCPh28?start=988&end=1043;mute=1;autoplay=1", 55] #55 seconds earth 2
+    y8_site = ["https://www.youtube.com/embed/7fYKMCCPh28?start=1196&end=1826;mute=1;autoplay=1", 630] #630 seconds earth 3
+    y9_site = ["https://www.youtube.com/embed/7fYKMCCPh28?start=1828&end=2175;mute=1;autoplay=1", 347] #347 seconds earth 4
+    y10_site = ["https://www.youtube.com/embed/PBJAR3-UvSQ?start=29&end=289;mute=1;autoplay=1", 260] #260 seconds aurora
+    y11_site = ["https://www.youtube.com/embed/Ilifg26TZrI?mute=1;autoplay=1", 144] #144 seconds around the moon
+    y12_site = ["https://www.youtube.com/embed/rgBKFEeXfww?mute=1;autoplay=1", 240] #240 seconds sights
     videos = [y1_site, y2_site, y3_site, y4_site, y5_site, y6_site, y7_site, y8_site, y9_site, y10_site, y11_site, y12_site]
     
     # do we feel lucky? We sure do for testing.
     if chance >= 0:
-        selection = choice(videos)
+        selection = random.choice(videos)
         webbrowser.get('Firefox').open(selection[0], new=0)
         time.sleep(selection[1])
     else:
