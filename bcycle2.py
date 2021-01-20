@@ -137,7 +137,7 @@ while VAR_CYCLE > 0:
     # seed random number generator
     random.seed()
     #create a chance to determine if a video plays this cycle
-    chance = random.randint(0, 10)
+    chance = random.randint(0, 11)
     # prepare a sequence
     y1_site = ["https://www.youtube.com/embed/SUyDcyHpFhc?mute=1;autoplay=1", 86] #86 seconds flying past galaxies
     y2_site = ["https://www.youtube.com/embed/6tmbeLTHC_0?start=54&end=174;mute=1;autoplay=1", 120] #120 seconds the sun 1
@@ -154,7 +154,7 @@ while VAR_CYCLE > 0:
     videos = [y1_site, y2_site, y3_site, y4_site, y5_site, y6_site, y7_site, y8_site, y9_site, y10_site, y11_site, y12_site]
     
     # do we feel lucky? We sure do for testing.
-    if chance >= 0:
+    if chance >= 5:
         selection = random.choice(videos)
         webbrowser.get('Firefox').open(selection[0], new=0)
         time.sleep(selection[1])
@@ -162,7 +162,7 @@ while VAR_CYCLE > 0:
         #r = text weather in STL
         r_website = "http://wttr.in/Saint+Louis+Missouri"
         webbrowser.get('Firefox').open(f_website, new=0)
-        time.sleep(120)
+        time.sleep(60)
 
         #latest = AN - 10Jan21
 
