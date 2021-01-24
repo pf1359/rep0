@@ -11,7 +11,7 @@ logging.basicConfig(filename = os.path.join(backupdest, timestr+'tar_error.log')
 for directory in backuptargets:
     try:
         full_dir = os.path.join(directory)
-        targz = tarfile.open(os.path.join(backupdest, directory, timestr+'.tar.gz'), 'w:gz')
+        targz = tarfile.open(os.path.join(backupdest, timestr+'-minecraft.tar.gz'), 'w:gz')
         targz.add(full_dir)
         targz.close()
         
