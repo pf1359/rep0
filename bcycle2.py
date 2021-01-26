@@ -7,6 +7,7 @@
 
 import webbrowser
 import time
+import random
 
 VAR_CYCLE = 1
 while VAR_CYCLE > 0:
@@ -127,13 +128,11 @@ while VAR_CYCLE > 0:
     time.sleep(120)
 
     #an - rivered.io rss site by twitterfall people (added 10Jan21)   
-    an_website = "https://www.rivered.io/"
-    webbrowser.get('Firefox').open(an_website, new=0)
-    time.sleep(120)
+    #an_website = "https://www.rivered.io/"
+    #webbrowser.get('Firefox').open(an_website, new=0)
+    #time.sleep(120)
 
     # choose a random element from a list
-    import random
-    from random import choice, randint, seed
     # seed random number generator
     random.seed()
     #create a chance to determine if a video plays this cycle
@@ -150,10 +149,9 @@ while VAR_CYCLE > 0:
     y9_site = ["https://www.youtube.com/embed/7fYKMCCPh28?start=1828&end=2175;mute=1;autoplay=1", 347] #347 seconds earth 4
     y10_site = ["https://www.youtube.com/embed/PBJAR3-UvSQ?start=29&end=289;mute=1;autoplay=1", 260] #260 seconds aurora
     y11_site = ["https://www.youtube.com/embed/Ilifg26TZrI?mute=1;autoplay=1", 144] #144 seconds around the moon
-    y12_site = ["https://www.youtube.com/embed/rgBKFEeXfww?mute=1;autoplay=1", 240] #240 seconds sights
-    videos = [y1_site, y2_site, y3_site, y4_site, y5_site, y6_site, y7_site, y8_site, y9_site, y10_site, y11_site, y12_site]
+    videos = [y1_site, y2_site, y3_site, y4_site, y5_site, y6_site, y7_site, y8_site, y9_site, y10_site, y11_site]
     
-    # do we feel lucky? We sure do for testing.
+    # do we feel lucky?
     if chance >= 5:
         selection = random.choice(videos)
         webbrowser.get('Firefox').open(selection[0], new=0)
@@ -161,7 +159,7 @@ while VAR_CYCLE > 0:
     else:
         #r = text weather in STL
         r_website = "http://wttr.in/Saint+Louis+Missouri"
-        webbrowser.get('Firefox').open(f_website, new=0)
+        webbrowser.get('Firefox').open(r_website, new=0)
         time.sleep(60)
 
         #latest = AN - 10Jan21
