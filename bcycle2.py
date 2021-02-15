@@ -36,7 +36,7 @@ while VAR_CYCLE > 0:
     time.sleep(180)
 
     #f = US weather radar
-    f_website = "http://wunderground.com/radar/us"
+    f_website = "https://www.wunderground.com/wundermap?lat=37.7&lon=-92.7&zoom=4&radar=1&wxstn=0"
     firefox.open(f_website, new=0)
     time.sleep(240)
 
