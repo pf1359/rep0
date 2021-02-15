@@ -211,3 +211,7 @@ while VAR_CYCLE > 0:
     #g_website = "https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6"
     #firefox.open(g_website, new=0)
     #time.sleep(60)
+
+    #from selenium import webdriver
+    #driver = webdriver.Chrome()
+    #driver.get(link1)
