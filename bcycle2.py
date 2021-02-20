@@ -59,7 +59,8 @@ while VAR_CYCLE > 0:
     time.sleep(120)
 
     #o = Meraki site for Findley
-    o_website = "https://n340.meraki.com/1000Llewellyn-wi/n/fGBARc0c/manage/usage/list?timespanClient=7200"
+    o_website = "https://n340.meraki.com/o/oci4od/manage/new_reports"
+    # o_website = "https://n340.meraki.com/1000Llewellyn-wi/n/fGBARc0c/manage/usage/list?timespanClient=7200"
     firefox.open(o_website, new=0)
     time.sleep(120)
 
@@ -109,9 +110,9 @@ while VAR_CYCLE > 0:
     time.sleep(120)
 
     #ao = pihole docker on 780white (add 15 Feb 2021)
-    ao_website = "http://dns5.findley.cc/admin/"
-    firefox.open(ao_website, new=0)
-    time.sleep(120)
+    #ao_website = "http://dns5.findley.cc/admin/"
+    #firefox.open(ao_website, new=0)
+    #time.sleep(120)
 
     #am = stl business journal (requires sign-in, added 10Jan21)
     am_website = "https://www.bizjournals.com/stlouis/news/"
@@ -137,10 +138,10 @@ while VAR_CYCLE > 0:
     firefox.open(ai_website, new=0)
     time.sleep(120)
 
-    #an - rivered.io rss site by twitterfall people (added 10Jan21)   
-    #an_website = "https://www.rivered.io/"
-    #firefox.open(an_website, new=0)
-    #time.sleep(120)
+    #an - feedreader (added 19Feb21.  Sign in as findleytablet) 
+    an_website = "https://feedreader.com/online/#/reader/category/all/"
+    firefox.open(an_website, new=0)
+    time.sleep(180)
 
     # choose a random element from a list
     # seed random number generator
