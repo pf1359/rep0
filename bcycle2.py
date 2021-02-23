@@ -59,8 +59,8 @@ while VAR_CYCLE > 0:
     time.sleep(120)
 
     #o = Meraki site for Findley
-    o_website = "https://n340.meraki.com/o/oci4od/manage/new_reports"
-    # o_website = "https://n340.meraki.com/1000Llewellyn-wi/n/fGBARc0c/manage/usage/list?timespanClient=7200"
+    #o_website = "https://n340.meraki.com/o/oci4od/manage/new_reports"
+    o_website = "https://n340.meraki.com/1000Llewellyn-wi/n/fGBARc0c/manage/usage/list?timespanClient=7200"
     firefox.open(o_website, new=0)
     time.sleep(120)
 
@@ -120,9 +120,9 @@ while VAR_CYCLE > 0:
     time.sleep(120)
 
     #ag = rumble console (run as reed honely, added 18Oct2020)
-    ag_website = "https://console.rumble.run"
-    firefox.open(ag_website, new=0)
-    time.sleep(120)
+    #ag_website = "https://console.rumble.run"
+    #firefox.open(ag_website, new=0)
+    #time.sleep(120)
 
     #Disabled 14Feb21 because Firefox broke autoplay
     #al = youtube live feed NYC Times Square
