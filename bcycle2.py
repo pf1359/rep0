@@ -89,46 +89,10 @@ while VAR_CYCLE > 0:
     firefox.open(z_website, new=0)
     time.sleep(180)
 
-    #aa = Oracle Internet Intelligence internet uptime (add 30 Aug 2020)
-    #aa_website="https://map.internetintel.oracle.com/?root=national&country=US"
-    #firefox.open(aa_website, new=0)
-    #time.sleep(120)
-    
-    #youtube live feed deerfield beach
-    #v_website = "https://www.youtube.com/embed/GAv4VCC41oU?mute=1;autoplay=1"
-    #firefox.open(v_website, new=0)
-    #time.sleep(180)
-
-    #ad = pihole on rpi419a(mod 4 Dec 2020)
-    ad_website = "http://dns4.findley.cc/admin/"
-    firefox.open(ad_website, new=0)
-    time.sleep(120)
-
-    #af = pihole on rpi0wrw (add 14 Oct 2020)
-    af_website = "http://dns3.findley.cc/admin/"
-    firefox.open(af_website, new=0)
-    time.sleep(120)
-
-    #ao = pihole docker on 780white (add 15 Feb 2021)
-    #ao_website = "http://dns5.findley.cc/admin/"
-    #firefox.open(ao_website, new=0)
-    #time.sleep(120)
-
     #am = stl business journal (requires sign-in, added 10Jan21)
     am_website = "https://www.bizjournals.com/stlouis/news/"
     firefox.open(am_website, new=0)
     time.sleep(120)
-
-    #ag = rumble console (run as reed honely, added 18Oct2020)
-    #ag_website = "https://console.rumble.run"
-    #firefox.open(ag_website, new=0)
-    #time.sleep(120)
-
-    #Disabled 14Feb21 because Firefox broke autoplay
-    #al = youtube live feed NYC Times Square
-    #al_website = "https://www.youtube.com/embed/eJ7ZkQ5TC08?mute=1;autoplay=1"
-    #firefox.open(al_website, new=0)
-    #time.sleep(120)
 
     ah_website = "https://www.stltoday.com/news/#tracking-source=main-nav"
     firefox.open(ah_website, new=0)
@@ -141,6 +105,11 @@ while VAR_CYCLE > 0:
     #an - feedreader (added 19Feb21.  Sign in as findleytablet) 
     an_website = "https://feedreader.com/online/#/reader/category/all/"
     firefox.open(an_website, new=0)
+    time.sleep(180)
+  
+    w = Cardinals
+    w_website = "https://www.mlb.com/cardinals"
+    firefox.open(w_website, new=0)
     time.sleep(180)
 
     # choose a random element from a list
@@ -188,11 +157,6 @@ while VAR_CYCLE > 0:
     #firefox.open(t_website, new=0)
     #time.sleep(180)
 
-   
-    #w = Cardinals (removed when their 2020 season ended)
-    #w_website = "https://www.mlb.com/cardinals"
-    #firefox.open(w_website, new=0)
-    #time.sleep(180)
 
     #r = text weather in STL
     #r_website = "http://wttr.in/Saint+Louis+Missouri"
@@ -221,3 +185,38 @@ while VAR_CYCLE > 0:
     #firefox.open(g_website, new=0)
     #time.sleep(60)
 
+    #ag = rumble console (run as reed honely, added 18Oct2020)
+    #ag_website = "https://console.rumble.run"
+    #firefox.open(ag_website, new=0)
+    #time.sleep(120)
+
+    #Disabled 14Feb21 because Firefox broke autoplay
+    #al = youtube live feed NYC Times Square
+    #al_website = "https://www.youtube.com/embed/eJ7ZkQ5TC08?mute=1;autoplay=1"
+    #firefox.open(al_website, new=0)
+    #time.sleep(120)
+
+        #aa = Oracle Internet Intelligence internet uptime (add 30 Aug 2020)
+    #aa_website="https://map.internetintel.oracle.com/?root=national&country=US"
+    #firefox.open(aa_website, new=0)
+    #time.sleep(120)
+    
+    #youtube live feed deerfield beach
+    #v_website = "https://www.youtube.com/embed/GAv4VCC41oU?mute=1;autoplay=1"
+    #firefox.open(v_website, new=0)
+    #time.sleep(180)
+
+    #ad = pihole on rpi419a(mod 4 Dec 2020)
+    #ad_website = "http://dns4.findley.cc/admin/"
+    #firefox.open(ad_website, new=0)
+    #time.sleep(120)
+
+    #af = pihole on rpi0wrw (add 14 Oct 2020)
+    #af_website = "http://dns3.findley.cc/admin/"
+    #firefox.open(af_website, new=0)
+    #time.sleep(120)
+
+    #ao = pihole docker on 780white (add 15 Feb 2021)
+    #ao_website = "http://dns5.findley.cc/admin/"
+    #firefox.open(ao_website, new=0)
+    #time.sleep(120)
