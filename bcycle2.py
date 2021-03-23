@@ -152,7 +152,7 @@ while VAR_CYCLE > 0:
     #ae_website = "https://www.mlb.com/postseason"
     #firefox.open(ae_website, new=0)
     #time.sleep(180)
-    t = hurricane watch
+    #t = hurricane watch
     t_website = "https://www.nhc.noaa.gov"
     firefox.open(t_website, new=0)
     time.sleep(180)
