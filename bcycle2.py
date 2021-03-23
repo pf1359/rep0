@@ -107,7 +107,7 @@ while VAR_CYCLE > 0:
     firefox.open(an_website, new=0)
     time.sleep(180)
   
-    w = Cardinals
+    #w = Cardinals
     w_website = "https://www.mlb.com/cardinals"
     firefox.open(w_website, new=0)
     time.sleep(180)
@@ -152,10 +152,10 @@ while VAR_CYCLE > 0:
     #ae_website = "https://www.mlb.com/postseason"
     #firefox.open(ae_website, new=0)
     #time.sleep(180)
-    #t = hurricane watch
-    #t_website = "https://www.nhc.noaa.gov"
-    #firefox.open(t_website, new=0)
-    #time.sleep(180)
+    t = hurricane watch
+    t_website = "https://www.nhc.noaa.gov"
+    firefox.open(t_website, new=0)
+    time.sleep(180)
 
 
     #r = text weather in STL
