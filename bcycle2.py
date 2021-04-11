@@ -78,6 +78,13 @@ while VAR_CYCLE > 0:
     ab_website = "https://www.wunderground.com/wundermap"
     firefox.open(ab_website, new=0)
     time.sleep(180)
+
+    #ap = a Creve Coeur weather underground station
+    #olivette = https://www.wunderground.com/dashboard/pws/KMOOLIVE2
+    #stoneleigh = https://www.wunderground.com/dashboard/pws/KMOSTLOU343
+    ap_website = "https://www.wunderground.com/dashboard/pws/KMOSTLOU477"
+    firefox.open(ap_website, new=0)
+    time.sleep(180)
     
     #y = BBC news (add 22 Aug 2020)
     y_website = "https://www.bbc.com/"
@@ -112,6 +119,11 @@ while VAR_CYCLE > 0:
     firefox.open(w_website, new=0)
     time.sleep(180)
 
+    #t = hurricane watch
+    t_website = "https://www.nhc.noaa.gov"
+    firefox.open(t_website, new=0)
+    time.sleep(180)
+
     # choose a random element from a list
     # seed random number generator
     #random.seed()
@@ -143,7 +155,7 @@ while VAR_CYCLE > 0:
         #firefox.open(r_website, new=0)
         #time.sleep(60)
 
-        #latest = AO - 15Feb21
+        #latest = Ap - 10Apr21
 
     #a = MSN news page
     #a_website = "https://www.msn.com/en-us/news/"
@@ -152,10 +164,7 @@ while VAR_CYCLE > 0:
     #ae_website = "https://www.mlb.com/postseason"
     #firefox.open(ae_website, new=0)
     #time.sleep(180)
-    #t = hurricane watch
-    t_website = "https://www.nhc.noaa.gov"
-    firefox.open(t_website, new=0)
-    time.sleep(180)
+
 
 
     #r = text weather in STL
