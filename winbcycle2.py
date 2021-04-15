@@ -11,90 +11,89 @@
 import webbrowser
 import time
 #import random
+firefox_path = "C:\Program Files\Mozilla Firefox\firefox.exe %s"
+#webbrowser.register('firefox', None, webbrowser.BackgroundBrowser(firefox_path))
 
 VAR_CYCLE = 1
 while VAR_CYCLE > 0:
 
-    firefox = webbrowser.get('Firefox')
-   
-
-    #b = NPR home page
+     #b = NPR home page
     b_website = "https://npr.org"
     webbrowser.open(b_website, new=0)
-    time.sleep(18)
+    time.sleep(180)
 
     #h = KMOV news page
     h_website = "https://www.kmov.com/news/"
     webbrowser.open(h_website, new=0)
-    time.sleep(18)
+    time.sleep(180)
 
     #d = Pollen count for STL
     d_website = "https://www.pollen.com/forecast/current/pollen/63132"
     webbrowser.open(d_website, new=0)
-    time.sleep(6)
+    time.sleep(60)
 
     #e = NOAA weather forcast for STL
     e_website = "https://forecast.weather.gov/MapClick.php?CityName=Olivette&state=MO&site=LSX&textField1=38.6723&textField2=-90.3772&e=0"
     webbrowser.open(e_website, new=0)
-    time.sleep(18)
+    time.sleep(180)
 
     #f = US weather radar
     f_website = "https://www.wunderground.com/wundermap?lat=37.7&lon=-92.7&zoom=4&radar=1&wxstn=0"
     webbrowser.open(f_website, new=0)
-    time.sleep(24)
+    time.sleep(240)
 
     #c = Blitzortung US lightning map
     c_website = "http://en.blitzortung.org/live_lightning_maps.php?map=30"
     webbrowser.open(c_website, new=0)
-    time.sleep(12)
+    time.sleep(120)
 
     #i = COVID-19 live stats page
     i_website = "https://ncov2019.live/"
     webbrowser.open(i_website, new=0)
-    time.sleep(12)
+    time.sleep(120)
 
     #ia = COVID-19 US live stats page (added 22Aug2020)
     ia_website = "https://ncov2019.live/data/unitedstates"
     webbrowser.open(ia_website, new=0)
-    time.sleep(12)
+    time.sleep(120)
 
     #o = Meraki site for Findley
     #o_website = "https://n340.meraki.com/o/oci4od/manage/new_reports"
     o_website = "https://n340.meraki.com/1000Llewellyn-wi/n/fGBARc0c/manage/usage/list?timespanClient=7200"
     webbrowser.open(o_website, new=0)
-    time.sleep(12)
+    time.sleep(120)
 
     #p = FlightRadar 24.  use with findleytablet@gmail.com for best result
     p_website = "https://www.flightradar24.com/40.52,-101.43/4"
     webbrowser.open(p_website, new=0)
-    time.sleep(30)
+    time.sleep(300)
    
     #s = radar loop
     s_website = "https://radar.weather.gov/?settings=v1_eyJhZ2VuZGEiOnsiaWQiOiJ3ZWF0aGVyIiwiY2VudGVyIjpbLTkwLjIsMzguNjI4XSwiem9vbSI6NywibG9jYXRpb24iOlstOTAuMiwzOC42MjhdfSwiYmFzZSI6InN0YW5kYXJkIiwiY291bnR5IjpmYWxzZSwiY3dhIjpmYWxzZSwic3RhdGUiOmZhbHNlLCJtZW51Ijp0cnVlLCJzaG9ydEZ1c2VkT25seSI6ZmFsc2V9#/"
     webbrowser.open(s_website, new=0)
-    time.sleep(18)
+    time.sleep(180)
 
     #ab = wundermap local stations (add 30 Aug 2020)
     ab_website = "https://www.wunderground.com/wundermap"
     webbrowser.open(ab_website, new=0)
-    time.sleep(18)
+    time.sleep(180)
 
     #ap = a Creve Coeur weather underground station
     #olivette = https://www.wunderground.com/dashboard/pws/KMOOLIVE2
     #stoneleigh = https://www.wunderground.com/dashboard/pws/KMOSTLOU343
     ap_website = "https://www.wunderground.com/dashboard/pws/KMOSTLOU477"
     webbrowser.open(ap_website, new=0)
-    time.sleep(18)
+    time.sleep(180)
     
     #y = BBC news (add 22 Aug 2020)
     y_website = "https://www.bbc.com/"
     webbrowser.open(y_website, new=0)
-    time.sleep(18)
+    time.sleep(180)
 
     #z = Newsbreak St. Louis (add 22 Aug 2020)
     z_website = "https://www.newsbreak.com/missouri/st.-louis"
     webbrowser.open(z_website, new=0)
-    time.sleep(18)
+    time.sleep(180)
 
     #am = stl business journal (requires sign-in, added 10Jan21)
     am_website = "https://www.bizjournals.com/stlouis/news/"
@@ -103,26 +102,26 @@ while VAR_CYCLE > 0:
 
     ah_website = "https://www.stltoday.com/news/#tracking-source=main-nav"
     firefox.open(ah_website, new=0)
-    time.sleep(12)
+    time.sleep(120)
 
     ai_website = "https://www.stltoday.com/sports/"
     webbrowser.open(ai_website, new=0)
-    time.sleep(12)
+    time.sleep(120)
 
     #an - feedreader (added 19Feb21.  Sign in as findleytablet) 
     an_website = "https://feedreader.com/online/#/reader/category/all/"
     webbrowser.open(an_website, new=0)
-    time.sleep(18)
+    time.sleep(180)
   
     #w = Cardinals
     w_website = "https://www.mlb.com/cardinals"
     webbrowser.open(w_website, new=0)
-    time.sleep(18)
+    time.sleep(180)
 
     #t = hurricane watch
     t_website = "https://www.nhc.noaa.gov"
     webbrowser.open(t_website, new=0)
-    time.sleep(18)
+    time.sleep(180)
 
     # choose a random element from a list
     # seed random number generator
