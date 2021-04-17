@@ -101,7 +101,7 @@ while VAR_CYCLE > 0:
     time.sleep(120)
 
     ah_website = "https://www.stltoday.com/news/#tracking-source=main-nav"
-    firefox.open(ah_website, new=0)
+    webbrowser.open(ah_website, new=0)
     time.sleep(120)
 
     ai_website = "https://www.stltoday.com/sports/"
