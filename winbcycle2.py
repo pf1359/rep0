@@ -200,9 +200,9 @@ while VAR_CYCLE > 0:
 
     #Disabled 14Feb21 because Firefox broke autoplay
     #al = youtube live feed NYC Times Square
-    #al_website = "https://www.youtube.com/embed/eJ7ZkQ5TC08?mute=1;autoplay=1"
-    #firefox.open(al_website, new=0)
-    #time.sleep(120)
+    al_website = "https://www.youtube.com/embed/eJ7ZkQ5TC08?mute=1;autoplay=1"
+    webbrowser.open(al_website, new=0)
+    time.sleep(120)
 
         #aa = Oracle Internet Intelligence internet uptime (add 30 Aug 2020)
     #aa_website="https://map.internetintel.oracle.com/?root=national&country=US"
