@@ -12,10 +12,12 @@ import webbrowser
 import time
 #import random
 
+firefox = webbrowser.get('Firefox')
+
 VAR_CYCLE = 1
 while VAR_CYCLE > 0:
 
-    firefox = webbrowser.get('Firefox')
+    
    
 
     #b = NPR home page
