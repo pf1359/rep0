@@ -42,16 +42,16 @@ site20 = ["https://www.mlb.com/cardinals", 120]
 site21 = ["https://www.nhc.noaa.gov", 120]
 site22 = ["https://www.youtube.com/embed/eJ7ZkQ5TC08?mute=1;autoplay=1", 180]
 
-website = [site01, site02, site03, site04, site05, site06, site07, site08, site09, \
+websites = [site01, site02, site03, site04, site05, site06, site07, site08, site09, \
      site10, site11, site12, site13, site14, site15, site16, site17, site18, site19, \
          site20, site21, site22]
 
 
 VAR_CYCLE = 1
 while VAR_CYCLE > 0:
-
-   webbrowser.open(website[0], new=0)
-   time.sleep(website[1])
+   for website in websites:
+      webbrowser.open(website[0], new=0)
+      time.sleep(website[1])
 
 
 
