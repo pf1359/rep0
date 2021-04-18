@@ -8,49 +8,68 @@
     #driver = webdriver.Chrome()
     #driver.get(link1)
 #import random
+
+#All this is commented out and it uses the default browser.
+#Opening in the same tab only works in Firefox (new=0), and only if you make the changes above.
 #firefox_path = "C:\Program Files\Mozilla Firefox\firefox.exe %s"
 #webbrowser.register('firefox', None, webbrowser.BackgroundBrowser(firefox_path))
-
 #IF Linux, we need this and change webbrowser.open to firefox.open
 #firefox = webbrowser.get('Firefox')
-
-
 
 import webbrowser
 import time
 
-site01 = ["https://npr.org", 120]
-site02 = ["https://www.kmov.com/news/", 120]
-site03 = ["https://www.pollen.com/forecast/current/pollen/63132", 60]
-site04 = ["https://forecast.weather.gov/MapClick.php?CityName=Olivette&state=MO&site=LSX&textField1=38.6723&textField2=-90.3772&e=0", 60]
-site05 = ["https://www.wunderground.com/wundermap?lat=37.7&lon=-92.7&zoom=4&radar=1&wxstn=0", 120]
-site06 = ["http://en.blitzortung.org/live_lightning_maps.php?map=30", 120]
+#########
+# Determine platform and define Firefox instead of using default
+import platform
+hostplatform = platform.system()
+if hostplatform =='Windows':
+    webbrowser.register('Firefox',
+	   None,
+	   webbrowser.BackgroundBrowser("C://Program Files//Mozilla Firefox//firefox.exe"))
+
+usebrowser = webbrowser.get('Firefox')
+
+site01 = ["https://npr.org", 180]
+site02 = ["https://www.kmov.com/news/", 180]
+site03 = ["https://www.pollen.com/forecast/current/pollen/63132", 120]
+site04 = ["https://forecast.weather.gov/MapClick.php?CityName=Olivette&state=MO&site=LSX&textField1=38.6723&textField2=-90.3772&e=0", 180]
+site05 = ["https://www.wunderground.com/wundermap?lat=37.7&lon=-92.7&zoom=4&radar=1&wxstn=0", 180]
+site06 = ["http://en.blitzortung.org/live_lightning_maps.php?map=30", 180]
 site07 = ["https://ncov2019.live/", 60]
 site08 = ["https://ncov2019.live/data/unitedstates", 60]
-site09 = ["]https://n340.meraki.com/1000Llewellyn-wi/n/fGBARc0c/manage/usage/list?timespanClient=7200", 120]
-site10 = ["https://www.flightradar24.com/40.52,-101.43/4", 180]
+site09 = ["]https://n340.meraki.com/1000Llewellyn-wi/n/fGBARc0c/manage/usage/list?timespanClient=7200", 180]
+site10 = ["https://www.flightradar24.com/40.52,-101.43/4", 240]
 site11 = ["https://radar.weather.gov/?settings=v1_eyJhZ2VuZGEiOnsiaWQiOiJ3ZWF0aGVyIiwiY2VudGVyIjpbLTkwLjIsMzguNjI4XSwiem9vbSI6NywibG9jYXRpb24iOlstOTAuMiwzOC42MjhdfSwiYmFzZSI6InN0YW5kYXJkIiwiY291bnR5IjpmYWxzZSwiY3dhIjpmYWxzZSwic3RhdGUiOmZhbHNlLCJtZW51Ijp0cnVlLCJzaG9ydEZ1c2VkT25seSI6ZmFsc2V9#/", 180]
 site12 = ["https://www.wunderground.com/wundermap", 180]
 site13 = ["https://www.wunderground.com/dashboard/pws/KMOSTLOU477", 180]
-site14 = ["https://www.bbc.com/", 120]
-site15 = ["https://www.newsbreak.com/missouri/st.-louis", 120]
-site16 = ["https://www.bizjournals.com/stlouis/news/", 120]
-site17 = ["https://www.stltoday.com/news/#tracking-source=main-nav", 120]
-site18 = ["https://www.stltoday.com/sports/", 120]
+site14 = ["https://www.bbc.com/", 180]
+site15 = ["https://www.newsbreak.com/missouri/st.-louis", 180]
+site16 = ["https://www.bizjournals.com/stlouis/news/", 180]
+site17 = ["https://www.stltoday.com/news/#tracking-source=main-nav", 180]
+site18 = ["https://www.stltoday.com/sports/", 180]
 site19 = ["https://feedreader.com/online/#/reader/category/all/", 240]
-site20 = ["https://www.mlb.com/cardinals", 120]
-site21 = ["https://www.nhc.noaa.gov", 120]
-site22 = ["https://www.youtube.com/embed/eJ7ZkQ5TC08?mute=1;autoplay=1", 180]
+site20 = ["https://www.mlb.com/cardinals", 180]
+site21 = ["https://www.nhc.noaa.gov", 180]
+site22 = ["https://www.youtube.com/embed/eJ7ZkQ5TC08?mute=1;autoplay=1", 180] #Times Square
+site23 = ["https://mars.nasa.gov/mars2020/mission/where-is-the-rover/", 120]
+site24 = ["https://www.earthcam.com/usa/missouri/stlouis/?cam=arch_riverview", 180]
+site25 = ["https://www.earthcam.com/usa/florida/keywest/?cam=irishkevins", 180]
+site26 = ["https://www.earthcam.com/usa/newyork/timessquare/?cam=tsrobo3", 180]
 
-websites = [site01, site02, site03, site04, site05, site06, site07, site08, site09, \
-     site10, site11, site12, site13, site14, site15, site16, site17, site18, site19, \
-         site20, site21, site22]
+websites = [site01, site02, site03, site04, site05, \
+    site06, site07, site08, site09, site10, \
+        site11, site12, site13, site14, site15, \
+          site16, site17, site18, site19, site20, \
+              site21, site22, site23, site24, site25, \
+                  site26]
+
 
 
 VAR_CYCLE = 1
 while VAR_CYCLE > 0:
    for website in websites:
-      webbrowser.open(website[0], new=0)
+      usebrowser.open(website[0], new=0)
       time.sleep(website[1])
 
 
@@ -75,22 +94,19 @@ while VAR_CYCLE > 0:
     #videos = [y1_site, y2_site, y3_site, y4_site, y5_site, y6_site, y7_site, y8_site, y9_site, y10_site, y11_site]
     
 
-    #r_website = "http://wttr.in/Saint+Louis+Missouri"
-    #a_website = "https://www.msn.com/en-us/news/"
-    #ae_website = "https://www.mlb.com/postseason"
-    #r_website = "http://wttr.in/Saint+Louis+Missouri"
-    #u_website = "https://spotthestation.nasa.gov/sightings/view.cfm?country=United_States&region=Missouri&city=Jefferson_National_Expansion_Memorial"
-    #x_website = "https://www.youtube.com/watch?v=DDU-rZs-Ic4"
-    #j_website = "https://www.youtube.com/watch?v=EEIk7gwjgIM"
-    #k_website = "https://spotthestation.nasa.gov/tracking_map.cfm"
-    #l_website = "http://www.internettrafficreport.com/"
-    #m_website = "https://cybermap.kaspersky.com"
-    #n_website = "https://www.akamai.com/us/en/resources/visualizing-akamai/enterprise-threat-monitor.jsp"
-    #g_website = "https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6"
-    #ag_website = "https://console.rumble.run"
-    #al_website = "https://www.youtube.com/embed/eJ7ZkQ5TC08?mute=1;autoplay=1"
-    #aa_website="https://map.internetintel.oracle.com/?root=national&country=US"
-    #v_website = "https://www.youtube.com/embed/GAv4VCC41oU?mute=1;autoplay=1"
-    #ad_website = "http://dns4.findley.cc/admin/"
-    #af_website = "http://dns3.findley.cc/admin/"
-    #ao_website = "http://dns5.findley.cc/admin/"
+    #site23 = "http://wttr.in/Saint+Louis+Missouri"
+    #site24 = "https://www.msn.com/en-us/news/"
+    #site25 = "https://www.mlb.com/postseason"
+    #site26 = "http://wttr.in/Saint+Louis+Missouri"
+    #site27 = "https://spotthestation.nasa.gov/sightings/view.cfm?country=United_States&region=Missouri&city=Jefferson_National_Expansion_Memorial"
+    #site28 = "https://www.youtube.com/watch?v=DDU-rZs-Ic4"
+    #site29 = "https://www.youtube.com/watch?v=EEIk7gwjgIM"
+    #site30 = "https://spotthestation.nasa.gov/tracking_map.cfm"
+    #site31 = "http://www.internettrafficreport.com/"
+    #site32 = "https://cybermap.kaspersky.com"
+    #site33 = "https://www.akamai.com/us/en/resources/visualizing-akamai/enterprise-threat-monitor.jsp"
+    #site34 = "https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6"
+    #site35 = "https://console.rumble.run"
+    #site36 = "https://www.youtube.com/embed/eJ7ZkQ5TC08?mute=1;autoplay=1"
+    #site37 ="https://map.internetintel.oracle.com/?root=national&country=US"
+    #site38 = "https://www.youtube.com/embed/GAv4VCC41oU?mute=1;autoplay=1"
