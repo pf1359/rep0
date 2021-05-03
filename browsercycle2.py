@@ -48,10 +48,10 @@ site15 = ["https://www.newsbreak.com/missouri/st.-louis", 180]
 site16 = ["https://www.bizjournals.com/stlouis/news/", 180]
 site17 = ["https://www.stltoday.com/news/#tracking-source=main-nav", 180]
 site18 = ["https://www.stltoday.com/sports/", 180]
-site19 = ["https://feedreader.com/online/#/reader/category/all/", 240]
+#site19 = ["https://feedreader.com/online/#/reader/category/all/", 240]
 site20 = ["https://www.mlb.com/cardinals", 180]
 site21 = ["https://www.nhc.noaa.gov", 180]
-site22 = ["https://www.youtube.com/embed/eJ7ZkQ5TC08?mute=1;autoplay=1", 180] #Times Square
+#site22 = ["https://www.youtube.com/embed/eJ7ZkQ5TC08?mute=1;autoplay=1", 180] #Times Square
 site23 = ["https://mars.nasa.gov/mars2020/mission/where-is-the-rover/", 120]
 site24 = ["https://www.earthcam.com/usa/missouri/stlouis/?cam=arch_riverview", 180]
 site25 = ["https://www.earthcam.com/usa/florida/keywest/?cam=irishkevins", 180]
@@ -60,8 +60,8 @@ site26 = ["https://www.earthcam.com/usa/newyork/timessquare/?cam=tsrobo3", 180]
 websites = [site01, site02, site03, site04, site05, \
     site06, site07, site08, site09, site10, \
         site11, site12, site13, site14, site15, \
-          site16, site17, site18, site19, site20, \
-              site21, site22, site23, site24, site25, \
+          site16, site17, site18, site20, \
+              site21, site23, site24, site25, \
                   site26]
 
 
