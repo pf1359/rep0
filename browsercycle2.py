@@ -55,14 +55,22 @@ site22 = ["https://www.youtube.com/embed/eJ7ZkQ5TC08?mute=1;autoplay=1", 180] #T
 site23 = ["https://mars.nasa.gov/mars2020/mission/where-is-the-rover/", 120]
 site24 = ["https://www.earthcam.com/usa/missouri/stlouis/?cam=arch_riverview", 180]
 site25 = ["https://www.earthcam.com/usa/florida/keywest/?cam=irishkevins", 180]
-site26 = ["https://www.earthcam.com/usa/newyork/timessquare/?cam=tsrobo3", 180]
+site26 = ["https://www.earthcam.com/usa/newyork/timessquare/?cam=tsrobo1", 180]
+site27 = ["https://www.earthcam.com/usa/florida/miami/resort/?cam=miamiresort", 180]
+site28 = ["https://www.earthcam.com/world/czechrepublic/prague/?cam=grandhotel_str", 180]
+site29 = ["https://www.earthcam.com/world/netherlands/amsterdam/?cam=amsterdam", 180]
+site30 = ["https://www.earthcam.com/world/aruba/druifbeach/?cam=casadelmar2", 180]
+site31 = ["https://www.earthcam.com/usa/nevada/lasvegas/fremontstreet/?cam=catsmeow_lv_fremont", 240]
+site32 = ["https://www.earthcam.com/usa/illinois/chicago/field/?cam=fieldmuseum", 180]
+site33 = ["https://www.earthcam.com/world/ireland/dublin/?cam=templebar", 180]
+site34 = ["https://www.earthcam.com/world/canada/niagarafalls/?cam=niagarafalls_str", 180]
 
 websites = [site01, site02, site03, site04, site05, \
     site06, site07, site08, site09, site10, \
         site11, site12, site13, site14, site15, \
           site16, site17, site18, site19, site20, \
               site21, site22, site23, site24, site25, \
-                  site26]
+                  site26, site31, site33]
 
 
 
