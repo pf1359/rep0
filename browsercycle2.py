@@ -36,8 +36,8 @@ site03 = ["https://www.pollen.com/forecast/current/pollen/63132", 120]
 site04 = ["https://forecast.weather.gov/MapClick.php?CityName=Olivette&state=MO&site=LSX&textField1=38.6723&textField2=-90.3772&e=0", 180]
 site05 = ["https://www.wunderground.com/wundermap?lat=37.7&lon=-92.7&zoom=4&radar=1&wxstn=0", 180]
 site06 = ["http://en.blitzortung.org/live_lightning_maps.php?map=30", 180]
-site07 = ["https://ncov2019.live/", 60]
-site08 = ["https://ncov2019.live/data/unitedstates", 60]
+#site07 = ["https://ncov2019.live/", 60]
+#site08 = ["https://ncov2019.live/data/unitedstates", 60]
 site09 = ["]https://n340.meraki.com/1000Llewellyn-wi/n/fGBARc0c/manage/usage/list?timespanClient=7200", 180]
 site10 = ["https://www.flightradar24.com/40.52,-101.43/4", 240]
 site11 = ["https://radar.weather.gov/?settings=v1_eyJhZ2VuZGEiOnsiaWQiOiJ3ZWF0aGVyIiwiY2VudGVyIjpbLTkwLjIsMzguNjI4XSwiem9vbSI6NywibG9jYXRpb24iOlstOTAuMiwzOC42MjhdfSwiYmFzZSI6InN0YW5kYXJkIiwiY291bnR5IjpmYWxzZSwiY3dhIjpmYWxzZSwic3RhdGUiOmZhbHNlLCJtZW51Ijp0cnVlLCJzaG9ydEZ1c2VkT25seSI6ZmFsc2V9#/", 180]
@@ -66,7 +66,7 @@ site33 = ["https://www.earthcam.com/world/ireland/dublin/?cam=templebar", 180]
 site34 = ["https://www.earthcam.com/world/canada/niagarafalls/?cam=niagarafalls_str", 180]
 
 websites = [site01, site02, site03, site04, site05, \
-    site06, site07, site08, site09, site10, \
+    site06, site09, site10, \
         site11, site12, site13, site14, site15, \
           site16, site17, site18, site20, \
               site21, site23, site24, site25, \
