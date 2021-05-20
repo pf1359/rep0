@@ -3,6 +3,7 @@
 # To get Firefox to open pages in the same tab, you have to make these changes in about:config:
 # browser.link.open_newwindow.restriction = 0
 # browser.link.open_newwindow = 1
+# browser.cache.memory.limit < - set to something realistic or it will eat all your rams.
 # Remember to go into options and enable autoplay audio and video if using Youtube links
     #from selenium import webdriver
     #driver = webdriver.Chrome()
