@@ -56,14 +56,14 @@ site23 = ["https://mars.nasa.gov/mars2020/mission/where-is-the-rover/", 120]
 site24 = ["https://www.earthcam.com/usa/missouri/stlouis/?cam=arch_riverview", 180]
 site25 = ["https://www.earthcam.com/usa/florida/keywest/?cam=irishkevins", 180]
 site26 = ["https://www.earthcam.com/usa/newyork/timessquare/?cam=tsrobo3", 180]
+site27 = ["https://coinmarketcap.com/watchlist", 180]
 
 websites = [site01, site02, site03, site04, site05, \
     site06, site07, site08, site09, site10, \
         site11, site12, site13, site14, site15, \
           site16, site17, site18, site20, \
               site21, site23, site24, site25, \
-                  site26]
-
+                  site26, site27]
 
 
 VAR_CYCLE = 1
