@@ -3,6 +3,7 @@
 # To get Firefox to open pages in the same tab, you have to make these changes in about:config:
 # browser.link.open_newwindow.restriction = 0
 # browser.link.open_newwindow = 1
+# browser.cache.memory.limit < - set to something realistic or it will eat all your rams.
 # Remember to go into options and enable autoplay audio and video if using Youtube links
     #from selenium import webdriver
     #driver = webdriver.Chrome()
@@ -36,8 +37,8 @@ site03 = ["https://www.pollen.com/forecast/current/pollen/63132", 120]
 site04 = ["https://forecast.weather.gov/MapClick.php?CityName=Olivette&state=MO&site=LSX&textField1=38.6723&textField2=-90.3772&e=0", 180]
 site05 = ["https://www.wunderground.com/wundermap?lat=37.7&lon=-92.7&zoom=4&radar=1&wxstn=0", 180]
 site06 = ["http://en.blitzortung.org/live_lightning_maps.php?map=30", 180]
-site07 = ["https://ncov2019.live/", 60]
-site08 = ["https://ncov2019.live/data/unitedstates", 60]
+#site07 = ["https://ncov2019.live/", 60]
+#site08 = ["https://ncov2019.live/data/unitedstates", 60]
 site09 = ["]https://n340.meraki.com/1000Llewellyn-wi/n/fGBARc0c/manage/usage/list?timespanClient=7200", 180]
 site10 = ["https://www.flightradar24.com/40.52,-101.43/4", 240]
 site11 = ["https://radar.weather.gov/?settings=v1_eyJhZ2VuZGEiOnsiaWQiOiJ3ZWF0aGVyIiwiY2VudGVyIjpbLTkwLjIsMzguNjI4XSwiem9vbSI6NywibG9jYXRpb24iOlstOTAuMiwzOC42MjhdfSwiYmFzZSI6InN0YW5kYXJkIiwiY291bnR5IjpmYWxzZSwiY3dhIjpmYWxzZSwic3RhdGUiOmZhbHNlLCJtZW51Ijp0cnVlLCJzaG9ydEZ1c2VkT25seSI6ZmFsc2V9#/", 180]
@@ -55,15 +56,24 @@ site21 = ["https://www.nhc.noaa.gov", 180]
 site23 = ["https://mars.nasa.gov/mars2020/mission/where-is-the-rover/", 120]
 site24 = ["https://www.earthcam.com/usa/missouri/stlouis/?cam=arch_riverview", 180]
 site25 = ["https://www.earthcam.com/usa/florida/keywest/?cam=irishkevins", 180]
-site26 = ["https://www.earthcam.com/usa/newyork/timessquare/?cam=tsrobo3", 180]
-site27 = ["https://coinmarketcap.com/watchlist", 180]
+site26 = ["https://www.earthcam.com/usa/newyork/timessquare/?cam=tsrobo1", 180]
+site27 = ["https://www.earthcam.com/usa/florida/miami/resort/?cam=miamiresort", 180]
+site28 = ["https://www.earthcam.com/world/czechrepublic/prague/?cam=grandhotel_str", 180]
+site29 = ["https://www.earthcam.com/world/netherlands/amsterdam/?cam=amsterdam", 180]
+site30 = ["https://www.earthcam.com/world/aruba/druifbeach/?cam=casadelmar2", 180]
+site31 = ["https://www.earthcam.com/usa/nevada/lasvegas/fremontstreet/?cam=catsmeow_lv_fremont", 240]
+site32 = ["https://www.earthcam.com/usa/illinois/chicago/field/?cam=fieldmuseum", 180]
+site33 = ["https://www.earthcam.com/world/ireland/dublin/?cam=templebar", 180]
+site34 = ["https://www.earthcam.com/world/canada/niagarafalls/?cam=niagarafalls_str", 180]
+site35 = ["https://coinmarketcap.com/watchlist", 180]
 
 websites = [site01, site02, site03, site04, site05, \
-    site06, site07, site08, site09, site10, \
+    site06, site09, site10, \
         site11, site12, site13, site14, site15, \
           site16, site17, site18, site20, \
               site21, site23, site24, site25, \
-                  site26, site27]
+                  site26, site31, site33, site35]
+
 
 
 VAR_CYCLE = 1
@@ -94,19 +104,19 @@ while VAR_CYCLE > 0:
     #videos = [y1_site, y2_site, y3_site, y4_site, y5_site, y6_site, y7_site, y8_site, y9_site, y10_site, y11_site]
     
 
-    #site23 = "http://wttr.in/Saint+Louis+Missouri"
-    #site24 = "https://www.msn.com/en-us/news/"
-    #site25 = "https://www.mlb.com/postseason"
-    #site26 = "http://wttr.in/Saint+Louis+Missouri"
-    #site27 = "https://spotthestation.nasa.gov/sightings/view.cfm?country=United_States&region=Missouri&city=Jefferson_National_Expansion_Memorial"
-    #site28 = "https://www.youtube.com/watch?v=DDU-rZs-Ic4"
-    #site29 = "https://www.youtube.com/watch?v=EEIk7gwjgIM"
-    #site30 = "https://spotthestation.nasa.gov/tracking_map.cfm"
-    #site31 = "http://www.internettrafficreport.com/"
-    #site32 = "https://cybermap.kaspersky.com"
-    #site33 = "https://www.akamai.com/us/en/resources/visualizing-akamai/enterprise-threat-monitor.jsp"
-    #site34 = "https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6"
-    #site35 = "https://console.rumble.run"
-    #site36 = "https://www.youtube.com/embed/eJ7ZkQ5TC08?mute=1;autoplay=1"
-    #site37 ="https://map.internetintel.oracle.com/?root=national&country=US"
-    #site38 = "https://www.youtube.com/embed/GAv4VCC41oU?mute=1;autoplay=1"
+    #site = "http://wttr.in/Saint+Louis+Missouri"
+    #site = "https://www.msn.com/en-us/news/"
+    #site = "https://www.mlb.com/postseason"
+    #site = "http://wttr.in/Saint+Louis+Missouri"
+    #site = "https://spotthestation.nasa.gov/sightings/view.cfm?country=United_States&region=Missouri&city=Jefferson_National_Expansion_Memorial"
+    #site = "https://www.youtube.com/watch?v=DDU-rZs-Ic4"
+    #site = "https://www.youtube.com/watch?v=EEIk7gwjgIM"
+    #site = "https://spotthestation.nasa.gov/tracking_map.cfm"
+    #site = "http://www.internettrafficreport.com/"
+    #site = "https://cybermap.kaspersky.com"
+    #site = "https://www.akamai.com/us/en/resources/visualizing-akamai/enterprise-threat-monitor.jsp"
+    #site = "https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6"
+    #site = "https://console.rumble.run"
+    #site = "https://www.youtube.com/embed/eJ7ZkQ5TC08?mute=1;autoplay=1"
+    #site ="https://map.internetintel.oracle.com/?root=national&country=US"
+    #site = "https://www.youtube.com/embed/GAv4VCC41oU?mute=1;autoplay=1"
