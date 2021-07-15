@@ -65,14 +65,15 @@ site31 = ["https://www.earthcam.com/usa/nevada/lasvegas/fremontstreet/?cam=catsm
 site32 = ["https://www.earthcam.com/usa/illinois/chicago/field/?cam=fieldmuseum", 180]
 site33 = ["https://www.earthcam.com/world/ireland/dublin/?cam=templebar", 180]
 site34 = ["https://www.earthcam.com/world/canada/niagarafalls/?cam=niagarafalls_str", 180]
-site35 = ["https://www.purpleair.com/map?opt=1/mAQI/a10/cC0#3.49/39.72/-98.65", 180]
+site36 = ["https://www.purpleair.com/map?opt=1/mAQI/a10/cC0#3.49/39.72/-98.65", 180]
+site35 = ["https://coinmarketcap.com/watchlist", 180]
 
 websites = [site01, site02, site03, site04, site05, \
     site06, site09, site10, \
         site11, site12, site13, site14, site15, \
           site16, site17, site18, site20, \
               site21, site23, site24, site25, \
-                  site26, site31, site33, site35]
+                  site26, site31, site33, site35, site36]
 
 
 
