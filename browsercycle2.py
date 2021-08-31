@@ -34,15 +34,19 @@ usebrowser = webbrowser.get('Firefox')
 site01 = ["https://npr.org", 180]
 site02 = ["https://www.kmov.com/news/", 180]
 site03 = ["https://www.pollen.com/forecast/current/pollen/63132", 120]
+#site04 = NOAA STL forecast
 site04 = ["https://forecast.weather.gov/MapClick.php?CityName=Olivette&state=MO&site=LSX&textField1=38.6723&textField2=-90.3772&e=0", 180]
+#site05 = Wunderground US Radar
 site05 = ["https://www.wunderground.com/wundermap?lat=37.7&lon=-92.7&zoom=4&radar=1&wxstn=0", 180]
 site06 = ["http://en.blitzortung.org/live_lightning_maps.php?map=30", 180]
 site07 = ["https://ncov2019.live/", 60]
 site08 = ["https://ncov2019.live/data/unitedstates", 60]
 site09 = ["]https://n340.meraki.com/1000Llewellyn-wi/n/fGBARc0c/manage/usage/list?timespanClient=7200", 180]
 site10 = ["https://www.flightradar24.com/40.52,-101.43/4", 240]
-site11 = ["https://radar.weather.gov/?settings=v1_eyJhZ2VuZGEiOnsiaWQiOiJ3ZWF0aGVyIiwiY2VudGVyIjpbLTkwLjIsMzguNjI4XSwiem9vbSI6NywibG9jYXRpb24iOlstOTAuMiwzOC42MjhdfSwiYmFzZSI6InN0YW5kYXJkIiwiY291bnR5IjpmYWxzZSwiY3dhIjpmYWxzZSwic3RhdGUiOmZhbHNlLCJtZW51Ijp0cnVlLCJzaG9ydEZ1c2VkT25seSI6ZmFsc2V9#/", 180]
-site12 = ["https://www.wunderground.com/wundermap", 180]
+#site11 = NOAA STL Radar
+site11 = ["https://radar.weather.gov/?settings=v1_eyJhZ2VuZGEiOnsiaWQiOiJ3ZWF0aGVyIiwiY2VudGVyIjpbLTkwLjIsMzguNjI4XSwiem9vbSI6NywibG9jYXRpb24iOlstOTAuMiwzOC42MjhdfSwiYmFzZSI6InN0YW5kYXJkIiwiY291bnR5IjpmYWxzZSwiY3dhIjpmYWxzZSwic3RhdGUiOmZhbHNlLCJtZW51Ijp0cnVlLCJzaG9ydEZ1c2VkT25seSI6ZmFsc2V9#/", 120]
+#site12 = wunderground temp readings
+site12 = ["https://www.wunderground.com/wundermap", 120]
 site13 = ["https://www.wunderground.com/dashboard/pws/KMOSTLOU477", 180]
 site14 = ["https://www.bbc.com/", 180]
 site15 = ["https://www.newsbreak.com/missouri/st.-louis", 180]
@@ -68,12 +72,20 @@ site34 = ["https://www.earthcam.com/world/canada/niagarafalls/?cam=niagarafalls_
 site36 = ["https://www.purpleair.com/map?opt=1/mAQI/a10/cC0#3.49/39.72/-98.65", 180]
 site35 = ["https://coinmarketcap.com/watchlist", 180]
 site37 = ["https://www.earthcam.com/usa/louisiana/neworleans/bourbonstreet/?cam=catsmeow2", 180]
+# site38 = MSN STL forecast
+site38 = ["https://www.msn.com/en-us/weather/today/weather-today/we-city?el=mqNeq4S2Ru16490udqmjjQ2VhRd7uNY42E%2BdrD3Q1rCRPcvzkGBdbSYZZ%2FwLZjzYmVTDoKVUfspPezxGz6SXCTkAjRSdk4A7DAmW2MAOT2sGnBCTLuacmCaSfmfCUWZwsU%2BX8djG%2FubYIauiqUQ13Q%3D%3D&weadegreetype=F&ocid=winp1taskbar", 180]
+# site 39 = MSN STL Radar
+site39 = ["https://www.msn.com/en-us/weather/maps/weather-today/we-city?weadegreetype=F&ocid=winp1taskbar&lat=38.66826248&lon=-90.45602417&weaext0=%7B%22l%22%3A%22St+Louis%22%2C%22r%22%3A%22MO%22%2C%22c%22%3A%22United+States%22%2C%22i%22%3A%22US%22%2C%22g%22%3A%22en-us%22%7D&city=St+Louis%2C+MO&type=radar&animation=1", 180]
+# site 40 = MSN STL temp
+site40 = ["https://www.msn.com/en-us/weather/maps/weather-today/we-city?weadegreetype=F&ocid=winp1taskbar&lat=38.66826248&lon=-90.45602417&weaext0=%7B%22l%22%3A%22St+Louis%22%2C%22r%22%3A%22MO%22%2C%22c%22%3A%22United+States%22%2C%22i%22%3A%22US%22%2C%22g%22%3A%22en-us%22%7D&city=St+Louis%2C+MO&type=temperature&animation=1",120]
+# site41 = MSN hurricane
+site41 = ["https://www.msn.com/en-us/weather/maps/weather-today/we-city?weadegreetype=F&ocid=winp1taskbar&lat=38.66826248&lon=-90.45602417&weaext0=%7B%22l%22%3A%22St+Louis%22%2C%22r%22%3A%22MO%22%2C%22c%22%3A%22United+States%22%2C%22i%22%3A%22US%22%2C%22g%22%3A%22en-us%22%7D&city=St+Louis%2C+MO&type=hurricane&animation=1&zoom=4",180]
 
-websites = [site01, site02, site03, site04, site05, \
+websites = [site01, site02, site03, site38, site05, \
     site06, site09, site10, \
-        site11, site12, site13, site14, site15, \
+        site11, site39, site12, site40, site13, site14, \
           site16, site17, site18, site20, \
-              site21, site23, site24, site25, \
+              site21, site41, site23, site24, site25, \
                   site26, site31, site33, site35, site36, site37]
 
 
