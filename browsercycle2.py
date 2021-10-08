@@ -81,12 +81,13 @@ site40 = ["https://www.msn.com/en-us/weather/maps/weather-today/we-city?weadegre
 # site41 = MSN hurricane
 site41 = ["https://www.msn.com/en-us/weather/maps/weather-today/we-city?weadegreetype=F&ocid=winp1taskbar&lat=38.66826248&lon=-90.45602417&weaext0=%7B%22l%22%3A%22St+Louis%22%2C%22r%22%3A%22MO%22%2C%22c%22%3A%22United+States%22%2C%22i%22%3A%22US%22%2C%22g%22%3A%22en-us%22%7D&city=St+Louis%2C+MO&type=hurricane&animation=1&zoom=4",180]
 site42 = ["https://www.msn.com/en-us/feed",180]
+site43 = ["https://www.mlb.com/postseason",180]
 
 
 websites = [site01, site02, site03, site38, site05, \
     site06, site09, site10, \
         site11, site39, site12, site40, site13, site14, \
-          site16, site17, site18, site20, \
+          site16, site17, site18, site43, \
               site21, site41, site23, site24, site25, \
                   site26, site31, site33, site35, site36, site37, \
                       site42 ]
@@ -123,7 +124,7 @@ while VAR_CYCLE > 0:
 
     #site = "http://wttr.in/Saint+Louis+Missouri"
     #site = "https://www.msn.com/en-us/news/"
-    #site = "https://www.mlb.com/postseason"
+    #site43 = "https://www.mlb.com/postseason"
     #site = "http://wttr.in/Saint+Louis+Missouri"
     #site = "https://spotthestation.nasa.gov/sightings/view.cfm?country=United_States&region=Missouri&city=Jefferson_National_Expansion_Memorial"
     #site = "https://www.youtube.com/watch?v=DDU-rZs-Ic4"
