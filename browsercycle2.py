@@ -41,7 +41,6 @@ site05 = ["https://www.wunderground.com/wundermap?lat=37.7&lon=-92.7&zoom=4&rada
 site06 = ["http://en.blitzortung.org/live_lightning_maps.php?map=30", 180]
 site07 = ["https://ncov2019.live/", 60]
 site08 = ["https://ncov2019.live/data/unitedstates", 60]
-site09 = ["]https://n340.meraki.com/1000Llewellyn-wi/n/fGBARc0c/manage/usage/list?timespanClient=7200", 180]
 site10 = ["https://www.flightradar24.com/40.52,-101.43/4", 240]
 #site11 = NOAA STL Radar
 site11 = ["https://radar.weather.gov/?settings=v1_eyJhZ2VuZGEiOnsiaWQiOiJ3ZWF0aGVyIiwiY2VudGVyIjpbLTkwLjIsMzguNjI4XSwiem9vbSI6NywibG9jYXRpb24iOlstOTAuMiwzOC42MjhdfSwiYmFzZSI6InN0YW5kYXJkIiwiY291bnR5IjpmYWxzZSwiY3dhIjpmYWxzZSwic3RhdGUiOmZhbHNlLCJtZW51Ijp0cnVlLCJzaG9ydEZ1c2VkT25seSI6ZmFsc2V9#/", 120]
@@ -55,7 +54,7 @@ site17 = ["https://www.stltoday.com/news/#tracking-source=main-nav", 180]
 site18 = ["https://www.stltoday.com/sports/", 180]
 site19 = ["https://feedreader.com/online/#/reader/category/all/", 240]
 site20 = ["https://www.mlb.com/cardinals", 180]
-site21 = ["https://www.nhc.noaa.gov", 180]
+site21 = ["https://www.nhc.noaa.gov", 120]
 site22 = ["https://www.youtube.com/embed/eJ7ZkQ5TC08?mute=1;autoplay=1", 180] #Times Square
 site23 = ["https://mars.nasa.gov/mars2020/mission/where-is-the-rover/", 120]
 site24 = ["https://www.earthcam.com/usa/missouri/stlouis/?cam=arch_riverview", 180]
@@ -85,11 +84,11 @@ site43 = ["https://www.mlb.com/postseason",180]
 
 
 websites = [site01, site02, site03, site38, site05, \
-    site06, site09, site10, \
+    site06, site10, \
         site11, site39, site12, site40, site13, site14, \
-          site16, site17, site18, site43, \
+          site16, site17, site18, \
               site21, site41, site23, site24, site25, \
-                  site26, site31, site33, site35, site36, site37, \
+                  site26, site29, site31, site33, site35, site36, site37, \
                       site42 ]
 
 
