@@ -79,8 +79,9 @@ site39 = ["https://www.msn.com/en-us/weather/maps/weather-today/we-city?weadegre
 site40 = ["https://www.msn.com/en-us/weather/maps/weather-today/we-city?weadegreetype=F&ocid=winp1taskbar&lat=38.66826248&lon=-90.45602417&weaext0=%7B%22l%22%3A%22St+Louis%22%2C%22r%22%3A%22MO%22%2C%22c%22%3A%22United+States%22%2C%22i%22%3A%22US%22%2C%22g%22%3A%22en-us%22%7D&city=St+Louis%2C+MO&type=temperature&animation=1",120]
 # site41 = MSN hurricane
 site41 = ["https://www.msn.com/en-us/weather/maps/weather-today/we-city?weadegreetype=F&ocid=winp1taskbar&lat=38.66826248&lon=-90.45602417&weaext0=%7B%22l%22%3A%22St+Louis%22%2C%22r%22%3A%22MO%22%2C%22c%22%3A%22United+States%22%2C%22i%22%3A%22US%22%2C%22g%22%3A%22en-us%22%7D&city=St+Louis%2C+MO&type=hurricane&animation=1&zoom=4",180]
-site42 = ["https://www.msn.com/en-us/feed",180]
-site43 = ["https://www.mlb.com/postseason",180]
+site42 = ["https://www.msn.com/en-us/feed",180] # MSN news start page
+site43 = ["https://www.mlb.com/postseason",180] #MLB Postseason
+site44 = ["https://www.youtube.com/watch?v=e0VawkIXKAc",180] # Namib desert Live cam. Added 20Dec2021
 
 
 websites = [site01, site02, site03, site38, site05, \
