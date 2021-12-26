@@ -82,15 +82,16 @@ site41 = ["https://www.msn.com/en-us/weather/maps/weather-today/we-city?weadegre
 site42 = ["https://www.msn.com/en-us/feed",180] # MSN news start page
 site43 = ["https://www.mlb.com/postseason",180] #MLB Postseason
 site44 = ["https://www.youtube.com/watch?v=e0VawkIXKAc",180] # Namib desert Live cam. Added 20Dec2021. Removed 21 Dec because it needs muted.
-
+site45 = ["https://webb.nasa.gov/content/webbLaunch/whereIsWebb.html", 180] #JWebb telescope live status
+site46 = ["https://dadjokegenerator.com/", 30]
 
 websites = [site01, site02, site03, site38, site05, \
     site06, site10, \
         site11, site39, site12, site40, site13, site14, \
-          site16, site17, site18, \
+          site16, site17, site18, site45, \
               site41, site23, site24, site25, \
                   site26, site29, site31, site33, site35, site36, site37, \
-                    site42 ]
+                    site42, site46]
 
 
 
