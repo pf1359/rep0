@@ -84,14 +84,27 @@ site43 = ["https://www.mlb.com/postseason",180] #MLB Postseason
 site44 = ["https://www.youtube.com/watch?v=e0VawkIXKAc",180] # Namib desert Live cam. Added 20Dec2021. Removed 21 Dec because it needs muted.
 site45 = ["https://webb.nasa.gov/content/webbLaunch/whereIsWebb.html", 180] #JWebb telescope live status
 site46 = ["https://dadjokegenerator.com/", 30]
+site47 = ["https://www.earthcam.com/world/japan/tokyo/?cam=tokyo1", 180] # Tokyo
+site48 = ["https://www.earthcam.com/world/russia/moscow/?cam=moscow_hd", 180] #Moscow
+site49 = ["https://www.earthcam.com/world/thailand/pattaya/?cam=pattaya", 180] #Thailand
+site50 = ["https://www.earthcam.com/world/spain/ceuta/?cam=gibraltar", 180] # Straight of Gilbraltar
+site51 = ["https://www.earthcam.com/world/philippines/boracay/?cam=boracay_hd", 180] # Boracay, Philippines
+site52 = ["https://www.earthcam.com/world/jamaica/negril/?cam=rickscafe", 180] #Rick's Cafe, Jamaica
+site53 = ["https://www.earthcam.com/world/hungary/budapest/?cam=hotelvictoria", 180] #Budapest, Hungary
+site54 = ["https://www.earthcam.com/world/canada/niagarafalls/thefalls/?cam=niagarafalls2", 180] # Niagara Falls
+site55 = ["https://www.earthcam.com/world/brazil/riodejaneiro/?cam=rio_copacabana", 180] #Rio, Copacabana South
+site56 = ["https://www.earthcam.com/world/botswana/chobe/?cam=campkuzuma", 180] # Camp Kuzuma, Botswana
+site57 = ["https://www.earthcam.com/usa/illinois/chicago/skydeck/?cam=chicagoskydeck", 180] # Chicago Skydeck
+site58 = ["https://www.earthcam.com/usa/georgia/atlanta/?cam=atlanta", 180] # Atlanta Centennial Park
+site59 = ["https://www.earthcam.com/usa/maryland/baltimore/aquarium/?cam=blacktipreef", 180] # Baltimore Shark Cam
 
 websites = [site01, site02, site03, site38, site05, \
     site06, site10, \
         site11, site39, site12, site40, site13, site14, \
-          site16, site17, site18, site45, \
+          site16, site17, site18, \
               site41, site23, site24, site25, \
                   site26, site29, site31, site33, site35, site36, site37, \
-                    site42, site46]
+                    site42, site50, site48, site52, site53, site56, site59]
 
 
 
