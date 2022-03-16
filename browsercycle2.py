@@ -98,7 +98,7 @@ site57 = ["https://www.earthcam.com/usa/illinois/chicago/skydeck/?cam=chicagosky
 site58 = ["https://www.earthcam.com/usa/georgia/atlanta/?cam=atlanta", 180] # Atlanta Centennial Park
 site59 = ["https://www.earthcam.com/usa/maryland/baltimore/aquarium/?cam=blacktipreef", 180] # Baltimore Shark Cam
 
-websites = [site01, site02, site03, site38, site05, \
+websites = [site01, site20, site02, site03, site38, site05, \
     site06, site10, \
         site11, site39, site12, site40, site13, site14, \
           site16, site17, site18, \
