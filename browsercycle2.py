@@ -97,6 +97,7 @@ site56 = ["https://www.earthcam.com/world/botswana/chobe/?cam=campkuzuma", 180] 
 site57 = ["https://www.earthcam.com/usa/illinois/chicago/skydeck/?cam=chicagoskydeck", 180] # Chicago Skydeck
 site58 = ["https://www.earthcam.com/usa/georgia/atlanta/?cam=atlanta", 180] # Atlanta Centennial Park
 site59 = ["https://www.earthcam.com/usa/maryland/baltimore/aquarium/?cam=blacktipreef", 180] # Baltimore Shark Cam
+site60 = ["https://my.papertrailapp.com/events", 180] #Papertrail logging
 
 websites = [site01, site20, site02, site03, site38, site05, \
     site06, site10, \
@@ -104,7 +105,7 @@ websites = [site01, site20, site02, site03, site38, site05, \
           site16, site17, site18, \
               site41, site23, site24, site25, \
                   site26, site29, site31, site33, site35, site36, site37, \
-                    site42, site50, site48, site53, site54, site57]
+                    site42, site50, site48, site53, site54, site57, site60]
 
 
 
