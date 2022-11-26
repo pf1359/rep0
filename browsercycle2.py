@@ -98,13 +98,12 @@ site57 = ["https://www.earthcam.com/usa/illinois/chicago/skydeck/?cam=chicagosky
 site58 = ["https://www.earthcam.com/usa/georgia/atlanta/?cam=atlanta", 180] # Atlanta Centennial Park
 site59 = ["https://www.earthcam.com/usa/maryland/baltimore/aquarium/?cam=blacktipreef", 180] # Baltimore Shark Cam
 site60 = ["https://my.papertrailapp.com/events", 180] #Papertrail logging
-site61 = ["https://feedreader.com/online/#/reader/category/all/", 180] #Feedreader feed
 site62 = ["https://www.nasa.gov/specials/trackartemis/", 180] # Artemis tracker
 
 websites = [site01, site02, site03, site38, site05, \
     site06, site10, site62, \
         site11, site39, site12, site40, site13, site14, \
-          site16, site17, site18, site61,\
+          site16, site17, site18, site19,\
               site41, site23, site24, site25, \
                   site26, site29, site31, site33, site35, site36, site37, \
                     site42, site50, site48, site53, site54, site57, site60]
