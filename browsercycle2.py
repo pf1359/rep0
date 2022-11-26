@@ -98,6 +98,7 @@ site57 = ["https://www.earthcam.com/usa/illinois/chicago/skydeck/?cam=chicagosky
 site58 = ["https://www.earthcam.com/usa/georgia/atlanta/?cam=atlanta", 180] # Atlanta Centennial Park
 site59 = ["https://www.earthcam.com/usa/maryland/baltimore/aquarium/?cam=blacktipreef", 180] # Baltimore Shark Cam
 site60 = ["https://my.papertrailapp.com/events", 180] #Papertrail logging
+site61 = ["https://feedreader.com/online/#/reader/category/all/", 180] #Feedreader feed
 
 websites = [site01, site02, site03, site38, site05, \
     site06, site10, \
