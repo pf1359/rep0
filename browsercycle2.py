@@ -98,10 +98,10 @@ site57 = ["https://www.earthcam.com/usa/illinois/chicago/skydeck/?cam=chicagosky
 site58 = ["https://www.earthcam.com/usa/georgia/atlanta/?cam=atlanta", 180] # Atlanta Centennial Park
 site59 = ["https://www.earthcam.com/usa/maryland/baltimore/aquarium/?cam=blacktipreef", 180] # Baltimore Shark Cam
 site60 = ["https://my.papertrailapp.com/events", 180] #Papertrail logging
-site62 = ["https://www.nasa.gov/specials/trackartemis/", 180] # Artemis tracker
+
 
 websites = [site01, site02, site03, site38, site05, \
-    site06, site10, site62, \
+    site06, site10, \
         site11, site39, site12, site40, site13, site14, \
           site16, site17, site18, site19,\
               site41, site23, site24, site25, \
@@ -154,3 +154,4 @@ while VAR_CYCLE > 0:
     #site = "https://www.youtube.com/embed/eJ7ZkQ5TC08?mute=1;autoplay=1"
     #site ="https://map.internetintel.oracle.com/?root=national&country=US"
     #site = "https://www.youtube.com/embed/GAv4VCC41oU?mute=1;autoplay=1"
+    #site62 = ["https://www.nasa.gov/specials/trackartemis/", 180] # Artemis tracker
