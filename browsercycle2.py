@@ -99,6 +99,9 @@ site58 = ["https://www.earthcam.com/usa/georgia/atlanta/?cam=atlanta", 180] # At
 site59 = ["https://www.earthcam.com/usa/maryland/baltimore/aquarium/?cam=blacktipreef", 180] # Baltimore Shark Cam
 site60 = ["https://my.papertrailapp.com/events", 180] #Papertrail logging
 site61 = ["https://www.earthcam.com/usa/tennessee/nashville/?cam=nashville", 180]
+site62 = ["http://live-fuji.jp/", 180] # Fuji-san
+site63 = ["https://www.youtube.com/watch?v=RQA5RcIZlAM", 180] #Tokyo Shinjuku crossing
+site64 = ["https://www.youtube.com/watch?v=3kPH7kTphnE", 180] #Tokyo Shibuya crossing
 
 
 websites = [site01, site02, site03, site38, site05, \
