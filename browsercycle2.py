@@ -102,12 +102,13 @@ site61 = ["https://www.earthcam.com/usa/tennessee/nashville/?cam=nashville", 180
 site62 = ["http://live-fuji.jp/", 180] # Fuji-san
 site63 = ["https://www.youtube.com/watch?v=RQA5RcIZlAM", 180] #Tokyo Shinjuku crossing
 site64 = ["https://www.youtube.com/watch?v=3kPH7kTphnE", 180] #Tokyo Shibuya crossing
+site65 = ["https://www.youtube.com/usgs/live",180] #USGS Live - showing Kiluea
 
 
 websites = [site01, site02, site03, site38, site05, \
     site06, site10, \
         site11, site39, site12, site40, site13, site14, \
-          site16, site17, site18, site19,\
+          site16, site17, site18, site19, site65,\
               site23, site24, site61, site20, site62, site63, site64, \
                   site26, site29, site31, site33, site36, site37, \
                     site42, site50, site48, site53, site54, site57, site60]
