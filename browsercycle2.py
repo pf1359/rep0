@@ -106,7 +106,7 @@ site65 = ["https://www.youtube.com/usgs/live",180] #USGS Live - showing Kiluea
 
 
 websites = [site01, site02, site03, site38, site05, \
-    site06, site10, \
+    site06, site10, site21,\
         site11, site39, site12, site40, site13, site14, \
           site16, site17, site18, site19, site65,\
               site23, site24, site61, site20, site62, site63, site64, \
