@@ -20,6 +20,7 @@
 
 import webbrowser
 import time
+from selenium import webdriver
 
 #########
 # Determine platform and define Firefox instead of using default
@@ -29,6 +30,10 @@ if hostplatform =='Windows':
     webbrowser.register('Firefox',
 	   None,
 	   webbrowser.BackgroundBrowser("C://Program Files//Mozilla Firefox//firefox.exe"))
+    
+f = webdriver.Firefox()
+f.get('http://magicmirror.findley.cc:8080')
+f.fullscreen_window()
 
 usebrowser = webbrowser.get('Firefox')
 
@@ -48,6 +53,5 @@ VAR_CYCLE = 1
 while VAR_CYCLE > 0:
    for website in websites:
       usebrowser.open(website[0], new=0)
-      usebrowser.fullscreen_window()
       time.sleep(website[1])
 
