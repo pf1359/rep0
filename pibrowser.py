@@ -30,7 +30,7 @@ if hostplatform =='Windows':
 	   None,
 	   webbrowser.BackgroundBrowser("C://Program Files//Mozilla Firefox//firefox.exe"))
 
-usebrowser = webbrowser.get('Firefox --kiosk')
+usebrowser = webbrowser.get('Firefox')
 
 site01 = ["http://magicmirror.findley.cc:8080", 240]
 site02 = ["https://www.pollen.com/forecast/current/pollen/63132", 30]
