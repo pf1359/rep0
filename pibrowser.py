@@ -32,8 +32,9 @@ usebrowser = webbrowser.get('Firefox')
 site01 = ["http://magicmirror.findley.cc:8080", 240]
 site02 = ["https://www.pollen.com/forecast/current/pollen/63132", 30]
 #site04 = Wunderground US Radar
-site04 = ["https://www.wunderground.com/wundermap?lat=37.7&lon=-92.7&zoom=4&radar=1&wxstn=0",>site05 = ["http://en.blitzortung.org/live_lightning_maps.php?map=30", 60]
-site06 = ["https://radar.weather.gov/?settings=v1_eyJhZ2VuZGEiOnsiaWQiOiJ3ZWF0aGVyIiwiY2VudGV>#site06 = wunderground temp readings
+site04 = ["https://www.wunderground.com/wundermap?lat=37.7&lon=-92.7&zoom=4&radar=1&wxstn=0", 60]
+site05 = ["http://en.blitzortung.org/live_lightning_maps.php?map=30", 60]
+site06 = ["https://radar.weather.gov/?settings=v1_eyJhZ2VuZGEiOnsiaWQiOiJ3ZWF0aGVyIiwiY2VudGV>#site06 = wunderground temp readings", 60]
 site07 = ["https://www.wunderground.com/wundermap", 60]
 site08 = ["https://www.wunderground.com/dashboard/pws/KMOSTLOU477", 60]
 
