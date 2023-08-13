@@ -48,5 +48,6 @@ VAR_CYCLE = 1
 while VAR_CYCLE > 0:
    for website in websites:
       usebrowser.open(website[0], new=0)
+      usebrowser.fullscreen_window()
       time.sleep(website[1])
 
