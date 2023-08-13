@@ -20,14 +20,11 @@
 
 import webbrowser
 import time
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
+import subprocess
 
-    
-f = webdriver.Firefox()
-f.maximize_window()
-time.sleep(5)
-f.get('http://magicmirror.findley.cc:8080')
+command = 'firefox-esr --kiosk http://magicmirror.findley.cc:8080 &'
+process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
+output, error = process.communicate()
 
 
 usebrowser = webbrowser.get('Firefox')
@@ -35,10 +32,8 @@ usebrowser = webbrowser.get('Firefox')
 site01 = ["http://magicmirror.findley.cc:8080", 240]
 site02 = ["https://www.pollen.com/forecast/current/pollen/63132", 30]
 #site04 = Wunderground US Radar
-site04 = ["https://www.wunderground.com/wundermap?lat=37.7&lon=-92.7&zoom=4&radar=1&wxstn=0", 60]
-site05 = ["http://en.blitzortung.org/live_lightning_maps.php?map=30", 60]
-site06 = ["https://radar.weather.gov/?settings=v1_eyJhZ2VuZGEiOnsiaWQiOiJ3ZWF0aGVyIiwiY2VudGVyIjpbLTkwLjIsMzguNjI4XSwiem9vbSI6NywibG9jYXRpb24iOlstOTAuMiwzOC42MjhdfSwiYmFzZSI6InN0YW5kYXJkIiwiY291bnR5IjpmYWxzZSwiY3dhIjpmYWxzZSwic3RhdGUiOmZhbHNlLCJtZW51Ijp0cnVlLCJzaG9ydEZ1c2VkT25seSI6ZmFsc2V9#/", 120]
-#site06 = wunderground temp readings
+site04 = ["https://www.wunderground.com/wundermap?lat=37.7&lon=-92.7&zoom=4&radar=1&wxstn=0",>site05 = ["http://en.blitzortung.org/live_lightning_maps.php?map=30", 60]
+site06 = ["https://radar.weather.gov/?settings=v1_eyJhZ2VuZGEiOnsiaWQiOiJ3ZWF0aGVyIiwiY2VudGV>#site06 = wunderground temp readings
 site07 = ["https://www.wunderground.com/wundermap", 60]
 site08 = ["https://www.wunderground.com/dashboard/pws/KMOSTLOU477", 60]
 
@@ -49,4 +44,3 @@ while VAR_CYCLE > 0:
    for website in websites:
       usebrowser.open(website[0], new=0)
       time.sleep(website[1])
-
