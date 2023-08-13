@@ -21,19 +21,14 @@
 import webbrowser
 import time
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 
-#########
-# Determine platform and define Firefox instead of using default
-import platform
-hostplatform = platform.system()
-if hostplatform =='Windows':
-    webbrowser.register('Firefox',
-	   None,
-	   webbrowser.BackgroundBrowser("C://Program Files//Mozilla Firefox//firefox.exe"))
     
 f = webdriver.Firefox()
+f.maximize_window()
+time.sleep(5)
 f.get('http://magicmirror.findley.cc:8080')
-f.fullscreen_window()
+
 
 usebrowser = webbrowser.get('Firefox')
 
