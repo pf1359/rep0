@@ -21,27 +21,51 @@
 import webbrowser
 import time
 import subprocess
-
-command = 'firefox-esr --kiosk http://magicmirror.findley.cc:8080 &'
-process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
-output, error = process.communicate()
-
-
-usebrowser = webbrowser.get('Firefox')
-
-site01 = ["http://magicmirror.findley.cc:8080", 240]
-site02 = ["https://www.pollen.com/forecast/current/pollen/63132", 30]
-#site04 = Wunderground US Radar
-site04 = ["https://www.wunderground.com/wundermap?lat=37.7&lon=-92.7&zoom=4&radar=1&wxstn=0", 60]
-site05 = ["http://en.blitzortung.org/live_lightning_maps.php?map=30", 60]
-site06 = ["https://radar.weather.gov/?settings=v1_eyJhZ2VuZGEiOnsiaWQiOiJ3ZWF0aGVyIiwiY2VudGV>#site06 = wunderground temp readings", 60]
-site07 = ["https://www.wunderground.com/wundermap", 60]
-site08 = ["https://www.wunderground.com/dashboard/pws/KMOSTLOU477", 60]
-
-websites = [site01, site02, site04, site05, site06, site07, site08]
+restart = 1
 
 VAR_CYCLE = 1
 while VAR_CYCLE > 0:
-   for website in websites:
-      usebrowser.open(website[0], new=0)
-      time.sleep(website[1])
+
+   if restart == 24:
+      command = 'pkill firefox'
+   command = 'firefox-esr --kiosk http://magicmirror.findley.cc:8080 &'
+   process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
+   output, error = process.communicate()
+   time.sleep(240)
+
+   command = 'firefox-esr --kiosk https://www.pollen.com/forecast/current/pollen/63132 &'
+   process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
+   output, error = process.communicate()
+   time.sleep(30)
+
+   command = 'firefox-esr --kiosk http://en.blitzortung.org/live_lightning_maps.php?map=30 &'
+   process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
+   output, error = process.communicate()
+   time.sleep(60)
+
+   command = 'firefox-esr --kiosk https://www.wunderground.com/wundermap?lat=37.7&lon=-92.7&zoom=4&radar=1&wxstn=0 &'
+   process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
+   output, error = process.communicate()
+   time.sleep(60)
+
+   command = 'firefox-esr --kiosk http://magicmirror.findley.cc:8080 &'
+   process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
+   output, error = process.communicate()
+   time.sleep(210)
+
+   command = 'firefox-esr --kiosk https://radar.weather.gov/?settings=v1_eyJhZ2VuZGEiOnsiaWQiOiJ3ZWF0aGVyIiwiY2VudGV &'
+   process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
+   output, error = process.communicate()
+   time.sleep(60)
+
+   command = 'firefox-esr --kiosk https://www.wunderground.com/wundermap &'
+   process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
+   output, error = process.communicate()
+   time.sleep(60)
+
+   command = 'firefox-esr --kiosk https://www.wunderground.com/dashboard/pws/KMOSTLOU477 &'
+   process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
+   output, error = process.communicate()
+   time.sleep(60)
+   
+   restart += 1
