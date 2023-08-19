@@ -32,6 +32,7 @@ while VAR_CYCLE > 0:
    process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
    output, error = process.communicate()
    time.sleep(240)
+   command = 'kill %1'
 
    command = 'firefox-esr --kiosk https://www.pollen.com/forecast/current/pollen/63132 &'
    process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
