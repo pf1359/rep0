@@ -2,6 +2,9 @@
 #sleep 60
 # Add this to~/.config/lxsession/LXDE-pi/autostart:
 #@lxterminal -e ~/pibrowser.sh
+#hide the mouse cursor
+#@unclutter -idle 0
+
 
 a=1
 
