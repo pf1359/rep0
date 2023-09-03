@@ -104,10 +104,12 @@ site63 = ["https://www.youtube.com/watch?v=RQA5RcIZlAM", 180] #Tokyo Shinjuku cr
 site64 = ["https://www.youtube.com/watch?v=3kPH7kTphnE", 180] #Tokyo Shibuya crossing
 site65 = ["https://www.youtube.com/usgs/live",180] #USGS Live - showing Kiluea
 site66 = ["http://magicmirror.findley.cc:8080", 180] #Magic Mirror
+site67 = ["http://magicmirror.findley.cc:8081", 180] #Magic Mirror2
+site68 = ["http://magicmirror.findley.cc:8082", 180] #Magic Mirror3
 
 
-websites = [site01, site02, site03, site38, site05, \
-    site06, site10, site21,\
+websites = [site68, site01, site02, site03, site38, site05, \
+    site06, site10, site21, site67,\
         site11, site39, site12, site40, site13, site14, \
           site16, site17, site18, site19,\
               site23, site24, site61, site20, site62, \
