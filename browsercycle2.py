@@ -112,7 +112,7 @@ websites = [site68, site01, site02, site03, site38, site05, \
     site06, site10, site21, site67,\
         site11, site39, site12, site40, site13, site14, \
           site16, site17, site18, site19,\
-              site23, site24, site61, site20, site62, \
+              site23, site24, site61, site20, \
                   site26, site29, site31, site33, site36, site37,\
                     site42, site50, site48, site53, site54, site57, site60]
 
