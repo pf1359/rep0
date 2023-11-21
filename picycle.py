@@ -30,7 +30,7 @@ if hostplatform =='Windows':
 	   None,
 	   webbrowser.BackgroundBrowser("C://Program Files//Mozilla Firefox//firefox.exe"))
 
-usebrowser = webbrowser.get('Firefox')
+usebrowser = webbrowser.get('Firefox  --kiosk')
 
 
 site66 = ["http://magicmirror.findley.cc:8080", 120] #Magic Mirror
