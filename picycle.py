@@ -30,7 +30,7 @@ if hostplatform =='Windows':
 	   None,
 	   webbrowser.BackgroundBrowser("C://Program Files//Mozilla Firefox//firefox.exe"))
 
-usebrowser = webbrowser.get('Firefox  --kiosk')
+usebrowser = webbrowser.get('Firefox')
 
 
 site66 = ["http://magicmirror.findley.cc:8080", 120] #Magic Mirror
@@ -41,7 +41,7 @@ site70 = ["http://magicmirror.findley.cc:8084", 120] #Magic Mirror5
 site72 = ["http://en.blitzortung.org/live_lightning_maps.php?map=30", 120]
 site73 = ["https://www.nhc.noaa.gov", 60]
 site74 = ["https://www.mlb.com/postseason", 60]
-site75 = ["https://merrysky.net/forecast/olivette,%20mo/us", 120]
+site75 = ["https://merrysky.net/forecast/olivette,%20mo/us", 120] #merry sky for STL
 
 
 websites = [site66, site67, site68, site69, site70, site72]
