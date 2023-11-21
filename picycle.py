@@ -30,6 +30,7 @@ if hostplatform =='Windows':
 	   None,
 	   webbrowser.BackgroundBrowser("C://Program Files//Mozilla Firefox//firefox.exe"))
 
+time.sleep(30)
 usebrowser = webbrowser.get('Firefox')
 
 
