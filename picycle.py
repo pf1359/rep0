@@ -32,7 +32,7 @@ if hostplatform =='Windows':
 	   webbrowser.BackgroundBrowser("C://Program Files//Mozilla Firefox//firefox.exe"))
 
 #time.sleep(30)
-os.system('/usr/bin/firefox-esr -kiosk')
+os.system('/usr/bin/firefox-esr -kiosk &')
 #usebrowser = webbrowser.get('Firefox')
 
 
