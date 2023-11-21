@@ -31,7 +31,7 @@ if hostplatform =='Windows':
 	   webbrowser.BackgroundBrowser("C://Program Files//Mozilla Firefox//firefox.exe"))
 
 time.sleep(30)
-usebrowser = webbrowser.get('Firefox')
+#usebrowser = webbrowser.get('Firefox')
 
 
 site66 = ["http://magicmirror.findley.cc:8080", 120] #Magic Mirror
@@ -45,7 +45,7 @@ site74 = ["https://www.mlb.com/postseason", 60]
 site75 = ["https://merrysky.net/forecast/olivette,%20mo/us", 120] #merry sky for STL
 
 
-websites = [site66, site67, site68, site69, site70, site72]
+websites = [site66, site68, site69, site70, site72]
 
 
 
