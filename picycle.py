@@ -20,6 +20,7 @@
 
 import webbrowser
 import time
+import os
 
 #########
 # Determine platform and define Firefox instead of using default
@@ -30,7 +31,8 @@ if hostplatform =='Windows':
 	   None,
 	   webbrowser.BackgroundBrowser("C://Program Files//Mozilla Firefox//firefox.exe"))
 
-time.sleep(30)
+#time.sleep(30)
+os.system('/usr/bin/firefox-esr -kiosk')
 #usebrowser = webbrowser.get('Firefox')
 
 
