@@ -40,7 +40,7 @@ site74 = ["https://www.mlb.com/postseason", 60]
 site75 = ["https://merrysky.net/forecast/olivette,%20mo/us", 120] #merry sky for STL
 
 
-websites = [site68, site69, site70, site72]
+websites = [site66, site68, site69, site70, site72]
 
 
 
