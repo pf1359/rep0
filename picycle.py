@@ -27,7 +27,7 @@ import os
 #time.sleep(30)
 #os.system('/usr/bin/firefox-esr -kiosk &')
 usebrowser = webbrowser.get('Firefox')
-
+usebrowser.args.append('-kiosk')
 
 site66 = ["http://magicmirror.findley.cc:8080", 120] #Magic Mirror
 site67 = ["http://magicmirror.findley.cc:8081", 120] #Magic Mirror2
