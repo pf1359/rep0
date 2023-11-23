@@ -22,14 +22,11 @@
 import webbrowser
 import time
 import os
-from selenium import webdriver
+
 
 #time.sleep(30)
 #os.system('/usr/bin/firefox-esr -kiosk &')
 usebrowser = webbrowser.get('Firefox')
-driver = webdriver.Firefox()
-driver.maximize_window()
-driver.get("http://magicmirror.findley.cc:8080")
 
 
 site66 = ["http://magicmirror.findley.cc:8080", 120] #Magic Mirror
