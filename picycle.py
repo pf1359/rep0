@@ -23,7 +23,7 @@ import webbrowser
 import time
 import os
 
-time.sleep(30)
+#time.sleep(30)
 #os.system('/usr/bin/firefox-esr -kiosk &')
 usebrowser = webbrowser.get('Firefox')
 
