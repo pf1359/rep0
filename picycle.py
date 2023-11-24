@@ -41,10 +41,11 @@ site75 = ["https://merrysky.net/forecast/olivette,%20mo/us", 120] #merry sky for
 
 
 websites = [site66, site68, site69, site70, site72]
+initialsite = websites[0]
 
 usebrowser = webbrowser.get('Firefox')
-usebrowser.open(websites[0])
-#pyautogui.hotkey('alt','tab')
+usebrowser.open(initialsite[0])
+pyautogui.hotkey('alt','tab')
 pyautogui.press('F11')
 
 VAR_CYCLE = 1
