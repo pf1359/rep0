@@ -29,7 +29,7 @@ import pyautogui
 #os.system('/usr/bin/firefox-esr -kiosk &')
 
 
-site66 = ["http://magicmirror.findley.cc:8080", 120] #Magic Mirror
+site66 = ["--kiosk http://magicmirror.findley.cc:8080", 120] #Magic Mirror
 site67 = ["http://magicmirror.findley.cc:8081", 120] #Magic Mirror2
 site68 = ["http://magicmirror.findley.cc:8082", 120] #Magic Mirror3
 site69 = ["http://magicmirror.findley.cc:8083", 120] #Magic Mirror4
@@ -41,10 +41,9 @@ site75 = ["https://merrysky.net/forecast/olivette,%20mo/us", 120] #merry sky for
 
 
 websites = [site66, site68, site69, site70, site72]
-initialsite = websites[0]
 
 usebrowser = webbrowser.get('Firefox')
-usebrowser.open('--kiosk initialsite[0]')
+#usebrowser.open('--kiosk initialsite[0]')
 #pyautogui.hotkey('alt','tab')
 #pyautogui.press('F11')
 
