@@ -44,7 +44,7 @@ websites = [site66, site68, site69, site70, site72]
 initialsite = websites[0]
 
 usebrowser = webbrowser.get('Firefox')
-usebrowser.open('-kiosk initialsite[0]')
+usebrowser.open('--kiosk initialsite[0]')
 #pyautogui.hotkey('alt','tab')
 #pyautogui.press('F11')
 
