@@ -27,9 +27,7 @@ import pyautogui
 
 #time.sleep(30)
 #os.system('/usr/bin/firefox-esr -kiosk &')
-usebrowser = webbrowser.get('Firefox')
-usebrowser.open
-pyautogui.hotkey('alt','tab'); pyautogui.press('F11')
+
 
 site66 = ["http://magicmirror.findley.cc:8080", 120] #Magic Mirror
 site67 = ["http://magicmirror.findley.cc:8081", 120] #Magic Mirror2
@@ -44,7 +42,10 @@ site75 = ["https://merrysky.net/forecast/olivette,%20mo/us", 120] #merry sky for
 
 websites = [site66, site68, site69, site70, site72]
 
-
+usebrowser = webbrowser.get('Firefox')
+usebrowser.open(websites[0])
+#pyautogui.hotkey('alt','tab')
+pyautogui.press('F11')
 
 VAR_CYCLE = 1
 while VAR_CYCLE > 0:
