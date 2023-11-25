@@ -29,7 +29,7 @@ import pyautogui
 #os.system('/usr/bin/firefox-esr -kiosk &')
 
 
-site66 = ["--kiosk http://magicmirror.findley.cc:8080", 120] #Magic Mirror
+site66 = ["http://magicmirror.findley.cc:8080", 120] #Magic Mirror
 site67 = ["http://magicmirror.findley.cc:8081", 120] #Magic Mirror2
 site68 = ["http://magicmirror.findley.cc:8082", 120] #Magic Mirror3
 site69 = ["http://magicmirror.findley.cc:8083", 120] #Magic Mirror4
@@ -48,7 +48,11 @@ usebrowser = webbrowser.get('Firefox')
 #pyautogui.press('F11')
 
 VAR_CYCLE = 1
+F11_CYCLE = 0
 while VAR_CYCLE > 0:
    for website in websites:
       usebrowser.open(website[0], new=0)
+      if F11_CYCLE < 1:
+         pyautogui.press('F11')
+         F11_CYCLE = 1
       time.sleep(website[1])
