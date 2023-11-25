@@ -48,11 +48,7 @@ usebrowser = webbrowser.get('Firefox')
 #pyautogui.press('F11')
 
 VAR_CYCLE = 1
-F11_CYCLE = 0
 while VAR_CYCLE > 0:
    for website in websites:
       usebrowser.open(website[0], new=0)
-      if F11_CYCLE < 1:
-         pyautogui.press('F11')
-         F11_CYCLE = 1
       time.sleep(website[1])
