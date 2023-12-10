@@ -1,32 +1,16 @@
 # Modified version of my script for cross-platform use.
 # Pat Findley 17 Apr 2021
-# converted for pi and magic mirror 20 Nov 23
+# converted for pi and magic mirror 20-24 Nov 23
 # To get Firefox to open pages in the same tab, you have to make these changes in about:config:
 # browser.link.open_newwindow.restriction = 0
 # browser.link.open_newwindow = 1
 # browser.cache.memory.limit < - set to something realistic or it will eat all your rams.
 # Double-click the browser.sessionstore.resume_from_crash to switch it from true to false.
-# Remember to go into options and enable autoplay audio and video if using Youtube links
-    #from selenium import webdriver
-    #driver = webdriver.Chrome()
-    #driver.get(link1)
-#import random
+# Create a launch.sh in mm home that launches firefox-esr --kiosk, then this script
 
-#All this is commented out and it uses the default browser.
-#Opening in the same tab only works in Firefox (new=0), and only if you make the changes above.
-#firefox_path = "C:\Program Files\Mozilla Firefox\firefox.exe %s"
-#webbrowser.register('firefox', None, webbrowser.BackgroundBrowser(firefox_path))
-#IF Linux, we need this and change webbrowser.open to firefox.open
-#firefox = webbrowser.get('Firefox')
 
 import webbrowser
 import time
-import os
-import pyautogui
-
-
-#time.sleep(30)
-#os.system('/usr/bin/firefox-esr -kiosk &')
 
 
 site66 = ["http://magicmirror.findley.cc:8080", 120] #Magic Mirror
@@ -41,12 +25,8 @@ site75 = ["https://merrysky.net/forecast/olivette,%20mo/us", 120] #merry sky for
 
 
 websites = [site66, site68, site69, site70, site72]
-initialsite = websites[0]
 
 usebrowser = webbrowser.get('Firefox')
-usebrowser.open(initialsite[0])
-pyautogui.hotkey('alt','tab')
-pyautogui.press('F11')
 
 VAR_CYCLE = 1
 while VAR_CYCLE > 0:
