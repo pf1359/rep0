@@ -29,6 +29,16 @@
       "url": "http://en.blitzortung.org/live_lightning_maps.php?map=30",
       "duration": 480,
       "tabReloadIntervalSeconds": 0
+    },
+    {
+      "url": "https://www.npr.org",
+      "duration": 480,
+      "tabReloadIntervalSeconds": 0
+    },
+    {
+      "url": "https://www.kmov.com/news/",
+      "duration": 480,
+      "tabReloadIntervalSeconds": 0
     }
 
   ]
