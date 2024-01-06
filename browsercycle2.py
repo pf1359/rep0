@@ -15,7 +15,7 @@
 #firefox_path = "C:\Program Files\Mozilla Firefox\firefox.exe %s"
 #webbrowser.register('firefox', None, webbrowser.BackgroundBrowser(firefox_path))
 #IF Linux, we need this and change webbrowser.open to firefox.open
-firefox = webbrowser.get('Firefox')
+
 
 import webbrowser
 import time
@@ -25,11 +25,10 @@ import time
 import platform
 hostplatform = platform.system()
 if hostplatform =='Windows':
-    webbrowser.register('Firefox',
-	   None,
-	   webbrowser.BackgroundBrowser("C://Program Files//Mozilla Firefox//firefox.exe"))
-usebrowser = webbrowser.get('Firefox')
+    webbrowser.register('Firefox', None,webbrowser.BackgroundBrowser("C://Program Files//Mozilla Firefox//firefox.exe"))
+    usebrowser = webbrowser.get('Firefox')
 
+firefox = webbrowser.get('Firefox')
 
 site01 = ["https://npr.org", 180]
 site02 = ["https://www.kmov.com/news/", 180]
@@ -123,6 +122,9 @@ websites = [site68, site01, site02, site03, site38, site05, \
 VAR_CYCLE = 1
 while VAR_CYCLE > 0:
    for website in websites:
-#      usebrowser.open(website[0], new=0) #windows
-      firefox.open(website[0], new=0) #linux
-      time.sleep(website[1])
+      if hostplatform =='Windows':
+       usebrowser.open(website[0], new=0) #windows
+       time.sleep(website[1]) 
+      else:   
+       firefox.open(website[0], new=0) #linux
+       time.sleep(website[1])
