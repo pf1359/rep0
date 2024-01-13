@@ -1,0 +1,115 @@
+{
+  "settingsReloadIntervalMinutes": 2,
+  "fullscreen": true,
+  "autoStart": true,
+  "lazyLoadTabs": true,
+  "closeExistingTabs": true,
+  "websites": [
+    {
+      "url": "https://npr.org",
+      "duration": 120,
+      "tabReloadIntervalSeconds": 2400
+    },
+    {
+      "url": "https://www.kmov.com/news/",
+      "duration": 120,
+      "tabReloadIntervalSeconds": 2400
+    },
+    {
+      "url": "https://www.pollen.com/forecast/current/pollen/63132",
+      "duration": 120,
+      "tabReloadIntervalSeconds": 2400
+    },
+    {
+      "url": "https://forecast.weather.gov/MapClick.php?CityName=Olivette&state=MO&=LSX&textField1=38.6723&textField2=-90.3772&e=0",
+      "duration": 120,
+      "tabReloadIntervalSeconds": 2400
+    },
+    {
+      "url": "https://www.wunderground.com/wundermap?lat=37.7&lon=-92.7&zoom=4&radar=1&wxstn=0",
+      "duration": 120,
+      "tabReloadIntervalSeconds": 2400
+    },
+    {
+      "url": "http://en.blitzortung.org/live_lightning_maps.php?map=30",
+      "duration": 120 ,
+      "tabReloadIntervalSeconds": 2400
+    },
+    {
+      "url": "https://www.flightradar24.com/40.52,-101.43/4",
+      "duration": 120,
+      "tabReloadIntervalSeconds": 2400
+    },
+    {
+        "url": "https://radar.weather.gov/?settings=v1_eyJhZ2VuZGEiOnsiaWQiOiJ3ZWF0aGVyIiwiY2VudGVyIjpbLTkwLjIsMzguNjI4XSwiem9vbSI6NywibG9jYXRpb24iOlstOTAuMiwzOC42MjhdfSwiYmFzZSI6InN0YW5kYXJkIiwiY291bnR5IjpmYWxzZSwiY3dhIjpmYWxzZSwic3RhdGUiOmZhbHNlLCJtZW51Ijp0cnVlLCJzaG9ydEZ1c2VkT25seSI6ZmFsc2V9#/",
+        "duration": 120,
+        "tabReloadIntervalSeconds": 2400
+      },
+      {
+        "url": "https://www.wunderground.com/wundermap",
+        "duration": 120,
+        "tabReloadIntervalSeconds": 2400
+      },
+      {
+        "url": "https://www.wunderground.com/dashboard/pws/KMOSTLOU477",
+        "duration": 120,
+        "tabReloadIntervalSeconds": 2400
+      },
+      {
+        "url": "https://www.bbc.com/",
+        "duration": 120,
+        "tabReloadIntervalSeconds": 2400
+      },
+      {
+        "url": "https://www.stltoday.com/news/#tracking-source=main-nav",
+        "duration": 120,
+        "tabReloadIntervalSeconds": 2400
+      },
+      {
+        "url": "https://www.stltoday.com/sports/",
+        "duration": 120 ,
+        "tabReloadIntervalSeconds": 2400
+      },
+      {
+        "url": "https://www.mlb.com/cardinals",
+        "duration": 120,
+        "tabReloadIntervalSeconds": 2400
+      },
+      {
+        "url": "https://www.nhc.noaa.gov",
+        "duration": 120,
+        "tabReloadIntervalSeconds": 2400
+      },
+      {
+          "url": "https://mars.nasa.gov/mars2020/mission/where-is-the-rover/",
+          "duration": 120,
+          "tabReloadIntervalSeconds": 2400
+        },
+        {
+          "url": "https://www.purpleair.com/map?opt=1/mAQI/a10/cC0#3.49/39.72/-98.65",
+          "duration": 120,
+          "tabReloadIntervalSeconds": 2400
+        },
+        {
+          "url": "https://www.msn.com/en-us/weather/today/weather-today/we-city?el=mqNeq4S2Ru16490udqmjjQ2VhRd7uNY42E%2BdrD3Q1rCRPcvzkGBdbSYZZ%2FwLZjzYmVTDoKVUfspPezxGz6SXCTkAjRSdk4A7DAmW2MAOT2sGnBCTLuacmCaSfmfCUWZwsU%2BX8djG%2FubYIauiqUQ13Q%3D%3D&weadegreetype=F&ocid=winp1taskbar",
+          "duration": 120,
+          "tabReloadIntervalSeconds": 2400
+        },
+        {
+          "url": "https://www.msn.com/en-us/weather/maps/weather-today/we-city?weadegreetype=F&ocid=winp1taskbar&lat=38.66826248&lon=-90.45602417&weaext0=%7B%22l%22%3A%22St+Louis%22%2C%22r%22%3A%22MO%22%2C%22c%22%3A%22United+States%22%2C%22i%22%3A%22US%22%2C%22g%22%3A%22en-us%22%7D&city=St+Louis%2C+MO&type=radar&animation=1",
+          "duration": 120,
+          "tabReloadIntervalSeconds": 2400
+        },
+        {
+          "url": "https://www.msn.com/en-us/weather/maps/weather-today/we-city?weadegreetype=F&ocid=winp1taskbar&lat=38.66826248&lon=-90.45602417&weaext0=%7B%22l%22%3A%22St+Louis%22%2C%22r%22%3A%22MO%22%2C%22c%22%3A%22United+States%22%2C%22i%22%3A%22US%22%2C%22g%22%3A%22en-us%22%7D&city=St+Louis%2C+MO&type=temperature&animation=1",
+          "duration": 120,
+          "tabReloadIntervalSeconds": 2400
+        },
+        {
+          "url": "https://www.msn.com/en-us/weather/maps/weather-today/we-city?weadegreetype=F&ocid=winp1taskbar&lat=38.66826248&lon=-90.45602417&weaext0=%7B%22l%22%3A%22St+Louis%22%2C%22r%22%3A%22MO%22%2C%22c%22%3A%22United+States%22%2C%22i%22%3A%22US%22%2C%22g%22%3A%22en-us%22%7D&city=St+Louis%2C+MO&type=hurricane&animation=1&zoom=4",
+          "duration": 120 ,
+          "tabReloadIntervalSeconds": 2400
+        }
+      
+  ]
+}

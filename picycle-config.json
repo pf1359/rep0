@@ -1,0 +1,45 @@
+{
+  "settingsReloadIntervalMinutes": 2,
+  "fullscreen": true,
+  "autoStart": true,
+  "lazyLoadTabs": true,
+  "closeExistingTabs": true,
+  "websites": [
+    {
+      "url": "http://magicmirror.findley.cc:8080",
+      "duration": 120,
+      "tabReloadIntervalSeconds": 600
+    },
+    {
+      "url": "http://magicmirror.findley.cc:8085",
+      "duration": 60,
+      "tabReloadIntervalSeconds": 600
+    },
+    {
+      "url": "http://magicmirror.findley.cc:8083",
+      "duration": 120,
+      "tabReloadIntervalSeconds": 600
+    },
+    {
+      "url": "http://magicmirror.findley.cc:8081",
+      "duration": 120,
+      "tabReloadIntervalSeconds": 600
+    },
+    {
+      "url": "http://en.blitzortung.org/live_lightning_maps.php?map=30",
+      "duration": 120,
+      "tabReloadIntervalSeconds": 600
+    },
+    {
+      "url": "https://www.npr.org",
+      "duration": 120 ,
+      "tabReloadIntervalSeconds": 600
+    },
+    {
+      "url": "https://www.kmov.com/news/",
+      "duration": 120,
+      "tabReloadIntervalSeconds": 600
+    }
+
+  ]
+}

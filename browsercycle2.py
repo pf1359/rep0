@@ -15,7 +15,7 @@
 #firefox_path = "C:\Program Files\Mozilla Firefox\firefox.exe %s"
 #webbrowser.register('firefox', None, webbrowser.BackgroundBrowser(firefox_path))
 #IF Linux, we need this and change webbrowser.open to firefox.open
-#firefox = webbrowser.get('Firefox')
+
 
 import webbrowser
 import time
@@ -25,11 +25,10 @@ import time
 import platform
 hostplatform = platform.system()
 if hostplatform =='Windows':
-    webbrowser.register('Firefox',
-	   None,
-	   webbrowser.BackgroundBrowser("C://Program Files//Mozilla Firefox//firefox.exe"))
+    webbrowser.register('Firefox', None,webbrowser.BackgroundBrowser("C://Program Files//Mozilla Firefox//firefox.exe"))
+    usebrowser = webbrowser.get('Firefox')
 
-usebrowser = webbrowser.get('Firefox')
+firefox = webbrowser.get('Firefox')
 
 site01 = ["https://npr.org", 180]
 site02 = ["https://www.kmov.com/news/", 180]
@@ -102,15 +101,20 @@ site61 = ["https://www.earthcam.com/usa/tennessee/nashville/?cam=nashville", 180
 site62 = ["http://live-fuji.jp/", 180] # Fuji-san
 site63 = ["https://www.youtube.com/watch?v=RQA5RcIZlAM", 180] #Tokyo Shinjuku crossing
 site64 = ["https://www.youtube.com/watch?v=3kPH7kTphnE", 180] #Tokyo Shibuya crossing
-site65 = ["https://www.youtube.com/watch?v=_gccgAPqk80", 180] #Dotonbori Osaka livecam
+site65 = ["https://www.youtube.com/usgs/live",180] #USGS Live - showing Kiluea
+site66 = ["http://magicmirror.findley.cc:8080", 180] #Magic Mirror
+site67 = ["http://magicmirror.findley.cc:8081", 180] #Magic Mirror2
+site68 = ["http://magicmirror.findley.cc:8082", 180] #Magic Mirror3
+site69 = ["http://magicmirror.findley.cc:8083", 180] #Magic Mirror4
+site70 = ["http://magicmirror.findley.cc:8084", 180] #Magic Mirror5
+site71 = ["https://www.youtube.com/watch?v=A8Al9WwaYtg", 180] #Zenkoji Temple, Nagano Prefecture, Japan
 
-
-websites = [site01, site02, site03, site38, site05, \
-    site06, site10, \
+websites = [site68, site01, site02, site03, site38, site05, \
+    site06, site10, site66,\
         site11, site39, site12, site40, site13, site14, \
-          site16, site17, site18, site19, site65,\
-              site23, site24, site61, site20, site62, site63, site64, \
-                  site26, site29, site31, site33, site36, site37, \
+          site16, site17, site18, site19, site69,\
+              site23, site24, site61, site70, \
+                  site26, site29, site31, site33, site36, site37,\
                     site42, site50, site48, site53, site54, site57, site60]
 
 
@@ -118,45 +122,9 @@ websites = [site01, site02, site03, site38, site05, \
 VAR_CYCLE = 1
 while VAR_CYCLE > 0:
    for website in websites:
-      usebrowser.open(website[0], new=0)
-      time.sleep(website[1])
-
-
-
-    # choose a random element from a list
-    # seed random number generator
-    #random.seed()
-    #create a chance to determine if a video plays this cycle
-    #chance = random.randint(0, 11)
-    # prepare a sequence
-    #y1_site = ["https://www.youtube.com/embed/SUyDcyHpFhc?mute=1;autoplay=1", 86] #86 seconds flying past galaxies
-    #y2_site = ["https://www.youtube.com/embed/6tmbeLTHC_0?start=54&end=174;mute=1;autoplay=1", 120] #120 seconds the sun 1
-    #y3_site = ["https://www.youtube.com/embed/6tmbeLTHC_0?start=267&end=387;mute=1;autoplay=1", 120] #120 seconds the sun 2
-    #y4_site = ["https://www.youtube.com/embed/6tmbeLTHC_0?start=559&end=679;mute=1;autoplay=1", 120] #120 seconds the sun 3
-    #y5_site = ["https://www.youtube.com/embed/6tmbeLTHC_0?start=1059&end=1359;mute=1;autoplay=1", 300] #300 seconds the sun 4
-    #y6_site = ["https://www.youtube.com/embed/7fYKMCCPh28?start=53&end=118;mute=1;autoplay=1", 65] #65 seconds earth 1
-    #y7_site = ["https://www.youtube.com/embed/7fYKMCCPh28?start=988&end=1043;mute=1;autoplay=1", 55] #55 seconds earth 2
-    #y8_site = ["https://www.youtube.com/embed/7fYKMCCPh28?start=1196&end=1826;mute=1;autoplay=1", 630] #630 seconds earth 3
-    #y9_site = ["https://www.youtube.com/embed/7fYKMCCPh28?start=1828&end=2175;mute=1;autoplay=1", 347] #347 seconds earth 4
-    #y10_site = ["https://www.youtube.com/embed/PBJAR3-UvSQ?start=29&end=289;mute=1;autoplay=1", 260] #260 seconds aurora
-    #y11_site = ["https://www.youtube.com/embed/Ilifg26TZrI?mute=1;autoplay=1", 144] #144 seconds around the moon
-    #videos = [y1_site, y2_site, y3_site, y4_site, y5_site, y6_site, y7_site, y8_site, y9_site, y10_site, y11_site]
-    
-
-    #site = "http://wttr.in/Saint+Louis+Missouri"
-    #site = "https://www.msn.com/en-us/news/"
-    #site43 = "https://www.mlb.com/postseason"
-    #site = "http://wttr.in/Saint+Louis+Missouri"
-    #site = "https://spotthestation.nasa.gov/sightings/view.cfm?country=United_States&region=Missouri&city=Jefferson_National_Expansion_Memorial"
-    #site = "https://www.youtube.com/watch?v=DDU-rZs-Ic4"
-    #site = "https://www.youtube.com/watch?v=EEIk7gwjgIM"
-    #site = "https://spotthestation.nasa.gov/tracking_map.cfm"
-    #site = "http://www.internettrafficreport.com/"
-    #site = "https://cybermap.kaspersky.com"
-    #site = "https://www.akamai.com/us/en/resources/visualizing-akamai/enterprise-threat-monitor.jsp"
-    #site = "https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6"
-    #site = "https://console.rumble.run"
-    #site = "https://www.youtube.com/embed/eJ7ZkQ5TC08?mute=1;autoplay=1"
-    #site ="https://map.internetintel.oracle.com/?root=national&country=US"
-    #site = "https://www.youtube.com/embed/GAv4VCC41oU?mute=1;autoplay=1"
-    #site62 = ["https://www.nasa.gov/specials/trackartemis/", 180] # Artemis tracker
+      if hostplatform =='Windows':
+       usebrowser.open(website[0], new=0) #windows
+       time.sleep(website[1]) 
+      else:   
+       firefox.open(website[0], new=0) #linux
+       time.sleep(website[1])
