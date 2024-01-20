@@ -109,12 +109,13 @@ site68 = ["http://magicmirror.findley.cc:8082", 180] #Magic Mirror3
 site69 = ["http://magicmirror.findley.cc:8083", 180] #Magic Mirror4
 site70 = ["http://magicmirror.findley.cc:8085", 180] #Magic Mirror5
 site71 = ["https://www.youtube.com/watch?v=_gccgAPqk80", 180] #Dotonbori, Osaka
+site72 = ["https://www.google.com/maps/@38.6223991,-90.4906904,11z/data=!5m1!1e1?entry=ttu", 120] #google traffic
 
 websites = [site68, site01, site02, site03, site38, site05, \
     site06, site10, site66,\
         site11, site39, site12, site40, site13, site14, site71, \
           site16, site17, site18, site19, site69,\
-              site23, site24, site61, site70, \
+              site23, site24, site61, site70, site72,\
                   site26, site29, site31, site33, site36, site37,\
                     site42, site50, site48, site53, site54, site57, site60]
 
