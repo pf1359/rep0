@@ -21,6 +21,11 @@
       "tabReloadIntervalSeconds": 600
     },
     {
+      "url": "https://www.google.com/maps/@38.6223991,-90.4906904,11z/data=!5m1!1e1?entry=ttu",
+      "duration": 120,
+      "tabReloadIntervalSeconds": 600
+    },
+    {
       "url": "http://en.blitzortung.org/live_lightning_maps.php?map=30",
       "duration": 120,
       "tabReloadIntervalSeconds": 600
