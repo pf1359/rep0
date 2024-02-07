@@ -81,17 +81,7 @@
       "tabReloadIntervalSeconds": 600
     },
     {
-      "url": "https://www.earthcam.com/usa/florida/keywest/?cam=irishkevins",
-      "duration": 90,
-      "tabReloadIntervalSeconds": 600
-    },
-    {
       "url": "https://www.earthcam.com/usa/illinois/chicago/field/?cam=fieldmuseum",
-      "duration": 90,
-      "tabReloadIntervalSeconds": 600
-    },
-    {
-      "url": "end",
       "duration": 90,
       "tabReloadIntervalSeconds": 600
     }

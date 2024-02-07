@@ -106,7 +106,7 @@
       "tabReloadIntervalSeconds": 600
     },
     {
-        "url": "http://zabbix.findley.cc/zabbix.php?action-dashboard.view@dashboardid=61",
+        "url": "http://zabbix.findley.cc/zabbix.php?action=dashboard.view",
         "duration": 90,
         "tabReloadIntervalSeconds": 600
       },
