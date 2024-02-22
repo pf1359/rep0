@@ -11,11 +11,6 @@
       "tabReloadIntervalSeconds": 600
     },
     {
-      "url": "https://www.youtube.com/watch?v=_gccgAPqk80;mute=1;autoplay=1",
-      "duration": 90,
-      "tabReloadIntervalSeconds": 600
-    },
-    {
       "url": "https://mars.nasa.gov/mars2020/mission/where-is-the-rover/",
       "duration": 90,
       "tabReloadIntervalSeconds": 600
