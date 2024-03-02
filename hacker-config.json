@@ -7,12 +7,12 @@
   "websites": [
     {
       "url": "https://rezmason.github.io/matrix/?version=operator",
-      "duration": 120,
+      "duration": 45,
       "tabReloadIntervalSeconds": 2400
     },
     {
       "url": "https://pranx.com/hacker/",
-      "duration": 120,
+      "duration": 60,
       "tabReloadIntervalSeconds": 2400
     },
     {
@@ -22,7 +22,7 @@
     },
     {
       "url": "https://rezmason.github.io/matrix/?version=3d",
-      "duration": 120,
+      "duration": 30,
       "tabReloadIntervalSeconds": 2400
     },
     {
@@ -37,7 +37,7 @@
     },
     {
       "url": "https://rezmason.github.io/matrix/?version=trinity",
-      "duration": 120,
+      "duration": 30,
       "tabReloadIntervalSeconds": 2400
     },
     {
@@ -47,7 +47,7 @@
       },
       {
         "url": "https://rezmason.github.io/matrix/?version=resurrections",
-        "duration": 120,
+        "duration": 30,
         "tabReloadIntervalSeconds": 2400
       },
       {
@@ -57,7 +57,7 @@
       },
       {
         "url": "https://rezmason.github.io/matrix/?version=updated&effect=mirror&camera=true",
-        "duration": 120,
+        "duration": 30,
         "tabReloadIntervalSeconds": 2400
       },
       {
