@@ -85,7 +85,7 @@ site44 = ["https://www.youtube.com/watch?v=e0VawkIXKAc",180] # Namib desert Live
 site45 = ["https://webb.nasa.gov/content/webbLaunch/whereIsWebb.html", 180] #JWebb telescope live status
 site46 = ["https://dadjokegenerator.com/", 30]
 site47 = ["https://www.earthcam.com/world/japan/tokyo/?cam=tokyo1", 180] # Tokyo
-site48 = ["https://www.earthcam.com/world/russia/moscow/?cam=moscow_hd", 180] #Moscow
+site48 = ["https://www.earthcam.com/world/russia/moscow/?cam=moscow_hd", 180] #Moscow (55.726218865336975, 37.56347999687398)
 site49 = ["https://www.earthcam.com/world/thailand/pattaya/?cam=pattaya", 180] #Thailand
 site50 = ["https://www.earthcam.com/world/spain/ceuta/?cam=gibraltar", 180] # Straight of Gilbraltar
 site51 = ["https://www.earthcam.com/world/philippines/boracay/?cam=boracay_hd", 180] # Boracay, Philippines
@@ -108,13 +108,16 @@ site67 = ["http://magicmirror.findley.cc:8081", 180] #Magic Mirror2
 site68 = ["http://magicmirror.findley.cc:8082", 180] #Magic Mirror3
 site69 = ["http://magicmirror.findley.cc:8083", 180] #Magic Mirror4
 site70 = ["http://magicmirror.findley.cc:8085", 180] #Magic Mirror5
-site71 = ["https://www.youtube.com/watch?v=_gccgAPqk80", 180] #Dotonbori, Osaka
+site71 = ["https://www.youtube.com/watch?v=_gccgAPqk80;mute=1;autoplay=1", 180] #Dotonbori, Osaka
+site72 = ["https://www.google.com/maps/@38.6223991,-90.4906904,11z/data=!5m1!1e1?entry=ttu", 120] #google traffic
+site73 = {"https://www.youtube.com/watch?v=DjdUEyjx8GM&list=PLxtg5zfgORZr8KB1VglBvI6czMJpPL-rx", 180} #Tokyo Shinjuku Kabukicho
+site74 = ["https://www.skylinewebcams.com/en/webcam/russia/central-federal-district/moscow/moskva-river.html", 180] #Moscow, Moskva River skyline
 
-websites = [site68, site01, site02, site03, site38, site05, \
+websites = [site68, site01, site02, site03, site38, \
     site06, site10, site66,\
         site11, site39, site12, site40, site13, site14, site71, \
           site16, site17, site18, site19, site69,\
-              site23, site24, site61, site70, \
+              site23, site24, site61, site72,\
                   site26, site29, site31, site33, site36, site37,\
                     site42, site50, site48, site53, site54, site57, site60]
 

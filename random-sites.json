@@ -1,0 +1,85 @@
+{
+  "settingsReloadIntervalMinutes": 2,
+  "fullscreen": true,
+  "autoStart": true,
+  "lazyLoadTabs": true,
+  "closeExistingTabs": true,
+  "websites": [
+    {
+      "url": "https://www.flightradar24.com/40.52,-101.43/4",
+      "duration": 90,
+      "tabReloadIntervalSeconds": 600
+    },
+    {
+      "url": "https://mars.nasa.gov/mars2020/mission/where-is-the-rover/",
+      "duration": 90,
+      "tabReloadIntervalSeconds": 600
+    },
+    {
+      "url": "https://www.earthcam.com/usa/missouri/stlouis/?cam=arch_riverview",
+      "duration": 90,
+      "tabReloadIntervalSeconds": 600
+    },
+    {
+      "url": "https://www.earthcam.com/usa/tennessee/nashville/?cam=nashville",
+      "duration": 90,
+      "tabReloadIntervalSeconds": 600
+    },
+    {
+      "url": "https://www.earthcam.com/usa/newyork/timessquare/?cam=tsrobo1",
+      "duration": 90,
+      "tabReloadIntervalSeconds": 600
+    },
+    {
+      "url": "https://www.earthcam.com/world/netherlands/amsterdam/?cam=amsterdam",
+      "duration": 90,
+      "tabReloadIntervalSeconds": 600
+    },
+    {
+      "url": "https://www.earthcam.com/usa/nevada/lasvegas/fremontstreet/?cam=catsmeow_lv_fremont",
+      "duration": 90,
+      "tabReloadIntervalSeconds": 600
+    },
+    {
+      "url": "https://www.earthcam.com/world/ireland/dublin/?cam=templebar",
+      "duration": 90,
+      "tabReloadIntervalSeconds": 600
+    },
+    {
+      "url": "https://www.earthcam.com/usa/louisiana/neworleans/bourbonstreet/?cam=catsmeow2",
+      "duration": 90,
+      "tabReloadIntervalSeconds": 600
+    },
+    {
+      "url": "https://www.earthcam.com/world/spain/ceuta/?cam=gibraltar",
+      "duration": 90,
+      "tabReloadIntervalSeconds": 600
+    },
+    {
+      "url": "https://www.earthcam.com/world/russia/moscow/?cam=moscow_hd",
+      "duration": 90,
+      "tabReloadIntervalSeconds": 600
+    },
+    {
+      "url": "https://www.earthcam.com/world/hungary/budapest/?cam=hotelvictoria",
+      "duration": 90,
+      "tabReloadIntervalSeconds": 600
+    },
+    {
+      "url": "https://www.earthcam.com/world/canada/niagarafalls/thefalls/?cam=niagarafalls2",
+      "duration": 90,
+      "tabReloadIntervalSeconds": 600
+    },
+    {
+      "url": "https://www.earthcam.com/usa/illinois/chicago/skydeck/?cam=chicagoskydeck",
+      "duration": 90,
+      "tabReloadIntervalSeconds": 600
+    },
+    {
+      "url": "https://www.earthcam.com/usa/illinois/chicago/field/?cam=fieldmuseum",
+      "duration": 90,
+      "tabReloadIntervalSeconds": 600
+    }
+
+  ]
+}

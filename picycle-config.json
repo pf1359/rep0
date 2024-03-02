@@ -7,37 +7,37 @@
   "websites": [
     {
       "url": "http://magicmirror.findley.cc:8080",
-      "duration": 120,
-      "tabReloadIntervalSeconds": 600
-    },
-    {
-      "url": "http://magicmirror.findley.cc:8085",
-      "duration": 60,
+      "duration": 90,
       "tabReloadIntervalSeconds": 600
     },
     {
       "url": "http://magicmirror.findley.cc:8083",
-      "duration": 120,
+      "duration": 90,
       "tabReloadIntervalSeconds": 600
     },
     {
       "url": "http://magicmirror.findley.cc:8081",
-      "duration": 120,
+      "duration": 90,
+      "tabReloadIntervalSeconds": 600
+    },
+    {
+      "url": "https://www.google.com/maps/@38.6223991,-90.4906904,11z/data=!5m1!1e1?entry=ttu",
+      "duration": 90,
       "tabReloadIntervalSeconds": 600
     },
     {
       "url": "http://en.blitzortung.org/live_lightning_maps.php?map=30",
-      "duration": 120,
+      "duration": 90,
       "tabReloadIntervalSeconds": 600
     },
     {
       "url": "https://www.npr.org",
-      "duration": 120 ,
+      "duration": 90,
       "tabReloadIntervalSeconds": 600
     },
     {
       "url": "https://www.kmov.com/news/",
-      "duration": 120,
+      "duration": 90,
       "tabReloadIntervalSeconds": 600
     }
 
