@@ -1,0 +1,69 @@
+{
+  "settingsReloadIntervalMinutes": 2,
+  "fullscreen": true,
+  "autoStart": true,
+  "lazyLoadTabs": true,
+  "closeExistingTabs": true,
+  "websites": [
+    {
+      "url": "https://rezmason.github.io/matrix/?version=operator",
+      "duration": 120,
+      "tabReloadIntervalSeconds": 2400
+    },
+    {
+      "url": "https://pranx.com/hacker/",
+      "duration": 120,
+      "tabReloadIntervalSeconds": 2400
+    },
+    {
+      "url": "https://threatmap.fortiguard.com/",
+      "duration": 120,
+      "tabReloadIntervalSeconds": 2400
+    },
+    {
+      "url": "https://rezmason.github.io/matrix/?version=3d",
+      "duration": 120,
+      "tabReloadIntervalSeconds": 2400
+    },
+    {
+      "url": "https://threatbutt.com/map/",
+      "duration": 120,
+      "tabReloadIntervalSeconds": 2400
+    },
+    {
+      "url": "https://cybermap.kaspersky.com/",
+      "duration": 120 ,
+      "tabReloadIntervalSeconds": 2400
+    },
+    {
+      "url": "https://rezmason.github.io/matrix/?version=trinity",
+      "duration": 120,
+      "tabReloadIntervalSeconds": 2400
+    },
+    {
+        "url": "https://livethreatmap.radware.com/",
+        "duration": 120,
+        "tabReloadIntervalSeconds": 2400
+      },
+      {
+        "url": "https://rezmason.github.io/matrix/?version=resurrections",
+        "duration": 120,
+        "tabReloadIntervalSeconds": 2400
+      },
+      {
+        "url": "https://threatmap.bitdefender.com/",
+        "duration": 120,
+        "tabReloadIntervalSeconds": 2400
+      },
+      {
+        "url": "https://rezmason.github.io/matrix/?version=updated&effect=mirror&camera=true",
+        "duration": 120,
+        "tabReloadIntervalSeconds": 2400
+      },
+      {
+        "url": "https://threatmap.checkpoint.com/",
+        "duration": 120 ,
+        "tabReloadIntervalSeconds": 2400
+      }   
+  ]
+}
