@@ -16,7 +16,7 @@
       "tabReloadIntervalSeconds": 600
     },
     {
-      "url": "http://magicmirror.findley.cc:8081",
+      "url": "http://magicmirror.findley.cc:8082",
       "duration": 90,
       "tabReloadIntervalSeconds": 600
     },
