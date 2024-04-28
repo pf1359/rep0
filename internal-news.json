@@ -11,6 +11,11 @@
       "tabReloadIntervalSeconds": 600
     },
     {
+      "url": "http://magicmirror.findley.cc:8081",
+      "duration": 90,
+      "tabReloadIntervalSeconds": 600
+    },
+    {
       "url": "https://npr.org",
       "duration": 90,
       "tabReloadIntervalSeconds": 600
