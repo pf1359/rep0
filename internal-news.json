@@ -116,6 +116,11 @@
         "tabReloadIntervalSeconds": 600
       },
       {
+        "url": "https://www.stlcitysc.com/",
+        "duration": 90,
+        "tabReloadIntervalSeconds": 600
+      },
+      {
       "url": "https://my.papertrailapp.com/events",
       "duration": 90,
       "tabReloadIntervalSeconds": 600
