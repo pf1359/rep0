@@ -110,7 +110,12 @@
         "duration": 90,
         "tabReloadIntervalSeconds": 600
       },
-    {
+      {
+        "url": "https://www.mlb.com/cardinals",
+        "duration": 90,
+        "tabReloadIntervalSeconds": 600
+      },
+      {
       "url": "https://my.papertrailapp.com/events",
       "duration": 90,
       "tabReloadIntervalSeconds": 600
