@@ -4,6 +4,7 @@ import datetime
 app = Flask(__name__)
 
 # Define the two kids
+# Adri is even week, T is odd in 2024
 kids = ["Adrianna", "Travis"]
 
 @app.route('/')
