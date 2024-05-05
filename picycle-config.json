@@ -21,6 +21,11 @@
       "tabReloadIntervalSeconds": 600
     },
     {
+      "url": "http://magicmirror.findley.cc:8090",
+      "duration": 30,
+      "tabReloadIntervalSeconds": 600
+    },
+    {
       "url": "https://www.google.com/maps/@38.6223991,-90.4906904,11z/data=!5m1!1e1?entry=ttu",
       "duration": 90,
       "tabReloadIntervalSeconds": 600
