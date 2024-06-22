@@ -44,6 +44,11 @@
       "url": "https://www.kmov.com/news/",
       "duration": 90,
       "tabReloadIntervalSeconds": 600
+    },
+    {
+      "url": "https://www.msn.com/en-us/weather/maps/hurricane/in-Olivette,MO?loc=eyJsIjoiT2xpdmV0dGUiLCJyIjoiTWlzc291cmkiLCJjIjoiVW5pdGVkIFN0YXRlcyIsImkiOiJVUyIsImciOiJlbi11cyIsIngiOiItOTAuMzc1OTQ2MDQ0OTIxODgiLCJ5IjoiMzguNjc3NjI3NTYzNDc2NTYifQ%3D%3D&weadegreetype=F&ocid=winp2fptaskbarent&cvid=081a3b805bb5412d9fc4b0bbe3e2dbb0&src=L1Banner&hurricane=2024-alberto&ei=7",
+      "duration": 120 ,
+      "tabReloadIntervalSeconds": 2400
     }
 
   ]
