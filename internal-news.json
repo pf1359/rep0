@@ -106,10 +106,15 @@
       "tabReloadIntervalSeconds": 600
     },
     {
-        "url": "http://zabbix.findley.cc/zabbix.php?action=dashboard.view",
+        "url": "http://zabbix2.findley.cc/zabbix/zabbix.php?action=dashboard.view&dashboardid=342&from=now-1h&to=now",
         "duration": 90,
         "tabReloadIntervalSeconds": 600
-      },
+    },
+    {
+        "url": "http://zabbix2.findley.cc/zabbix/zabbix.php?action=dashboard.view&dashboardid=343&from=now-1h&to=now",
+        "duration": 90,
+        "tabReloadIntervalSeconds": 600
+    },
     {
       "url": "https://my.papertrailapp.com/events",
       "duration": 90,
