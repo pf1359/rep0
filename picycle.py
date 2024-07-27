@@ -18,13 +18,14 @@ site67 = ["http://magicmirror.findley.cc:8081", 120] #Magic Mirror2
 site68 = ["http://magicmirror.findley.cc:8082", 120] #Magic Mirror3
 site69 = ["http://magicmirror.findley.cc:8083", 120] #Magic Mirror4
 site70 = ["http://magicmirror.findley.cc:8084", 120] #Magic Mirror5
+site71 = ["http://magicmirror.findley.cc:8085", 120] #Magic Mirror6
 site72 = ["http://en.blitzortung.org/live_lightning_maps.php?map=30", 120]
 site73 = ["https://www.nhc.noaa.gov", 60]
 site74 = ["https://www.mlb.com/postseason", 60]
 site75 = ["https://merrysky.net/forecast/olivette,%20mo/us", 120] #merry sky for STL
 
 
-websites = [site66, site68, site69, site70, site72]
+websites = [site66, site67, site71, site72]
 
 usebrowser = webbrowser.get('Firefox')
 

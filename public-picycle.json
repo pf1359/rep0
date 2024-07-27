@@ -109,7 +109,13 @@
           "url": "https://www.msn.com/en-us/weather/maps/weather-today/we-city?weadegreetype=F&ocid=winp1taskbar&lat=38.66826248&lon=-90.45602417&weaext0=%7B%22l%22%3A%22St+Louis%22%2C%22r%22%3A%22MO%22%2C%22c%22%3A%22United+States%22%2C%22i%22%3A%22US%22%2C%22g%22%3A%22en-us%22%7D&city=St+Louis%2C+MO&type=hurricane&animation=1&zoom=4",
           "duration": 120 ,
           "tabReloadIntervalSeconds": 2400
+        },
+        {
+          "url": "https://www.msn.com/en-us/weather/maps/hurricane/in-Olivette,MO?loc=eyJsIjoiT2xpdmV0dGUiLCJyIjoiTWlzc291cmkiLCJjIjoiVW5pdGVkIFN0YXRlcyIsImkiOiJVUyIsImciOiJlbi11cyIsIngiOiItOTAuMzc1OTQ2MDQ0OTIxODgiLCJ5IjoiMzguNjc3NjI3NTYzNDc2NTYifQ%3D%3D&weadegreetype=F&ocid=winp2fptaskbarent&cvid=081a3b805bb5412d9fc4b0bbe3e2dbb0&src=L1Banner&hurricane=2024-alberto&ei=7",
+          "duration": 120 ,
+          "tabReloadIntervalSeconds": 2400
         }
       
   ]
 }
+
