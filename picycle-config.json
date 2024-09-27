@@ -46,6 +46,11 @@
       "tabReloadIntervalSeconds": 600
     },
     {
+      "url": "https://calendar.google.com/calendar/u/0/embed?height=600&wkst=1&ctz=America/Chicago&bgcolor=%23ffffff&showPrint=0&showTz=0&mode=WEEK&showTitle=0&src=NHNmaGxvbXZsaDFsamVpODhoNzg3MXY4dG8yODVpcmtAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&src=MHRqZHQ0M2MxZ2o4bHJ1YWEyZTBucGdzaWU4aXJtODFAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23F09300&color=%2333B679",
+      "duration": 90,
+      "tabReloadIntervalSeconds": 600
+    },
+    {
       "url": "https://www.msn.com/en-us/weather/maps/hurricane/in-Olivette,MO?loc=eyJsIjoiT2xpdmV0dGUiLCJyIjoiTWlzc291cmkiLCJjIjoiVW5pdGVkIFN0YXRlcyIsImkiOiJVUyIsImciOiJlbi11cyIsIngiOiItOTAuMzcxMDg2MTIwNjA1NDciLCJ5IjoiMzguNjczNzM2NTcyMjY1NjI1In0%3D&weadegreetype=F&ocid=winp2fptaskbarent&cvid=14a9cfbf1d5847d6b92813f84fcec36c&src=L1Banner&ei=11&zoom=4",
       "duration": 60 ,
       "tabReloadIntervalSeconds": 2400
