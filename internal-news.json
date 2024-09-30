@@ -121,7 +121,7 @@
         "tabReloadIntervalSeconds": 600
     },
     {
-        "url": "https://www.mlb.com/cardinals",
+        "url": "https://www.mlb.com/postseason",
         "duration": 90,
         "tabReloadIntervalSeconds": 600
     },
