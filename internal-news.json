@@ -121,11 +121,6 @@
         "tabReloadIntervalSeconds": 600
     },
     {
-        "url": "https://www.mlb.com/postseason",
-        "duration": 90,
-        "tabReloadIntervalSeconds": 600
-    },
-    {
         "url": "https://www.stlcitysc.com/",
         "duration": 90,
         "tabReloadIntervalSeconds": 600
