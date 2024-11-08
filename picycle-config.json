@@ -52,7 +52,7 @@
     },
     {
       "url": "http://magicmirror.findley.cc:8081",
-      "duration": 90,
+      "duration": 120,
       "tabReloadIntervalSeconds": 600
     },
     {
