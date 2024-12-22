@@ -6,12 +6,7 @@
   "closeExistingTabs": true,
   "websites": [
     {
-      "url": "http://magicmirror.findley.cc:8082",
-      "duration": 90,
-      "tabReloadIntervalSeconds": 600
-    },
-    {
-      "url": "http://magicmirror.findley.cc:8081",
+      "url": "http://magicmirror.findley.cc:8080",
       "duration": 90,
       "tabReloadIntervalSeconds": 600
     },
@@ -41,7 +36,7 @@
       "tabReloadIntervalSeconds": 600
     },
     {
-      "url": "http://magicmirror.findley.cc:8080",
+      "url": "http://magicmirror.findley.cc:8084",
       "duration": 90,
       "tabReloadIntervalSeconds": 600
     },
@@ -91,7 +86,7 @@
       "tabReloadIntervalSeconds": 600
     },
     {
-      "url": "http://magicmirror.findley.cc:8083",
+      "url": "http://magicmirror.findley.cc:8080",
       "duration": 90,
       "tabReloadIntervalSeconds": 600
     },
@@ -117,11 +112,6 @@
     },
     {
         "url": "http://zabbix2.findley.cc/zabbix/zabbix.php?action=dashboard.view&dashboardid=343&from=now-1h&to=now",
-        "duration": 90,
-        "tabReloadIntervalSeconds": 600
-    },
-    {
-        "url": "https://my.wyze.com/live",
         "duration": 90,
         "tabReloadIntervalSeconds": 600
     },
