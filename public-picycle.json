@@ -1,6 +1,6 @@
 {
   "settingsReloadIntervalMinutes": 2,
-  "fullscreen": true,
+  "fullscreen": false,
   "autoStart": true,
   "lazyLoadTabs": true,
   "closeExistingTabs": true,
