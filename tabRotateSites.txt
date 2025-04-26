@@ -1,0 +1,8 @@
+
+
+
+    {
+        "url": "https://www.msn.com/en-us/weather/maps/hurricane/in-Olivette,MO?loc=eyJsIjoiT2xpdmV0dGUiLCJyIjoiTWlzc291cmkiLCJjIjoiVW5pdGVkIFN0YXRlcyIsImkiOiJVUyIsImciOiJlbi11cyIsIngiOiItOTAuMzcxMDg2MTIwNjA1NDciLCJ5IjoiMzguNjczNzM2NTcyMjY1NjI1In0%3D&weadegreetype=F&ocid=winp2fptaskbarent&cvid=14a9cfbf1d5847d6b92813f84fcec36c&src=L1Banner&ei=11&zoom=4",
+        "duration": 120 ,
+        "tabReloadIntervalSeconds": 2400
+    }
