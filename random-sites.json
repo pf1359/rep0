@@ -76,6 +76,21 @@
       "tabReloadIntervalSeconds": 600
     },
     {
+      "url": "https://www.mlb.com/cardinals",
+      "duration": 90,
+      "tabReloadIntervalSeconds": 600
+    },
+    {
+      "url": "https://www.stlcitysc.com/",
+      "duration": 90,
+      "tabReloadIntervalSeconds": 600
+    },
+    {   
+      "url": "https://www.indycar.com/",
+      "duration": 90,
+      "tabReloadIntervalSeconds": 600
+    },
+    {
       "url": "https://www.earthcam.com/usa/illinois/chicago/field/?cam=fieldmuseum",
       "duration": 90,
       "tabReloadIntervalSeconds": 600
