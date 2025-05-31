@@ -31,6 +31,11 @@
       "tabReloadIntervalSeconds": 600
     },
     {
+      "url": "https://www.msn.com/en-us/weather/maps/hurricane/in-Olivette,MO?loc=eyJsIjoiT2xpdmV0dGUiLCJyIjoiTWlzc291cmkiLCJjIjoiVW5pdGVkIFN0YXRlcyIsImkiOiJVUyIsImciOiJlbi11cyIsIngiOiItOTAuMzcxNDU5OTYwOTM3NSIsInkiOiIzOC42NzI1NDI1NzIwMjE0ODQifQ%3D%3D&weadegreetype=F&ocid=winp2fptaskbarent&cvid=ae8bb74921514eb69aa1fa676b9c8cbf",
+      "duration": 90,
+      "tabReloadIntervalSeconds": 600
+    },
+    {
       "url": "http://en.blitzortung.org/live_lightning_maps.php?map=30",
       "duration": 90,
       "tabReloadIntervalSeconds": 600
