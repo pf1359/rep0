@@ -1,0 +1,106 @@
+{
+  "isFullscreen": true,
+  "pages": [
+   {
+      "delaySeconds": 90,
+      "reloadIntervalSeconds": 600,
+      "url": "https://www.flightradar24.com/40.52,-101.43/4"
+    },
+    {
+      "delaySeconds": 90,
+      "reloadIntervalSeconds": 600,
+      "url": "https://mars.nasa.gov/mars2020/mission/where-is-the-rover/"
+    },
+    {
+      "delaySeconds": 90,
+      "reloadIntervalSeconds": 600,
+      "url": "https://www.earthcam.com/usa/missouri/stlouis/?cam=arch_riverview"
+    },
+    {
+      "delaySeconds": 90,
+      "reloadIntervalSeconds": 600,
+      "url": "https://www.earthcam.com/usa/tennessee/nashville/?cam=nashville"
+    },
+    {
+      "delaySeconds": 90,
+      "reloadIntervalSeconds": 600,
+      "url": "https://www.earthcam.com/usa/newyork/timessquare/?cam=tsrobo1"
+    },
+    {
+      "delaySeconds": 90,
+      "reloadIntervalSeconds": 600,
+      "url": "https://www.earthcam.com/world/netherlands/amsterdam/?cam=amsterdam"
+    },
+    {
+      "delaySeconds": 90,
+      "reloadIntervalSeconds": 600,
+      "url": "https://www.earthcam.com/usa/nevada/lasvegas/fremontstreet/?cam=catsmeow_lv_fremont"
+    },
+    {
+      "delaySeconds": 90,
+      "reloadIntervalSeconds": 600,
+      "url": "https://www.earthcam.com/world/ireland/dublin/?cam=templebar"
+    },
+    {
+      "delaySeconds": 90,
+      "reloadIntervalSeconds": 600,
+      "url": "https://www.earthcam.com/usa/louisiana/neworleans/bourbonstreet/?cam=catsmeow2"
+    },
+    {
+      "delaySeconds": 90,
+      "reloadIntervalSeconds": 600,
+      "url": "https://www.earthcam.com/world/spain/ceuta/?cam=gibraltar"
+    },
+    {
+      "delaySeconds": 90,
+      "reloadIntervalSeconds": 600,
+      "url": "https://www.earthcam.com/world/russia/moscow/?cam=moscow_hd"
+    },
+    {
+      "delaySeconds": 90,
+      "reloadIntervalSeconds": 600,
+      "url": "https://www.earthcam.com/world/hungary/budapest/?cam=hotelvictoria"
+    },
+    {
+      "delaySeconds": 90,
+      "reloadIntervalSeconds": 600,
+      "url": "https://www.earthcam.com/world/canada/niagarafalls/thefalls/?cam=niagarafalls2"
+    },
+    {
+      "delaySeconds": 90,
+      "reloadIntervalSeconds": 600,
+      "url": "https://www.earthcam.com/usa/illinois/chicago/skydeck/?cam=chicagoskydeck"
+    },
+    {
+      "delaySeconds": 90,
+      "reloadIntervalSeconds": 600,
+      "url": "https://www.mlb.com/cardinals"
+    },
+    {
+      "delaySeconds": 90,
+      "reloadIntervalSeconds": 600,
+      "url": "https://www.mlb.com/postseason"
+    },
+    {
+      "delaySeconds": 90,
+      "reloadIntervalSeconds": 600,
+      "url": "https://www.stlcitysc.com/"
+    },
+    {   
+      "delaySeconds": 90,
+      "reloadIntervalSeconds": 600,
+      "url": "https://www.indycar.com/"
+    },
+        {
+      "delaySeconds": 90,
+      "reloadIntervalSeconds": 600,
+      "url": "https://formula1.com/en/latest"
+    },
+    {
+      "delaySeconds": 90,
+      "reloadIntervalSeconds": 600,
+      "url": "https://www.earthcam.com/usa/illinois/chicago/field/?cam=fieldmuseum"
+    }
+
+  ]
+}
