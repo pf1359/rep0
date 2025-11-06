@@ -7,6 +7,7 @@ app = Flask(__name__)
 # Define the two kids
 # Adri is even week, T is odd in 2024
 kids = ["Adrianna", "Travis"]
+laundrykids = ["Travis", "Adrianna"]
 
 @app.route('/')
 def home():
@@ -18,16 +19,18 @@ def home():
     day_of_week = datetime.date.today().isocalendar()[2]
     
     # If the week number is even, select the first kid, otherwise select the second
+    # The 
     kid = kids[week_number % 2]
+    laundrykid = laundrykids[week_number % 2]
     
     # If the day of the week is not Monday, return a message indicating that it's not trash day
     if day_of_week != 1:  # 1 corresponds to Monday
 
         #return f"{kid} needs to check the trash and recycling today."
-        return render_template('trash_template.html', kid=kid)
+        return render_template('trash_template.html', kid=kid, laundrykid=laundrykid, trash_day=False)
     else:
         # If it is Monday, return a message indicating that it's trash day
-        return render_template('trash_template_Monday.html', kid=kid, trash_day=True)
+        return render_template('trash_template_Monday.html', kid=kid, laundrykid=laundrykid, trash_day=True)
     
 
 
