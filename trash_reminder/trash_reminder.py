@@ -38,5 +38,14 @@ def glances_dashboard():
     return render_template('glances.html')
 
 
+import requests
+from flask import Response
+
+@app.route('/glances-local')
+def proxy_local():
+    r = requests.get("http://127.0.0.1:61208")
+    return Response(r.content, content_type=r.headers['Content-Type'])
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8090)
