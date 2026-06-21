@@ -32,15 +32,10 @@ def home():
         # If it is Monday, return a message indicating that it's trash day
         return render_template('trash_template_Monday.html', kid=kid, laundrykid=laundrykid, trash_day=True)
     
-# ✅ NEW ROUTE: Glances Dashboard
+# ✅ NEW ROUTE: Glances Dashboard Added 2026-0621
 @app.route('/glances')
 def glances_dashboard():
     return render_template('glances.html')
-
-
-import requests
-from flask import Response
-
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8090)
