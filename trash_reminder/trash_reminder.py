@@ -32,6 +32,10 @@ def home():
         # If it is Monday, return a message indicating that it's trash day
         return render_template('trash_template_Monday.html', kid=kid, laundrykid=laundrykid, trash_day=True)
     
+# ✅ NEW ROUTE: Glances Dashboard
+@app.route('/glances')
+def glances_dashboard():
+    return render_template('glances.html')
 
 
 if __name__ == '__main__':
